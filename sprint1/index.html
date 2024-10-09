@@ -1,0 +1,1110 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://james-willett.github.io/mkdocs-material-youtube-tutorial/sprint1/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+    
+    
+      
+        <title>Sprint 1 - Implantació de Sistemes Operatius - MkDocs Maria Gutierrez</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sprint-1-implantacio-de-sistemes-operatius" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MkDocs Maria Gutierrez" class="md-header__button md-logo" aria-label="MkDocs Maria Gutierrez" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MkDocs Maria Gutierrez
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sprint 1 - Implantació de Sistemes Operatius
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="cyan" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Benvingut/da a Implantació de Sistemes Operatius!
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Sprint 1 - Implantació de Sistemes Operatius
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MkDocs Maria Gutierrez" class="md-nav__button md-logo" aria-label="MkDocs Maria Gutierrez" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MkDocs Maria Gutierrez
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Benvingut/da a Implantació de Sistemes Operatius!
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Sprint 1 - Implantació de Sistemes Operatius
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 1 - Implantació de Sistemes Operatius
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducció
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installacio-de-ubuntu-desktop-240" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instal·lació de Ubuntu Desktop 24.0
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#punts-de-restauracio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Punts de restauració
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Punts de restauració">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-son" class="md-nav__link">
+    <span class="md-ellipsis">
+      Què són?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diferencies-entre-sistemes-operatius" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diferencies entre sistemes operatius
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-nivell-de-carpetes-o-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      A nivell de carpetes o sistema
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A nivell de carpetes o sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#btrfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      BTRFS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timeshift" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timeshift
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clonezilla" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clonezilla
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fent-instantanies-en-timeshift" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fent instàntanies en Timeshift
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#llicencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Llicències
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Llicències">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#public-license-pl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public License (PL)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-quatre-llibertats-del-programari-lliure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les quatre llibertats del programari lliure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#llicencies-robustes-i-permissives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Llicencies robustes i permissives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#llicencia-dubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Llicencia d’ubuntu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#llicencia-de-virtualbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Llicencia de VirtualBox
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opinio-personal-sobre-programari-lliure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opinió personal sobre programari lliure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creative-common" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creative Common
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#llicencia-de-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Llicència de Github
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracio-de-xarxa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuració de xarxa
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programari" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programari
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Programari">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccio_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducció
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#centre-de-programari" class="md-nav__link">
+    <span class="md-ellipsis">
+      Centre de programari
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apt" class="md-nav__link">
+    <span class="md-ellipsis">
+      APT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aptitude" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aptitude
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dpkg" class="md-nav__link">
+    <span class="md-ellipsis">
+      DPKG
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repositoris" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repositoris
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compilar-a-traves-de-codi-font" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compilar a traves de codi font
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestor-de-arrancada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestor de arrancada
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gestor de arrancada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basics-per-restaurar-grub2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bàsics per restaurar grub2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bàsics per restaurar grub2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bootrepair" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bootrepair
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#super-grub2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Super Grub2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trencar-i-reparar-grub2-dubuntu-2404" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trencar i reparar grub2 d'Ubuntu 24.04
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Trencar i reparar grub2 d'Ubuntu 24.04">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bootrepair_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bootrepair
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#super-grub2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Super Grub2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="sprint-1-implantacio-de-sistemes-operatius">Sprint 1 - Implantació de Sistemes Operatius</h1>
+<h2 id="introduccio">Introducció</h2>
+<p>En aquest primer sprint, començarem amb la instal·lació d'Ubuntu Linux en una màquina virtual, assegurant una configuració adequada per a un ús general. Això inclou la personalització de gestors d'arrencada, la gestió de llicències i la configuració de punts de restauració per a la recuperació del sistema.</p>
+<p>Després de la instal·lació, configurarem el programari bàsic necessari, com eines de gestió, seguretat i virtualització, i implementarem còpies de seguretat automàtiques. Finalment, es realitzaran proves per garantir el correcte funcionament i es documentarà tot el procés amb captures de pantalla i detalls clau de la configuració.</p>
+<p><img alt="intro" src="../fotos/intro2.png" /></p>
+<h2 id="installacio-de-ubuntu-desktop-240">Instal·lació de Ubuntu Desktop 24.0</h2>
+<p>El primer pas que farem és crear una màquina nova a partir d’una iso d’un Ubuntu 24. Aquesta ha de tindre les següents característiques: disc de 50 GB, Xarxa NAT i la iso Ubuntu 24 (RAM i Processadors al gust de l’usuari). Per poder tindre l’opció de Xarxa NAT disponible haurem de crear primer un nom, aquest pas consisteix en anar a “Fitxer”, “Eines”, “Network Manager” i aquí crear una nova “Nat Network”. Tot seguit anirem a “Xarxa” i seleccionarem la nova Nat Network. Seguidament faré un petit insis en els diferents tipus de xarxa que tenim al virtualbox i les seves funcions:</p>
+<p>La primera xarxa que VirtualBox posa predeterminadament a qualsevol màquina virtual és NAT. Aquesta és una opció bona, ja que, simula que és l’ordinador real, agafant la ip. D’aquesta manera tenim sortida a internet i el DHCP s’encarrega de assignar-nos la ip.</p>
+<p>La segona opció de xarxa que hi ha és el Adaptador Pont, aquesta consisteix en tindre una altra ip diferent que de l'ordinador real. Amb aquesta opció també tenim sortida a internet.</p>
+<p>La tercera opció és la Xarxa Interna, aquesta és molt utilitzada per fer LAN virtuals amb diferents màquines. En aquesta opció no tens sortida a internet i crees tu el rang de ip que vols utilitzar. </p>
+<p>Per últim tenim la Xarxa NAT, aquesta és la opció més òptima si volem poder tindre ip propia amb sortida a internet i LAN. Per a fer-ho més sencill seria com si antigament habiliteses dos adaptadors de red, el primer amb xarxa interna per tindre la LAN i el segon a NAT o Adaptador pont per tindre sortida a internet.</p>
+<p><img alt="foto1" src="../fotos/foto1.png" />
+<img alt="foto2" src="../fotos/foto2.png" />
+<img alt="foto3" src="../fotos/foto3.png" /></p>
+<p>Una vegada, ja tenim tota aquesta part prèvia feta, haurem de iniciar la instal·lació. Aquí nomes seguirem els passos com a les captures, fins que començesem les particions del disc dur.</p>
+<p><img alt="foto" src="../fotos/Instalacio5.png" />
+<img alt="foto" src="../fotos/Instalacio6.png" />
+<img alt="foto" src="../fotos/Instalacio7.png" />
+<img alt="foto" src="../fotos/Instalacio8.png" />
+<img alt="foto" src="../fotos/Instalacio9.png" />
+<img alt="foto" src="../fotos/Instalacio10.png" />
+<img alt="foto" src="../fotos/Instalacio11.png" />
+<img alt="foto" src="../fotos/Instalacio12.png" />
+<img alt="foto" src="../fotos/Instalacio14.png" /></p>
+<p>El disc dur té una capacitat de 50 GB, la primera partició que farem serà destinada al swap, a la qual li assignarem 5 GB. Seguidament, per al home de l’usuari utilitzarem 30 GB, ja que, normalment és el que més utilitzarem en aquest cas. Per últim farem una partició amb la resta d’espai la qual estara assignada a l’arrel.</p>
+<p><img alt="foto" src="../fotos/Instalacio15.png" />
+<img alt="foto" src="../fotos/Instalacio20.png" />
+<img alt="foto" src="../fotos/Instalacio24.png" /></p>
+<h2 id="punts-de-restauracio">Punts de restauració</h2>
+<h3 id="que-son">Què són?</h3>
+<p>Els punts de restauració són com fotos del teu ordinador en un moment concret. Si alguna cosa va malament, com un programa que no funciona o un error, pots tornar a una d'aquestes "fotos" per recuperar el sistema.</p>
+<h3 id="diferencies-entre-sistemes-operatius">Diferencies entre sistemes operatius</h3>
+<p>Ubuntu i Windows fan servir punts de restauració de maneres diferents. Seguidament explicare les principals diferències:</p>
+<p>Ubuntu i Windows fan servir punts de restauració de maneres diferents. Windows crea punts de restauració automàticament abans d'instal·lar programes o actualitzacions, i també els pots fer manualment quan vulguis. En canvi, Ubuntu no crea punts de restauració automàticament, has de fer-ho tu mateix amb eines com Timeshift. En referent a què es guarda, els punts de restauració de Windows només guarden configuracions del sistema, sense incloure els teus fitxers personals. D'altra banda, amb Timeshift, pots decidir si vols incloure només les configuracions o també els fitxers personals. A més, la facilitat d'ús és un altre punt a considerar: Windows és més senzill, ja que pots gestionar-ho des del "Panell de control" amb uns clics, mentre que Ubuntu requereix un coneixement una mica més tècnic.</p>
+<h3 id="a-nivell-de-carpetes-o-sistema">A nivell de carpetes o sistema</h3>
+<p>Quan parlem de cuidar les nostres dades i fer còpies de seguretat, és important tenir les eines adequades. Hi ha moltes opcions que ens ajuden a protegir la informació i a recuperar-la si alguna cosa va malament. En aquest apartat, veurem tres eines molt útils: BTRFS, Timeshift i Clonezilla, cadascuna amb les seves pròpies característiques que fan que la gestió de les dades sigui més senzilla i segura.</p>
+<h4 id="btrfs">BTRFS</h4>
+<p>BTRFS és un sistema de fitxers que ajuda a gestionar les dades. Permet fer còpies de seguretat automàtiques i crear "instantànies" del sistema, que són com punts de restauració.</p>
+<h4 id="timeshift">Timeshift</h4>
+<p>Timeshift és una eina que et permet fer còpies de seguretat del sistema. És útil perquè si alguna cosa va malament, pots tornar a un moment anterior sense perdre els teus fitxers personals.</p>
+<h4 id="clonezilla">Clonezilla</h4>
+<p>Clonezilla és un programa que fa còpies completes del teu disc dur. En comptes de només guardar fitxers, fa una imatge del disc sencer. Això és genial si vols transferir dades a un nou ordinador.</p>
+<h3 id="fent-instantanies-en-timeshift">Fent instàntanies en Timeshift</h3>
+<ol>
+<li>
+<p>Primer, començarem actualitzant el repositori de paquets del sistema per assegurar-nos que tenim la darrera versió de Timeshift disponible.<br />
+<img alt="foto" src="../fotos/t1.png" /><img alt="foto" src="../fotos/t2.png" /></p>
+</li>
+<li>
+<p>A continuació, iniciarem Timeshift i introduirem les nostres credencials d'usuari per accedir a l'aplicació. Un cop dins, veurem una interfície que ens guiarà a través dels diferents passos. <br />
+<img alt="foto" src="../fotos/t3.png" /><img alt="foto" src="../fotos/t4.png" /></p>
+</li>
+<li>
+<p>Un cop a l'aplicació, escollirem l'opció RSYNC com a mètode per a la creació d'instantànies, ja que aquest mètode és molt eficient per gestionar còpies de seguretat. Després, seleccionarem la partició sda2, que és d'on volem les instantànies. <br />
+<img alt="foto" src="../fotos/t5.png" /><img alt="foto" src="../fotos/t6.png" /></p>
+</li>
+<li>
+<p>A l'etapa següent, mantindrem la configuració predeterminada dels nivells d'instantànies. Aquesta configuració habitual permetrà que el programa gestioni automàticament les còpies de seguretat, eliminant les més antigues quan l'espai sigui limitat.  <br />
+<img alt="foto" src="../fotos/t7.png" /></p>
+</li>
+<li>
+<p>Després, farem una revisió dels fitxers que volem incloure o excloure de les còpies de seguretat. Exclourem els fitxers de root per evitar qualsevol conflicte amb el sistema i afegirem tots els fitxers de l'usuari maria perquè volem assegurar-nos que la seva informació estigui protegida.   <br />
+<img alt="foto" src="../fotos/t8.png" /><img alt="foto" src="../fotos/t9.png" /><img alt="foto" src="../fotos/t10.png" /></p>
+</li>
+<li>
+<p>Seguidament, mirarem les particions disponibles al sistema i afegirem un nou fitxer al directori home/maria. Aquest fitxer és important perquè el volem incloure en la pròxima instantània.<br />
+<img alt="foto" src="../fotos/t11.png" /></p>
+</li>
+<li>
+<p>Ara, arribem al moment crucial: començarem a crear la instantània. Timeshift iniciarà el procés de còpia de seguretat, i podrà trigar uns minuts, depenent de la quantitat de dades a copiar.  <br />
+<img alt="foto" src="../fotos/t12.png" /></p>
+</li>
+<li>
+<p>Un cop creada la instantània, eliminarem el fitxer que hem afegit anteriorment per comprovar que el sistema pot restaurar-lo correctament. A continuació, procedirem a restaurar la instantània que acabem de crear. Aquesta acció ens permetrà veure si Timeshift funciona com ha de ser. <br />
+<img alt="foto" src="../fotos/t13.png" /><img alt="foto" src="../fotos/t15.png" /><img alt="foto" src="../fotos/t16.png" /><img alt="foto" src="../fotos/t17.png" /><img alt="foto" src="../fotos/t18.png" /></p>
+</li>
+<li>
+<p>Finalment, després de completar la restauració, comprovarem que el fitxer ha tornat a aparèixer al directori home/maria. Si és així, podrem estar segurs que la restauració s'ha realitzat amb èxit i que Timeshift està funcionant correctament.   <br />
+<img alt="foto" src="../fotos/t19.png" /></p>
+</li>
+</ol>
+<h2 id="llicencies">Llicències</h2>
+<h3 id="public-license-pl">Public License (PL)</h3>
+<p>PL o Llicència Pública, és un tipus de llicència legal que permet l'ús, la modificació i la distribució d'un producte, generalment programari, de manera oberta, amb determinades llibertats garantides a l'usuari.</p>
+<h3 id="les-quatre-llibertats-del-programari-lliure">Les quatre llibertats del programari lliure</h3>
+<p>Dins del Programari Lliure o PL, hi ha diferents condicions o llibertats que s’han de cumplir. La primera llibertat consisteix en el fet de que s’ha utilitzar sense condicions. Seguidament, la segona dictamina que es pot estudiar i adaptar a les pròpies necessitats. La tercera permet que sigui distribuible. Per últim, la quarta fa referència a que és possible de millorar i distribuir les modificacions. </p>
+<h3 id="llicencies-robustes-i-permissives">Llicencies robustes i permissives</h3>
+<p>Hi ha dues grans categories de llicencies de software, les llicències robustes (GPL) i les permissives (BSD). </p>
+<p>Les GPL, són també conegudes com llicències “copyleft”. Aquestes requereixen que qualsevol software derivat porte també el mateix tipus de llicència, de mode que es preserva la filosofia de “compartir”. Seguidament, tampoc és lícit treure aquesta llicència d’un software derivat i distribuir-ho com a software propietari.</p>
+<p>Les BSD o llicències permissives, són menys estrictes. Aquestes no requereixen que el software derivat preserve el mateix tipus de llicència, això vol dir que es pot arribar a vendre com a software propietari.</p>
+<h3 id="llicencia-dubuntu">Llicencia d’ubuntu</h3>
+<p>El sistema operatiu d’ubuntu és un software lliure. Aquest està fet a partir de la base de GNU/Linux que aquest segueix aquests mateixos principis. De forma que la major part del software en ubuntu porta llicències de GPL o General Public License, entre altres.</p>
+<h3 id="llicencia-de-virtualbox">Llicencia de VirtualBox</h3>
+<p>Actualment VirtualBox utilitza la llicència GNU General Public License, version 3.</p>
+<p><img alt="virtualbox" src="../fotos/VB.png" /></p>
+<h3 id="opinio-personal-sobre-programari-lliure">Opinió personal sobre programari lliure</h3>
+<p>Des del meu punt de vista, el programari lliure és una filosofia fantàstica, perquè ens permet aprendre de moltes maneres diferents i, a més, ens impulsa a ser creatius. El fet de poder modificar els programes segons les nostres necessitats i després compartir aquestes modificacions amb altres persones és molt enriquidor. Ara bé, personalment prefereixo les llicències GPL perquè, tot i que continuen promovent la idea de "compartir", són una mica més restrictives i eviten que altres persones es puguin aprofitar econòmicament del nostre treball sense respectar aquesta filosofia.</p>
+<h3 id="creative-common">Creative Common</h3>
+<p>Les llicències Creative Commons permeten als creadors compartir la obra de manera més flexible, decidint quins drets volen conservar i quins cedeixen. Aquestes poden permetre que altres utilitzin, modifiquin o distribueixin la seva obra, sempre amb algunes condicions com el reconeixement de l’autor o la prohibició d’ús comercial.</p>
+<p>Una vegada ja tenim clar el funcionament, hem de saber que hi ha diferents tipus de llicències. Algunes permeten més llibertat i altres són més restrictives, depenent de l’autor. Els tipus de llicència contenen restriccions com el reconeixement de l’autor (BY), l'ús no comercial (NC), compartir amb la mateixa llicència (SA) o no permetre modificacions (ND).</p>
+<p><img alt="cc" src="../fotos/cc.jpg" /></p>
+<h3 id="llicencia-de-github">Llicència de Github</h3>
+<p>La llicència que utilitzo per a allotjar la pàgina web en GitHub és la següent: GNU general public license v3.0. Aquesta no forma part de les llicències Creative Common. Seguidament expliacaré les diferencies.</p>
+<p>La GNU GPL és per a programari i es centra en assegurar que el codi font sigui accessible i que qualsevol modificació mantingui les mateixes condicions de llibertat. En canvi, les llicències Creative Commons estan dissenyades per a obres creatives com textos, imatges o música. GPL obliga a compartir el codi font i manté les llibertats per a les obres derivades, sempre que es mantingui la mateixa llicència. (És molt estricta en aquest aspecte)</p>
+<p>La llicència Creative Commons que més s’assembla és la CC BY-SA, que permet modificar i compartir obres si es reconeix l’autor i es manté la mateixa llicència.</p>
+<p><img alt="cc" src="../fotos/cc_github.png" /></p>
+<h2 id="configuracio-de-xarxa">Configuració de xarxa</h2>
+<ol>
+<li>
+<p>El primer que haurem de fer és entrar dins de el directori /etc/netplan i seguidament entrarem en el fitxer de 01-network-manager-all.yaml, per editar-lo.
+<img alt="fnet" src="../fotos/fnet1.png" /></p>
+</li>
+<li>
+<p>Una vegada dins, veurem la configuració predeterminada, aquesta la canviarem a la configuració de la captura de pantalla. Aquesta configuració determina que se li assigne ip automatica per DHCP. Per això, afegim la interficie de xarxa enp0s3 i seguidament dhcp4: yes.
+<img alt="fnet" src="../fotos/fnet2.png" /></p>
+</li>
+<li>
+<p>Tot seguit, si el que volem és configurar una ip estàtica, haurem de determinar els següents parametres:
+<img alt="fnet" src="../fotos/fnet3.png" /></p>
+</li>
+<li>
+<p>Després de decidir si volem una ip automatica o estàtica, sortirem del fitxer guardant el canvis. Per aplicar realment la configuració haurem de escriure "netplan apply".
+<img alt="fnet" src="../fotos/fnet4.png" /></p>
+</li>
+<li>
+<p>Una altra forma de poder canviar la ip és per interfície gràfica. Aqui, editarem la entrada que ja és existent i canviarem la ip.
+<img alt="fnet" src="../fotos/fnet5.png" /></p>
+</li>
+<li>
+<p>Per comprovar quin és l'ordre de importancia al configurar una ip, haurem de eliminar o comentar les linies de codi del fitxer "90-NM-...", això és degut a que l'Ubuntu 24.04 el crea i fa interferencia amb el fitxer configurat prèviament.
+<img alt="fnet" src="../fotos/fnet6.png" /></p>
+</li>
+<li>
+<p>Com podem comprovar, al fer un "ip a" al terminal, ens sortirà la ip que li hem assignat per el fitxer de configuració del netplan, això és degut a que aquest fitxer té prioritat abans que la configuració que fem per interfície gràfica.
+<img alt="fnet" src="../fotos/fnet7.png" />
+<img alt="fnet" src="../fotos/fnet8.png" /></p>
+</li>
+</ol>
+<h2 id="programari">Programari</h2>
+<h3 id="introduccio_1">Introducció</h3>
+<p>El programari és tot allò que instal·lem perquè el nostre ordinador funcioni com cal, des d'aplicacions fins a eines del sistema. En Linux, hi ha diverses formes de gestionar el programari, ja sigui amb eines gràfiques o per línia de comandes.</p>
+<h3 id="centre-de-programari">Centre de programari</h3>
+<p>El centre de programari és una aplicació gràfica, com una botiga d’apps, que permet instal·lar i eliminar programes de manera fàcil i visual. És molt útil trobar i posar aplicacions sense tocar la línia de comandes, només cercant i fent clic.</p>
+<ol>
+<li>
+<p>Per instal·lar un programa a través del ubuntu software haurem de cercar el nom del programa primer i clicar "Install". En aquest cas l'exemple és el programa Gimp. 
+<img alt="ubuntusoftware" src="../fotos/ubuntusoftware1.png" /></p>
+</li>
+<li>
+<p>Per desinstal·lar haurem de clicar en "Uninstall". <br />
+<img alt="ubuntusoftware" src="../fotos/ubuntusoftware2.png" /></p>
+</li>
+</ol>
+<h3 id="apt">APT</h3>
+<ol>
+<li>
+<p>Primer haurem de actualitzar el repositori de paquets. <br />
+<img alt="apt" src="../fotos/apt1.png" /></p>
+</li>
+<li>
+<p>Seguidament, instal·larem el programa gimp. 
+<img alt="apt" src="../fotos/apt2.png" /></p>
+</li>
+<li>
+<p>Després, executarem el programa.
+<img alt="apt" src="../fotos/apt3.png" /></p>
+</li>
+<li>
+<p>Una vegada, executat ja podrem utilitzar-lo.
+<img alt="apt" src="../fotos/apt4.png" /></p>
+</li>
+<li>
+<p>Per últim, eliminarem gimp i intentarem executar-lo per comprovar que la eliminació s'ha realitzat bé.
+<img alt="apt" src="../fotos/apt5.png" />
+<img alt="apt" src="../fotos/apt6.png" /></p>
+</li>
+</ol>
+<h3 id="aptitude">Aptitude</h3>
+<p>Aptitude és com una versió més potent de APT amb una interfície fàcil per gestionar paquets des de la línia de comandes. Serveix per instal·lar, actualitzar i eliminar paquets amb més control.</p>
+<ol>
+<li>
+<p>El primer que haurem de fer és instal·lar aptitude.<br />
+<img alt="aptitude" src="../fotos/aptitude1.png" /></p>
+</li>
+<li>
+<p>Seguidament, instal·larem el programa geany amb aptitude.  <br />
+<img alt="aptitude" src="../fotos/aptitude2.png" /></p>
+</li>
+<li>
+<p>Una vegada instal·lat, executarem el programa amb la comanda "geany".  <br />
+<img alt="aptitude" src="../fotos/aptitude3.png" /></p>
+</li>
+<li>
+<p>Per últim, desinstal·larem el programa amb "aptitude remove".  <br />
+<img alt="aptitude" src="../fotos/aptitude4.png" /></p>
+</li>
+</ol>
+<h3 id="dpkg">DPKG</h3>
+<p>DPKG és l'eina bàsica per gestionar paquets en sistemes com Debian o Ubuntu. És útil per instal·lar i gestionar paquets .deb de manera manual, sense utilitzar repositoris.</p>
+<ol>
+<li>
+<p>Per començar descarregarem un paquet .deb d'internet i l'instal·larem amb dpkg. Com podem observar a la captura per poder instal·lar el programa haurem de triar la versió amd, en aquest cas inicialment vaig provar-ho amb arm i efectivament, no va funcionar.  <br />
+<img alt="deb" src="../fotos/deb1.png" /></p>
+</li>
+<li>
+<p>Seguidament executarem programa amb la comanda "pacman" i començarà a funcionar el videojoc. 
+<img alt="deb" src="../fotos/deb2.png" /></p>
+</li>
+<li>
+<p>Per desinstal·lar-lo haurem de executar la següent comanda "dpkg -P pacman", per comprovar que ha funcionat intentem executar el programa. <br />
+<img alt="deb" src="../fotos/deb3.png" /></p>
+</li>
+</ol>
+<h3 id="repositoris">Repositoris</h3>
+<p>Els repositoris són llocs d’on el sistema descarrega i actualitza el programari de forma segura i automàtica. Hi ha repositoris oficials, PPAs (creats per altres usuaris) i també de tercers.</p>
+<ol>
+<li>
+<p>Per instal·lar un programa en repositori, escollirem com exemple Google Chrome. El primer pas és descarregar i instal·lar la clau. Seguidament instal·larem el repositori i després el chrome.
+<img alt="rep" src="../fotos/rep1.png" /></p>
+</li>
+<li>
+<p>Per últim, revisarem que tenim el repositori a la carpeta de repositoris i mirarem que el programa estigui instal·lat.
+<img alt="rep" src="../fotos/rep2.png" />
+<img alt="rep" src="../fotos/rep3.png" /></p>
+</li>
+</ol>
+<h3 id="compilar-a-traves-de-codi-font">Compilar a traves de codi font</h3>
+<p>Compilar programari significa convertir el codi font d’un programa en un executable. És útil quan vols versions personalitzades o quan el programa no està als repositoris, ja que pots controlar les opcions d'instal·lació.</p>
+<ol>
+<li>
+<p>Per començar, descarregarem el fitxer tar.gz de myman (un programa paregut al videojoc pacman), i el descomprimirem. 
+<img alt="tar" src="../fotos/tar1.png" /></p>
+</li>
+<li>
+<p>Tot seguit, entrarem dins de la carpeta i visualitzarem el contigut. 
+<img alt="tar" src="../fotos/tar2.png" /></p>
+</li>
+<li>
+<p>Després en "sudo" executarem la comanda "./configure".
+<img alt="tar" src="../fotos/tar3.png" /></p>
+</li>
+<li>
+<p>A continuació, instal·larem el paquet build-essential i verificarem la versió del "gcc". Aquest pas és important, ja que, sinó salten errors a les següents comandes.<br />
+<img alt="tar" src="../fotos/tar4.png" />
+<img alt="tar" src="../fotos/tar5.png" /></p>
+</li>
+<li>
+<p>Seguidament, en "sudo" executarem les següents comandes.
+<img alt="tar" src="../fotos/tar6.png" /><img alt="tar" src="../fotos/tar7.png" /></p>
+</li>
+<li>
+<p>Una vegada instal·lat executarem el programa amb "myman"
+<img alt="tar" src="../fotos/tar8.png" />
+<img alt="tar" src="../fotos/tar9.png" />
+<img alt="tar" src="../fotos/tar10.png" /></p>
+</li>
+<li>
+<p>Per últim, eliminarem el programa i ho comprovarem.
+<img alt="tar" src="../fotos/tar11.png" />
+<img alt="tar" src="../fotos/tar12.png" /></p>
+</li>
+</ol>
+<h2 id="gestor-de-arrancada">Gestor de arrancada</h2>
+<p>El gestor d'arrencada és el programa que permet que l'ordinador engegui el sistema operatiu, com Ubuntu, i el més utilitzat és GRUB2, que et deixa escollir entre diferents sistemes si n'hi ha més d'un instal·lat. Per organitzar l'espai del disc dur, existeixen dues opcions: MBR, que és antic i només funciona amb discos de fins a 2 TB, i GPT, que és més modern, admet discos més grans i és més segur. Si apareix l'error "Gestor d'arrencada pendent", vol dir que el sistema no sap com arrencar, però es pot solucionar reinstal·lant el gestor amb un USB o CD.</p>
+<h3 id="basics-per-restaurar-grub2">Bàsics per restaurar grub2</h3>
+<p>Quan el gestor d'arrencada GRUB2 es danya o no arrenca correctament en Ubuntu o altres sistemes Linux, hi ha diverses eines i mètodes per solucionar el problema. A continuació es presenten dues eines útils per restaurar GRUB2: Boot-Repair i Super Grub2 Disk.</p>
+<h4 id="bootrepair">Bootrepair</h4>
+<p>Boot-Repair és una eina molt útil que t'ajuda a solucionar problemes amb el gestor d'arrencada GRUB2. És perfecta per a aquells que no volen complicar-se la vida amb comandos tècnics. Simplement obres l'eina, i ella s'encarrega de buscar i reparar els errors més comuns que impedeixen que l'ordinador arranqui correctament.</p>
+<h4 id="super-grub2">Super Grub2</h4>
+<p>Super Grub2 Disk és una altra eina que et permet arrencar el teu sistema operatiu si GRUB2 no funciona. Aquesta eina és com un "salvador" que et permet accedir al teu ordinador, fins i tot si el gestor d'arrencada s'ha danyat. Amb Super Grub2 Disk, pots iniciar el teu sistema i fer les reparacions necessàries per tornar a posar-ho tot en marxa.</p>
+<h3 id="trencar-i-reparar-grub2-dubuntu-2404">Trencar i reparar grub2 d'Ubuntu 24.04</h3>
+<h4 id="bootrepair_1">Bootrepair</h4>
+<ol>
+<li>
+<p>Per fer la recuperació amb Boot-Repair, repetirem el mateix procés inicial: accedirem com a administrador a la carpeta /boot i eliminarem la subcarpeta grub/ amb la comanda sudo rm -r grub/. Després, reiniciarem l'ordinador i ens apareixerà el missatge "grub rescue", indicant que no hi ha gestor d’arrencada.  <br />
+<img alt="rfoto" src="../fotos/r1.png" /></p>
+</li>
+<li>
+<p>Quan aparegui el missatge "grub rescue", apagarem la màquina virtual i afegirem la imatge ISO de Boot-Repair a la configuració de la màquina virtual.  <br />
+<img alt="rfoto" src="../fotos/r2.png" /><img alt="rfoto" src="../fotos/r3.png" /></p>
+</li>
+<li>
+<p>Un cop afegida la ISO, reiniciarem la màquina virtual i aquesta arrencarà directament amb Boot-Repair. Quan Boot-Repair s’iniciï, podrem veure diverses opcions per reparar el sistema.<br />
+<img alt="rfoto" src="../fotos/r4.png" /></p>
+</li>
+<li>
+<p>En el menú de Boot-Repair, seleccionarem l’opció recomanada per començar el procés automàtic de reparació del gestor d’arrencada. Aquesta opció sol ser suficient per resoldre problemes comuns amb GRUB.  <br />
+<img alt="rfoto" src="../fotos/r5.png" /><img alt="rfoto" src="../fotos/r6.png" /><img alt="rfoto" src="../fotos/r7.png" /></p>
+</li>
+<li>
+<p>Un cop finalitzi el procés, apareixerà un missatge indicant que la reparació ha estat completada. Apagarem la màquina virtual, retirarem la imatge ISO de Boot-Repair des de la configuració de VirtualBox, i tornarem a encendre la màquina. Si tot ha anat correctament, el sistema operatiu hauria d’arrencar de manera normal amb GRUB restaurat.  <br />
+<img alt="rfoto" src="../fotos/r8.png" /></p>
+</li>
+</ol>
+<h4 id="super-grub2_1">Super Grub2</h4>
+<ol>
+<li>
+<p>El primer que haurem de fer és entrar com administrador a la carpeta /boot utilitzant el terminal. Per accedir-hi, farem servir el següent comandament: cd /boot, i un cop dins, eliminarem la subcarpeta grub/ amb la comanda sudo rm -r grub/. Aquest pas és crucial, ja que esborrarem el gestor d'arrencada, el qual haurem de restaurar més endavant. <br />
+<img alt="rfoto" src="../fotos/r1.png" /></p>
+</li>
+<li>
+<p>Una vegada eliminada la carpeta, reiniciarem l’ordinador. Durant l’arrencada, apareixerà el missatge "grub rescue", indicant que el sistema no pot trobar el gestor d’arrencada. Aquí, el que farem és apagar la màquina virtual, obrir la configuració, i afegir la imatge ISO de Super Grub2 al lector virtual de discs. <br />
+<img alt="rfoto" src="../fotos/r2.png" /><img alt="rfoto" src="../fotos/r9.png" /></p>
+</li>
+<li>
+<p>Després d’afegir la ISO de Super Grub2, reiniciarem la màquina i se'ns mostrarà un menú d’opcions d’arrencada. Hem de seleccionar la primera opció que ens permetrà veure les opcions de boot disponibles per al sistema operatiu que volem arrencar.  <br />
+<img alt="rfoto" src="../fotos/r10.png" /></p>
+</li>
+<li>
+<p>Un cop triada l’opció de boot disponible que Super Grub2 ens mostra, prenem "Enter" per iniciar el sistema operatiu de forma temporal. Aquest pas ens permetrà arrencar el sistema sense la necessitat d’un gestor d’arrencada completament funcional. <br />
+<img alt="rfoto" src="../fotos/r11.png" /></p>
+</li>
+<li>
+<p>Ja dins del sistema operatiu, obrirem un terminal i ens convertirem en superusuari amb la comanda sudo su. A continuació, executarem les següents comandes: grub-install /dev/sda, que reinstal·larà el gestor d’arrencada a l’unitat de disc principal, update-grub2 per actualitzar la configuració de GRUB, i finalment, sudo apt-get install grub2 per assegurar-nos que GRUB està instal·lat correctament.<br />
+<img alt="rfoto" src="../fotos/r12.png" /><img alt="rfoto" src="../fotos/r13.png" /><img alt="rfoto" src="../fotos/r14.png" /></p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+  <span>&copy; 2024 <a href="https://github.com/mariagutierrez03" target="_blank" rel="noopener">María Gutiérrez</a></span>
+  <img src="./fotos/cc_github.png" alt="Descripción de la imagen" style="width:100px;height:auto; margin-left:900px;">
+</div>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+    
+  </body>
+</html>
