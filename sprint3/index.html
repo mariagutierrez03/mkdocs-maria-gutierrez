@@ -1,0 +1,1801 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://james-willett.github.io/mkdocs-material-youtube-tutorial/sprint3/">
+      
+      
+        <link rel="prev" href="../sprint2/">
+      
+      
+        <link rel="next" href="../sprint4/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Administració de dominis i seguretat - MkDocs Maria Gutierrez</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#administracio-de-dominis-i-seguretat" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MkDocs Maria Gutierrez" class="md-header__button md-logo" aria-label="MkDocs Maria Gutierrez" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MkDocs Maria Gutierrez
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Administració de dominis i seguretat
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="cyan" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Implantació de Sistemes Operatius
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../sprint1/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Instal·lació i configuració
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../sprint2/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Gestió d'usuaris i serveis
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Administració de dominis i seguretat
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../sprint4/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Gestió de discs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../sprint5/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Monitoratge, auditories i programari client/servidor
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MkDocs Maria Gutierrez" class="md-nav__button md-logo" aria-label="MkDocs Maria Gutierrez" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MkDocs Maria Gutierrez
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Implantació de Sistemes Operatius
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Instal·lació i configuració
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gestió d'usuaris i serveis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Administració de dominis i seguretat
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Administració de dominis i seguretat
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducció
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installacio-domini-ldap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instal·lació domini ldap
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unir-un-client-al-domini" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unir un client al domini
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#canvis-en-un-ubuntu-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Canvis en un Ubuntu Server
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestio-del-domini" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestió del domini
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gestió del domini">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ldapsearch" class="md-nav__link">
+    <span class="md-ellipsis">
+      LDAPSEARCH
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ldapadd" class="md-nav__link">
+    <span class="md-ellipsis">
+      LDAPADD
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LDAPADD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opcio-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      OPCIÓ 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opcio-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      OPCIÓ 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ldapdelete" class="md-nav__link">
+    <span class="md-ellipsis">
+      LDAPDELETE
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LDAPDELETE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opcio-1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      OPCIÓ 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opcio-2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      OPCIÓ 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ldapmodify" class="md-nav__link">
+    <span class="md-ellipsis">
+      LDAPMODIFY
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LDAPMODIFY">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changetype-modify" class="md-nav__link">
+    <span class="md-ellipsis">
+      CHANGETYPE: MODIFY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changetype-modrdn" class="md-nav__link">
+    <span class="md-ellipsis">
+      CHANGETYPE: MODRDN
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entorns-grafics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entorns gràfics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entorns gràfics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apache-directory-studio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apache Directory Studio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jxplorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      JXplorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#server-nfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Server NFS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Server NFS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es-nfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Què és NFS?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diferencia-entre-nfs-i-samba" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diferència entre NFS i Samba
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autenticacio-a-nivell-de-host" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autenticació a nivell de host
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instal·lació
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instal·lació">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#servidor" class="md-nav__link">
+    <span class="md-ellipsis">
+      SERVIDOR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#client-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      CLIENT UBUNTU
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#client-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      CLIENT WINDOWS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparticion-carpeta-al-server-y-pruebas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compartición carpeta al server y pruebas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perfil-movil-ubuntu-ldap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Perfil Movil (Ubuntu LDAP)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#server-samba" class="md-nav__link">
+    <span class="md-ellipsis">
+      Server SAMBA
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Server SAMBA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-es-samba" class="md-nav__link">
+    <span class="md-ellipsis">
+      Què és Samba?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionalitat-de-samba" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionalitat de Samba
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ldap-authetication" class="md-nav__link">
+    <span class="md-ellipsis">
+      LDAP Authetication
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#webgrafia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Webgrafia
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gestió de discs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Monitoratge, auditories i programari client/servidor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="administracio-de-dominis-i-seguretat">Administració de dominis i seguretat</h1>
+<p>Per a la documentació completa visita <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
+<hr />
+<h2 id="introduccio">Introducció</h2>
+<p>En aquest projecte, configuraré un sistema Ubuntu Linux en una màquina virtual per gestionar dominis, usuaris i polítiques de seguretat mitjançant LDAP. Instal·laré i configuraré un servidor LDAP, crearé usuaris i grups, i definiré normes de seguretat per protegir l’accés al sistema.</p>
+<p>També integraré serveis essencials com servidors de fitxers i connexions remotes segures, optimitzant els recursos i assegurant una gestió centralitzada dels usuaris. A més, aplicaré mesures de seguretat per protegir el sistema i controlar els permisos d’accés.</p>
+<p>Finalment, faré proves per verificar que tot funciona correctament i documentaré cada pas amb captures de pantalla.
+<img alt="intro" src="../fotos/ldapintro.png" /></p>
+<hr />
+<h2 id="installacio-domini-ldap">Instal·lació domini ldap</h2>
+<p>Un domini LDAP és una estructura que ens ajuda a gestionar usuaris, grups i recursos dins d'una xarxa de manera centralitzada. Funciona com un directori organitzat jeràrquicament, similar a un arbre, on podem trobar usuaris, grups, i altres recursos (impressores, servidors) organitzats en Unitats Orgàniques (UOs), com si fossin carpetes dins del domini.</p>
+<p>Estructura bàsica d'un domini LDAP:</p>
+<ul>
+<li>UOs: Contenen grups d'usuaris i recursos (ex. "Recursos Humans", "TI").</li>
+<li>Usuaris: Representen les persones de la xarxa, amb atributs com nom, correu, contrasenya, etc.</li>
+<li>Grups: Col·leccions d'usuaris amb permisos similars (ex. "Administradors").</li>
+<li>Recursos: Impressores, servidors, etc.</li>
+</ul>
+<p>Per crear l'esquema bàsic d'un domini LDAP tenim dues opcions:</p>
+<ul>
+<li>
+<p>Fitxers LDIF: Creem un fitxer amb la informació (usuaris, grups, etc.) i el carreguem al servidor LDAP. És útil per afegir moltes dades de cop.</p>
+</li>
+<li>
+<p>Comanda <code>ldapadd</code>: Utilitzem aquesta comanda per afegir directament la informació al servidor LDAP. Llegirà un fitxer LDIF i afegirà les dades al domini.</p>
+</li>
+</ul>
+<p><strong>Polítiques de Grup (GPOs)</strong></p>
+<p>Els GPOs permeten aplicar configuracions i regles comunes a grups d'usuaris o dispositius dins del domini, com limitacions d'accés o configuracions de seguretat.</p>
+<hr />
+<ol>
+<li>
+<p>En la màquina server ubuntu desktop 24 haurem de canviar la interifície a NatNetwork. 
+<img alt="ldap" src="../fotos/ldap1.png" /></p>
+</li>
+<li>
+<p>Seguidament, revisarem la ip i la farem estàtica, ja que, els servidors sempre han de tindre una ip fixa.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ip a
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>google.com
+</code></pre></div>
+<img alt="ldap" src="../fotos/ldap2.png" />
+<img alt="ldap" src="../fotos/ldap3.png" />
+<img alt="ldap" src="../fotos/ldap4.png" /></p>
+</li>
+<li>
+<p>A continuació, farem un <code>apt update</code> i <code>apt upgrade</code>.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>apt update
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>apt upgrade
+</code></pre></div>
+<img alt="ldap" src="../fotos/ldap5.png" />
+<img alt="ldap" src="../fotos/ldap6.png" /></p>
+</li>
+<li>
+<p>Després anirem al moodle descarregarem el comprimit arxius.zip i el descomprimirem amb la comanda <code>unzip</code>, com podem observar té diferents arxius de configuració.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>cd Baixades/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>unzip arxius.zip
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>ls
+</code></pre></div>
+<img alt="ldap" src="../fotos/ldap7.png" />
+<img alt="ldap" src="../fotos/ldap8.png" /></p>
+</li>
+<li>
+<p>Tot seguit, canviarem el hostname de la nostra vm (aquest pas és opcional). A més al fitxer /etc/hosts tornarem a canviar el hostname si ho hem fet previament i també afegirem una nova linia en la que indicarem la ip del server, el nostre hostname, el nom del domini en aquest cas "asix.cat" i per últim afegirem una altra vegada el hostname. 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>nano /etc/hosts
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>nano /etc/hostname
+</code></pre></div>
+<img alt="ldap" src="../fotos/ldap9.png" />
+<img alt="ldap" src="../fotos/ldap10.png" />
+<img alt="ldap" src="../fotos/ldap11.png" /></p>
+</li>
+<li>
+<p>Seguidament, reiniciarem la vm i una vegada encesa comprovem el hostname.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>reboot
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>hostname
+</code></pre></div>
+<img alt="ldap" src="../fotos/ldap12.png" />
+<img alt="ldap" src="../fotos/ldap13.png" /></p>
+</li>
+<li>
+<p>Ara instal·larem els paquets slapd i ldap-utils.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>apt install slapd ldap-utils
+</code></pre></div>
+<img alt="ldap" src="../fotos/ldap14.png" /></p>
+</li>
+<li>
+<p>Una vegada a inciada l'instal·lació assignarem una contrassenya a l'administrador.     <br />
+<img alt="ldap" src="../fotos/ldap15.png" />
+<img alt="ldap" src="../fotos/ldap16.png" /></p>
+</li>
+<li>
+<p>Després amb la comanda slapcat mirarem la informació del slapd, com podem comprovar no hi ha cap domini configurat.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>slapcat
+</code></pre></div>
+<img alt="ldap" src="../fotos/ldap17.png" /></p>
+</li>
+<li>
+<p>En aquest cas tornarem a configurar slapd. Una vegada dins clicarem en "No" per poder continuar, després escriurem el nom del domini dues vegades, a més tornarem a configurar la contrasenya i clicarem en "Sí" dues per afegir la configuració actual.      <br />
+<img alt="ldap" src="../fotos/ldap20.png" />
+<img alt="ldap" src="../fotos/ldap21.png" />
+<img alt="ldap" src="../fotos/ldap22.png" />
+<img alt="ldap" src="../fotos/ldap23.png" />
+<img alt="ldap" src="../fotos/ldap24.png" />
+<img alt="ldap" src="../fotos/ldap25.png" />
+<img alt="ldap" src="../fotos/ldap26.png" /></p>
+</li>
+<li>
+<p>Seguidament, si tornem a fer slapcat veurem que s'ha actulitzat la informació del domini.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>slapcat
+</code></pre></div>
+<img alt="ldap" src="../fotos/ldap27.png" /></p>
+</li>
+<li>
+<p>Ara el que farem és editar el fitxer de configuració "uo.ldif", aquí definirem les unitats organitzatives (OU) dins del directori LDAP, que serveixen per agrupar i organitzar objectes com usuaris, grups o altres unitats, mantenint una estructura jeràrquica clara i coherent.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>nano uo.ldif
+</code></pre></div>
+<img alt="ldap" src="../fotos/ldap28.png" />
+<img alt="ldap" src="../fotos/ldap29.png" /></p>
+</li>
+<li>
+<p>Tot seguit, editarem el fitxer "grup.ldif", la seva funció és crear i configurar grups dins del directori LDAP, permetent agrupar usuaris amb propòsits específics, com gestionar permisos i accessos de manera eficient.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>nano grup.ldif
+</code></pre></div>
+<img alt="ldap" src="../fotos/ldap30.png" />
+<img alt="ldap" src="../fotos/ldap31.png" /></p>
+</li>
+<li>
+<p>Per últim, configurarem fitxer "usu.ldif" on definirem els atributs dels usuaris (nom, UID, contrasenya i OU corresponent) per assegurar que cadascun tingui accés al sistema i als recursos necessaris.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>nano usu.ldif
+</code></pre></div>
+<img alt="ldap" src="../fotos/ldap32.png" />
+<img alt="ldap" src="../fotos/ldap33.png" />
+<img alt="ldap" src="../fotos/ldap34.png" /></p>
+</li>
+<li>
+<p>Seguidament, afegirem tots el fitxers de configuració i revisarem el slapcat.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>ldapadd -c -x -D &quot;con=admin,dc=asix,dc=cat&quot; -W -f uo.ldif
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>ldapadd -c -x -D &quot;con=admin,dc=asix,dc=cat&quot; -W -f grup.ldif
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>ldapadd -c -x -D &quot;con=admin,dc=asix,dc=cat&quot; -W -f usu.ldif
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>slapcat
+</code></pre></div></p>
+<ul>
+<li>-x: Connexió simple.</li>
+<li>-D: Usuari administrador que afegeix dades.</li>
+<li>-W: Demana la contrasenya de l'usuari.</li>
+<li>-f: Fitxer LDIF amb les dades a afegir.</li>
+</ul>
+<p><img alt="ldap" src="../fotos/ldap36.png" />
+<img alt="ldap" src="../fotos/ldap37.png" />
+<img alt="ldap" src="../fotos/ldap38.png" />
+<img alt="ldap" src="../fotos/ldap39.png" /></p>
+</li>
+</ol>
+<hr />
+<h2 id="unir-un-client-al-domini">Unir un client al domini</h2>
+<p>En aquest apartat unirem un client al domini per permetre una gestió centralitzada dels usuaris i recursos de xarxa. Això facilitarà l’autenticació, l’aplicació de polítiques de seguretat i la gestió dels permisos d’accés. A continuació, veurem els passos necessaris per realitzar aquesta configuració de manera eficient i segura.</p>
+<ol>
+<li>
+<p>El primer que haurem de fer és canviar l'adaptador de xarxa del Ubuntu Desktop 24 Client a NatNetwork, així estaràn a la mateixa xarxa i es podran comunicar.      <br />
+<img alt="ldap" src="../fotos/1u.png" /></p>
+</li>
+<li>
+<p>A més revisarem la ip des de terminal per comprovar que no coincideixen i seguidament farem ping al servidor.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>ip a
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>ping 10.0.2.9
+</code></pre></div>
+<img alt="ldap" src="../fotos/2u.png" />
+<img alt="ldap" src="../fotos/3u.png" /></p>
+</li>
+<li>
+<p>A continuació, descarregarem els paquets de ldap client i farem un reconfigure per posar a punt la configuració.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>apt install libnss-ldap libpam-ldap nscd
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>depkg-reconfigure ldap-auth-config
+</code></pre></div>
+<img alt="ldap" src="../fotos/4u.png" />
+<img alt="ldap" src="../fotos/5u.png" /></p>
+</li>
+<li>
+<p>En la primera i segona pantalla haurem de indicar "Sí", després escriurem el nom de domini i configurarem la contrasenya.      <br />
+<img alt="ldap" src="../fotos/6u.png" />
+<img alt="ldap" src="../fotos/7u.png" />
+<img alt="ldap" src="../fotos/8u.png" />
+<img alt="ldap" src="../fotos/9u.png" />
+<img alt="ldap" src="../fotos/10u.png" />
+<img alt="ldap" src="../fotos/11u.png" /></p>
+</li>
+<li>
+<p>Una vegada hem fet tota la configuració anterior en tornara a preguntar i li haurem de indicar "Sí". També escriurem la ip del server a la següent pantalla i tornarem a introduir el domini, després escollirem la versio i continuarem així fins arribar al tipus d'encriptacio que serà l'última pantalla de configuració.      <br />
+<img alt="ldap" src="../fotos/12u.png" />
+<img alt="ldap" src="../fotos/13u.png" />
+<img alt="ldap" src="../fotos/14u.png" />
+<img alt="ldap" src="../fotos/15u.png" />
+<img alt="ldap" src="../fotos/16u.png" />
+<img alt="ldap" src="../fotos/17u.png" />
+<img alt="ldap" src="../fotos/18u.png" />
+<img alt="ldap" src="../fotos/19u.png" />
+<img alt="ldap" src="../fotos/20u.png" />
+<img alt="ldap" src="../fotos/21u.png" />
+<img alt="ldap" src="../fotos/22u.png" />
+<img alt="ldap" src="../fotos/23u.png" /></p>
+</li>
+<li>
+<p>Al finalitzar la configuració haurem d'editar una seria de fitxers com /etc/nsswitch.conf en el que escriurem "ldap compat" davant de les 4 primeres linies, això indica que el sistema ha de buscar la informació en el servidor ldap. 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>nano /etc/nsswitch.conf
+</code></pre></div>
+<img alt="ldap" src="../fotos/24u.png" />
+<img alt="ldap" src="../fotos/25u.png" /></p>
+</li>
+<li>
+<p>El següent fitxer és /etc/pam.d/common-session en aquest li haurem d'escriure una nova linia. La línia configura que, durant l’autenticació, si l’usuari no té un directori home, aquest es creï automàticament utilitzant com a plantilla el contingut de /etc/skel i aplicant un umask=077 per garantir que els permisos siguin segurs (només accessibles pel propietari).
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>nano /etc/pam.d/common-session
+</code></pre></div>
+<img alt="ldap" src="../fotos/27u.png" /></p>
+</li>
+<li>
+<p>Aquest últim fitxer de configuració, no és estrictament necessari en l'última versió d'ubuntu, encara que si estas en versions anteriors serà fundamental. Haurem d'afegir una nova linia, aquesta configura la sessió predeterminada com "ubuntu" i permet l'inici de sessió manual escrivint el nom d'usuari a LightDM.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>nano /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
+</code></pre></div>
+<img alt="ldap" src="../fotos/28u.png" />
+<img alt="ldap" src="../fotos/29u.png" /></p>
+</li>
+<li>
+<p>Seguidament revisarem que l'usuari creat en el servidor està al llistat del client i si és així iniciarem sessió des de terminal. 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>getent passwd | grep alu1
+</code></pre></div>
+<img alt="ldap" src="../fotos/30u.png" />
+<img alt="ldap" src="../fotos/31u.png" /></p>
+</li>
+<li>
+<p>Per provar que funciona amb interficie grafica reiniciarem la vm i en la pantalla de bloqueig iniciarem sessio amb un usuari no llistat, aquí indicarem username i password. Si tot funciona bé quan obrim un terminal i escribim la comanda "whoami" ens ha de donar l'usuari ldap. 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>reboot
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>whoami
+</code></pre></div>
+<img alt="ldap" src="../fotos/32u.png" />
+<img alt="ldap" src="../fotos/33u.png" /></p>
+</li>
+</ol>
+<hr />
+<h2 id="canvis-en-un-ubuntu-server">Canvis en un Ubuntu Server</h2>
+<p>En aquest apartat realitzarem la instal·lació i configuració del domini LDAP en un Ubuntu Server, seguint el mateix procés que en Ubuntu Desktop, però sense interfície gràfica. Treballarem exclusivament des de la línia de comandaments per instal·lar, configurar i gestionar el servidor LDAP, assegurant-ne el correcte funcionament i la integració amb els usuaris i recursos de la xarxa.</p>
+<ol>
+<li>
+<p>El primer canvi és que el hostname del servidor ha de ser directament el propi nom del domini ldap.     <br />
+<img alt="ldap" src="../fotos/1s.png" /></p>
+</li>
+<li>
+<p>Seguidament com estem en un entorn sense GUI haurem de editar el fitxer de netplan per afegir una ip estàtica.     <br />
+<img alt="ldap" src="../fotos/2s.png" />
+<img alt="ldap" src="../fotos/3s.png" /></p>
+</li>
+<li>
+<p>Una vegada hem acabat comprovarem que la ip és la correcta i farem un ping al exterior per saber si tenim connexió a internet.     <br />
+<img alt="ldap" src="../fotos/4s.png" />
+<img alt="ldap" src="../fotos/5s.png" /></p>
+</li>
+</ol>
+<hr />
+<h2 id="gestio-del-domini">Gestió del domini</h2>
+<p>En aquest apartat abordarem la gestió del domini mitjançant comandes essencials d'LDAP, com ldapsearch, ldapadd, ldapdelete i ldapmodify. Aquestes eines permeten consultar, afegir, eliminar i modificar usuaris, grups i altres elements del directori LDAP. A través d'aquests comandaments, assegurarem un control precís de la base de dades LDAP i una administració eficient dels recursos del domini.</p>
+<hr />
+<h3 id="ldapsearch">LDAPSEARCH</h3>
+<p>En aquest apartat explorarem ldapsearch, una eina fonamental per consultar informació emmagatzemada en el directori LDAP. Amb aquesta comanda, podem buscar usuaris, grups i altres objectes del domini aplicant diferents filtres i opcions. Aprendrem a utilitzar ldapsearch de manera eficient per obtenir informació rellevant i verificar la configuració del servidor LDAP.</p>
+<ol>
+<li>
+<p>El primer que farem és provar diferents opcions com buscar un usuari pel uid.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>ldapsearch -xLLL -b &quot;dc=asix,dc=cat&quot; uid=miguel
+</code></pre></div>
+<img alt="ldap" src="../fotos/g1.png" /></p>
+</li>
+<li>
+<p>Seguidament buscarem per uid, però concretant en els camps. Els camps que no existeixent com 'mail' no els mostra.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>ldapsearch -xLLL -b &quot;dc=asix,dc=cat&quot; uid=miguel dn cn sn mail uid
+</code></pre></div>
+<img alt="ldap" src="../fotos/g2.png" /></p>
+</li>
+<li>
+<p>Seguidament llistarem tots el posixGroup.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>ldapsearch -xLLL -b &quot;dc=asix,dc=cat&quot; objectClass=posixGroup dn
+</code></pre></div>
+<img alt="ldap" src="../fotos/g3.png" /></p>
+</li>
+<li>
+<p>A més, podem buscar el numero que hi ha de grups, tenint en compte que el sistema també conta el espais en blanc.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>ldapsearch -xLLL -b &quot;dc=asix,dc=cat&quot; objectClass=posixGroup dn | wc -l
+</code></pre></div>
+<img alt="ldap" src="../fotos/g4.png" /></p>
+</li>
+<li>
+<p>A continuació buscarem a partir de un uid major o igual a 1002.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>ldapsearch -xLLL -b &quot;dc=asix,dc=cat&quot; &quot;uidNumber&gt;=1002&quot; dn uidNumber
+</code></pre></div>
+<img alt="ldap" src="../fotos/g5.png" /></p>
+</li>
+<li>
+<p>Ara buscarem a partir de un 'cn' que comence amb 'M' o qualsevol registre de mail. A més també tenim l'opció de que les dues opcions s'han de complir amb '&amp;' en comptes de '|'.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>ldapsearch -xLLL -b &quot;dc=asix,dc=cat&quot; &quot;(|(cn=M*)(mail=*))&quot;
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>ldapsearch -xLLL -b &quot;dc=asix,dc=cat&quot; &quot;(&amp;(cn=M*)(mail=*))&quot;
+</code></pre></div>
+<img alt="ldap" src="../fotos/g6.png" />
+<img alt="ldap" src="../fotos/g30.png" /></p>
+</li>
+</ol>
+<hr />
+<h3 id="ldapadd">LDAPADD</h3>
+<p>En aquest apartat explorarem ldapadd, una eina fonamental per afegir noves entrades al directori LDAP. Amb aquesta comanda, podrem introduir usuaris, grups i altres objectes al directori mitjançant un fitxer LDIF que defineix les dades a afegir. Aprendrem a utilitzar ldapadd de manera eficient per incorporar noves entrades i gestionar la informació del domini LDAP de manera centralitzada.</p>
+<h4 id="opcio-1">OPCIÓ 1</h4>
+<p>Per poder afegir un fitxer ho podem fer d'aquesta manera, la qual només involucra una comanda.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>ldapadd -x -D &quot;cn=admin,dc=asix,dc=cat&quot; -W -f dades_prova.ldif
+</code></pre></div>
+<img alt="ldap" src="../fotos/g24.png" /></p>
+<h4 id="opcio-2">OPCIÓ 2</h4>
+<p>La segona opció és afegir una nova linia al fitxer i després executar ldapmodify. 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>ldapmodify -x -D &quot;cn=admin,dc=asix,dc=cat&quot; -W -f grups.ldif
+</code></pre></div>
+<img alt="ldap" src="../fotos/g25.png" />
+<img alt="ldap" src="../fotos/g26.png" /></p>
+<hr />
+<h3 id="ldapdelete">LDAPDELETE</h3>
+<p>En aquest apartat explorarem ldapdelete, una eina essencial per eliminar entrades del directori LDAP. Amb aquesta comanda, podrem suprimir usuaris, grups i altres objectes del directori de manera controlada. Aprendrem a utilitzar ldapdelete per gestionar i mantenir el directori LDAP net, eliminant elements que ja no siguin necessaris o que hagin caducat, tot garantint la seguretat i coherència del sistema.</p>
+<h4 id="opcio-1_1">OPCIÓ 1</h4>
+<p>La primera opció per eliminar és només amb la comanda ldapdelete. 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>ldapdelete -x -D &quot;cn=admin,dc=asix,dc=cat&quot; -W &quot;cn=persones,ou=users,dc=asix,dc=cat&quot;
+</code></pre></div>
+<img alt="ldap" src="../fotos/g27.png" /></p>
+<h4 id="opcio-2_1">OPCIÓ 2</h4>
+<p>Com a alternativa, també podem utilitzar ldapmodify.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>ldapmodify -x -D &quot;cn=admin,dc=asix,dc=cat&quot; -W -f grups.ldif
+</code></pre></div>
+<img alt="ldap" src="../fotos/g28.png" />
+<img alt="ldap" src="../fotos/g29.png" /></p>
+<hr />
+<h3 id="ldapmodify">LDAPMODIFY</h3>
+<p>En aquest apartat explorarem ldapmodify, una eina clau per modificar les entrades existents al directori LDAP. Amb aquesta comanda, podrem actualitzar informació d'usuaris, grups i altres objectes del directori mitjançant un fitxer LDIF que defineix els canvis a aplicar. Aprendrem a utilitzar ldapmodify de manera eficient per mantenir el directori LDAP actualitzat i gestionar les modificacions de dades de manera centralitzada i controlada.</p>
+<hr />
+<h4 id="changetype-modify">CHANGETYPE: MODIFY</h4>
+<ol>
+<li>
+<p>El primer que farem és afegir les dues ultimes linies al fitxer de configuració i després executar la comanda.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>ldapmodify -x -D &quot;cn=asix,dc=asix,dc=cat&quot; -W -f proves.ldif
+</code></pre></div>
+<img alt="ldap" src="../fotos/g13.png" />
+<img alt="ldap" src="../fotos/g14.png" />
+<img alt="ldap" src="../fotos/g15.png" /></p>
+</li>
+<li>
+<p>Seguidament eliminarem d'aquesta manera el camp mail.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>ldapmodify -x -D &quot;cn=asix,dc=asix,dc=cat&quot; -W -f proves.ldif
+</code></pre></div>
+<img alt="ldap" src="../fotos/g16.png" />
+<img alt="ldap" src="../fotos/g17.png" /></p>
+</li>
+<li>
+<p>També podem optar per una opció així.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>ldapmodify -x -D &quot;cn=asix,dc=asix,dc=cat&quot; -W -f proves.ldif
+</code></pre></div>
+<img alt="ldap" src="../fotos/g18.png" />
+<img alt="ldap" src="../fotos/g19.png" /></p>
+</li>
+</ol>
+<hr />
+<h4 id="changetype-modrdn">CHANGETYPE: MODRDN</h4>
+<ol>
+<li>En aquest cas podem també podem utilitzar modrdn amb deleteoldrdn.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>ldapmodify -x -D &quot;cn=asix,dc=asix,dc=cat&quot; -W -f proves.ldif
+</code></pre></div>
+<img alt="ldap" src="../fotos/g20.png" />
+<img alt="ldap" src="../fotos/g21.png" /></li>
+</ol>
+<hr />
+<h2 id="entorns-grafics">Entorns gràfics</h2>
+<p>En aquest apartat parlarem de Apache Directory Studio i JXplorer, dues eines gràfiques molt útils per gestionar directoris LDAP de manera visual. Aquestes aplicacions faciliten la interacció amb el servidor LDAP sense necessitat d’utilitzar la línia de comandes, fet que fa que sigui molt més senzill gestionar les dades.</p>
+<hr />
+<h3 id="apache-directory-studio">Apache Directory Studio</h3>
+<p>Apache Directory Studio és una eina completa que permet crear, editar i eliminar entrades en el directori LDAP. A més, té una interfície clara i intuïtiva per fer cerques i administrar la configuració del servidor LDAP de manera fàcil.</p>
+<ol>
+<li>
+<p>Primer ens assegurarem que les màquines virtuals tinguin connexions.
+<img alt="ldap" src="../fotos/eg02.png" /></p>
+</li>
+<li>
+<p>Aleshores veurem si java està instal·lat escrivint l'ordre "java -version". Jo no el tenia, així que vaig instal·lar java.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>sudo apt install default-jre
+</code></pre></div>
+<img alt="ldap" src="../fotos/eg03.png" />
+<img alt="ldap" src="../fotos/eg04.png" /></p>
+</li>
+<li>
+<p>Després baixarem el directory studio d'apache de la web i després descomprimirem el paquet.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>cd Baixades
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>tar -xzvf
+</code></pre></div>
+<img alt="ldap" src="../fotos/eg01.png" />
+<img alt="ldap" src="../fotos/eg05.png" /></p>
+</li>
+<li>
+<p>Seguidament, entrarem dins del directori i executarem el programa i un cop estiguem dins afegirem una nova Connexió LDAP.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>cd ApacheDirectoryStudio/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>./ApacheDirectoryStudio
+</code></pre></div>
+<img alt="ldap" src="../fotos/eg06.png" />
+<img alt="ldap" src="../fotos/eg07.png" /></p>
+</li>
+<li>
+<p>Després escriurem el nom de la connexió, la ip del servidor i després crearem una contrasenya.     <br />
+<img alt="ldap" src="../fotos/eg08.png" />
+<img alt="ldap" src="../fotos/eg09.png" /></p>
+</li>
+<li>
+<p>Tot seguit, podrem visualitzar totes les unitats organitzatives, grups i usuaris que hem creat al servidor.    <br />
+<img alt="ldap" src="../fotos/eg10.png" /></p>
+</li>
+<li>
+<p>Per crear una UO, hem d'iniciar una nova entrada.      <br />
+<img alt="ldap" src="../fotos/eg11.png" /></p>
+</li>
+<li>
+<p>A continuació, afegim l'opció "organizationalUnit" i "top".    <br />
+<img alt="ldap" src="../fotos/eg13.png" /></p>
+</li>
+<li>
+<p>Després li ficarem un nom, en aquest cas "prova".      <br />
+<img alt="ldap" src="../fotos/eg14.png" /></p>
+</li>
+<li>
+<p>Per últim, li donarem a finish i ja la tindrem creada.     <br />
+<img alt="ldap" src="../fotos/eg15.png" />
+<img alt="ldap" src="../fotos/eg16.png" /></p>
+</li>
+<li>
+<p>Ara crearem un grup, hem d'iniciar una nova entrada.   <br />
+<img alt="ldap" src="../fotos/eg17.png" /></p>
+</li>
+<li>
+<p>A continuació, afegim l'opció "posixGroup" i "top".    <br />
+<img alt="ldap" src="../fotos/eg18.png" /></p>
+</li>
+<li>
+<p>Seguidament, incloem un nom comú (cn) i un identificador de grup (gidNumber).      <br />
+<img alt="ldap" src="../fotos/eg19.png" /></p>
+</li>
+<li>
+<p>En finalitzar, l'entrada del grup hauria de semblar-se al format següent.      <br />
+<img alt="ldap" src="../fotos/eg20.png" />
+<img alt="ldap" src="../fotos/eg21.png" /></p>
+</li>
+<li>
+<p>Passant a crear un usuari, també iniciem una nova entrada.     <br />
+<img alt="ldap" src="../fotos/eg22.png" /></p>
+</li>
+<li>
+<p>A continuació, incloem les opcions "inetOrgPerson", "organizationalPerson", "person", "posixAccount", "shadowAccount" i "top".     <br />
+<img alt="ldap" src="../fotos/eg23.png" /></p>
+</li>
+<li>
+<p>Posteriorment, afegim un identificador d'usuari (uid), un identificador de grup (gidNumber), un nom comú (cn) i un cognom (sn). A més, proporcionem detalls per al directori d'inici i l'identificador d'usuari, entre altres coses.   <br />
+<img alt="ldap" src="../fotos/eg24.png" />
+<img alt="ldap" src="../fotos/eg25.png" /></p>
+</li>
+<li>
+<p>Un cop finalitzats aquests detalls, ja tindrem el nostre usuari a l'esquema.   <br />
+<img alt="ldap" src="../fotos/eg26.png" /></p>
+</li>
+<li>
+<p>Finalment inciarem sessió amb l'usuari i revisarem al server que l'usuari està a ldap.     <br />
+<img alt="ldap" src="../fotos/eg27.png" />
+<img alt="ldap" src="../fotos/eg28.png" />
+<img alt="ldap" src="../fotos/eg29.png" /></p>
+</li>
+</ol>
+<hr />
+<h3 id="jxplorer">JXplorer</h3>
+<p>Per altra banda, JXplorer és una eina més lleugera que també serveix per treballar amb LDAP. Tot i ser més senzilla que Apache Directory Studio, és molt útil per fer cerques ràpides i gestionar entrades sense complicacions.</p>
+<ol>
+<li>
+<p>El primer que farem serà instal·lar "JXplorer".
+<div class="highlight"><pre><span></span><code><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>sudo apt install jxplorer
+</code></pre></div>
+<img alt="ldap" src="../fotos/eg001.png" />
+<img alt="ldap" src="../fotos/eg002.png" /></p>
+</li>
+<li>
+<p>Seguidament executarem el programa, tenim dues formes per fer-ho.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>nohup jxplorer
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>nohup jxplorer &amp;
+</code></pre></div>
+<img alt="ldap" src="../fotos/eg003.png" /></p>
+</li>
+<li>
+<p>Una vegada dins afegirem el servidor ldap.     <br />
+<img alt="ldap" src="../fotos/eg004.png" />
+<img alt="ldap" src="../fotos/eg005.png" />
+<img alt="ldap" src="../fotos/eg006.png" /></p>
+</li>
+<li>
+<p>Tot seguit, crearem una nova entrada per a la UO.      <br />
+<img alt="ldap" src="../fotos/eg007.png" />
+<img alt="ldap" src="../fotos/eg008.png" />
+<img alt="ldap" src="../fotos/eg009.png" /></p>
+</li>
+<li>
+<p>Després crearem el grup.   <br />
+<img alt="ldap" src="../fotos/eg010.png" />
+<img alt="ldap" src="../fotos/eg011.png" />
+<img alt="ldap" src="../fotos/eg012.png" /></p>
+</li>
+<li>
+<p>Per últim afegirem un nou usuari.      <br />
+<img alt="ldap" src="../fotos/eg013.png" />
+<img alt="ldap" src="../fotos/eg015.png" />
+<img alt="ldap" src="../fotos/eg016.png" />
+<img alt="ldap" src="../fotos/eg017.png" /></p>
+</li>
+<li>
+<p>Ara que ja tenim tota l'estructura feta, inciarem sessio amb l'usuari i després revisarem al servidor.     <br />
+<img alt="ldap" src="../fotos/eg018.png" />
+<img alt="ldap" src="../fotos/eg019.png" />
+<img alt="ldap" src="../fotos/eg020.png" />
+<img alt="ldap" src="../fotos/eg021.png" />
+<img alt="ldap" src="../fotos/eg022.png" /></p>
+</li>
+</ol>
+<hr />
+<h2 id="server-nfs">Server NFS</h2>
+<h3 id="que-es-nfs">Què és NFS?</h3>
+<p>NFS (Network File System) és un protocol que permet compartir directoris i fitxers entre màquines a través d'una xarxa. És molt utilitzat en entorns Linux/Unix per permetre que una màquina accedeixi a fitxers d'una altra com si fossin locals, tot i que estan en un servidor remot.</p>
+<h3 id="diferencia-entre-nfs-i-samba">Diferència entre NFS i Samba</h3>
+<ul>
+<li>
+<p>NFS és ideal per compartir fitxers entre màquines Linux/Unix dins d'una xarxa local (encara que també es pot aplicar a clients Windows).</p>
+</li>
+<li>
+<p>Samba es fa servir per compartir fitxers entre sistemes Linux i Windows, ja que utilitza el protocol SMB que és propi de Windows.</p>
+</li>
+</ul>
+<h3 id="autenticacio-a-nivell-de-host">Autenticació a nivell de host</h3>
+<p>L’autenticació a nivell de host assegura que només les màquines autoritzades poden accedir als recursos compartits. Això es fa mitjançant la validació de l’adreça IP o el nom de l’equip. Si l’equip està autoritzat, pot muntar els recursos, si no, no pot accedir-hi.</p>
+<hr />
+<h3 id="installacio">Instal·lació</h3>
+<h4 id="servidor">SERVIDOR</h4>
+<ol>
+<li>Instal·larem el servei nfs-kernel-server i una vegada fet revisarem l'estat del servei.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>apt update
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>apt install nfs-kernel-server
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>systemctl status nfs-server
+</code></pre></div>
+<img alt="ldap" src="../fotos/o15.png" />
+<img alt="ldap" src="../fotos/o14.png" />
+<img alt="ldap" src="../fotos/o13.png" /></li>
+</ol>
+<h4 id="client-ubuntu">CLIENT UBUNTU</h4>
+<ol>
+<li>En ubuntu client instal·larem el paquet "nfs-common rpcbind".
+<img alt="ldap" src="../fotos/o15.png" />
+<img alt="ldap" src="../fotos/o19.png" /></li>
+</ol>
+<h4 id="client-windows">CLIENT WINDOWS</h4>
+<ol>
+<li>
+<p>Aquí entrarem dins del "control panel", clicarem en "iconos pequeños" i després en "Programas y caracteristicas"
+<img alt="ldap" src="../fotos/o18.png" /></p>
+</li>
+<li>
+<p>Després farem clic en "Activar o desactivar las caracteristicas de Windows" dins activarem tottes les caselles de NFS.
+<img alt="ldap" src="../fotos/o17.png" /></p>
+</li>
+<li>
+<p>Quan acabem ens sortirà un missatge de que els canvis han estat aplicats.
+<img alt="ldap" src="../fotos/o16.png" /></p>
+</li>
+</ol>
+<hr />
+<h3 id="comparticion-carpeta-al-server-y-pruebas">Compartición carpeta al server y pruebas</h3>
+<ol>
+<li>
+<p>Primer, crearem la carpeta "compartida" en l'arrel, li ficarem els permissos de propetari nobody:nogroup i permissos total de lectura, escriptura i execució. 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a>cd /
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a>mkdir compartida
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a>ls -la | grep compartida
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a>chown nobody:nogroup compartida/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a>chmod -R 777 compartida/
+</code></pre></div>
+<img alt="ldap" src="../fotos/o12.png" /></p>
+</li>
+<li>
+<p>A més, entrarem dins del fitxer /etc/exports i afegirem una nova linia.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a>nano /etc/export
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a>/compartida *(rw,sync,no_subtree_check)
+</code></pre></div>
+<img alt="ldap" src="../fotos/o9.png" /></p>
+</li>
+<li>
+<p>Seguidament, entrarem dins de la carpeta i crearem un fitxer anomenat "hola".
+<div class="highlight"><pre><span></span><code><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a>cd compartida
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a>touch hola
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a>ls
+</code></pre></div>
+<img alt="ldap" src="../fotos/o7.png" /></p>
+</li>
+<li>
+<p>En windows provarem connexió amb el server.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a>ipconfig
+</code></pre></div>
+<img alt="ldap" src="../fotos/o6.png" /></p>
+</li>
+<li>
+<p>Tot seguit, entrarem en "Red" i afegirem la ip del server, de forma que ens sortirà la carpeta.    <br />
+<img alt="ldap" src="../fotos/o5.png" /></p>
+</li>
+<li>
+<p>A continuació, crearem una carpeta nova dins del recurs compartit.
+<img alt="ldap" src="../fotos/o11.png" />
+<img alt="ldap" src="../fotos/o4.png" /></p>
+</li>
+<li>
+<p>Després, anirem al client ubuntu, crearem la carpeta "nfs" a /mnt, afegirem permissos 777 i muntarem la carpeta al servidor. Una vegada fet entrarem dins i crearem un fitxer.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a>cd /mnt
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a>mkdir nfs
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-70-1" name="__codelineno-70-1" href="#__codelineno-70-1"></a>chmod -R 777 nfs/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-71-1" name="__codelineno-71-1" href="#__codelineno-71-1"></a>ls nfs/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-72-1" name="__codelineno-72-1" href="#__codelineno-72-1"></a>mount 10.0.2.9:/compartida /mnt/nfs/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-73-1" name="__codelineno-73-1" href="#__codelineno-73-1"></a>touch provaubuntu
+</code></pre></div>
+<img alt="ldap" src="../fotos/o3.png" /></p>
+</li>
+<li>
+<p>Per últim, revisarem la carpeta al servidor per comprovar que realment estàn els dos fitxers que hem creat amb els diferents clients.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-74-1" name="__codelineno-74-1" href="#__codelineno-74-1"></a>cd compartida/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-75-1" name="__codelineno-75-1" href="#__codelineno-75-1"></a>ls
+</code></pre></div>
+<img alt="ldap" src="../fotos/o1.png" /></p>
+</li>
+</ol>
+<hr />
+<h3 id="perfil-movil-ubuntu-ldap">Perfil Movil (Ubuntu LDAP)</h3>
+<p>Un perfil mòbil permet que els usuaris tinguin les mateixes dades i configuracions disponibles a qualsevol màquina. Amb LDAP, els fitxers i la configuració de l’usuari es guarden en un servidor centralitzat, així que l’usuari pot accedir-hi des de qualsevol màquina sense dependre de la màquina en si.</p>
+<ol>
+<li>
+<p>El primer que farem és un <code>apt install nfs-kernel-server</code> si no el tenim fet.      <br />
+<img alt="ldap" src="../fotos/perfils01.png" />
+<img alt="ldap" src="../fotos/perfils02.png" />
+<img alt="ldap" src="../fotos/perfils03.png" /></p>
+</li>
+<li>
+<p>Seguidament crearem la carpeta "perfils", li donarem permisos "nobody:nogroup" de propietari.      <br />
+<img alt="ldap" src="../fotos/perfils04.png" />
+<img alt="ldap" src="../fotos/perfils05.png" /></p>
+</li>
+<li>
+<p>Després anirem a /etc/exports i aquí afegirem una nova linia.      <br />
+<img alt="ldap" src="../fotos/perfils06.png" /></p>
+</li>
+<li>
+<p>Una vegada hem acabat de editar el fitxer reiniciarem el servei per a que s'apliquen els canvis.   <br />
+<img alt="ldap" src="../fotos/perfils07.png" /></p>
+</li>
+<li>
+<p>A continuació anirem al client que ja estava prèviament al domini i instal·larem aquests paquets: apt install nfs-common rpcbind.      <br />
+<img alt="ldap" src="../fotos/perfils08.png" />
+<img alt="ldap" src="../fotos/perfils09.png" /></p>
+</li>
+<li>
+<p>Després crearem la carpeta perfils i afegirem permisos 777.    <br />
+<img alt="ldap" src="../fotos/perfils10.png" /></p>
+</li>
+<li>
+<p>Seguidament, farem el muntatge permanent al fitxer /etc/fstab.     <br />
+<img alt="ldap" src="../fotos/perfils11.png" /></p>
+</li>
+<li>
+<p>Tornarem al servidor i afegirem un nou usuari, aquest és important que tingui com a home la ruta /perfils.     <br />
+<img alt="ldap" src="../fotos/perfils12.png" />
+<img alt="ldap" src="../fotos/perfils13.png" /></p>
+</li>
+<li>
+<p>A continuació, en l'usuari revisarem que està l'user que acabem de crear.      <br />
+<img alt="ldap" src="../fotos/perfils14.png" /></p>
+</li>
+<li>
+<p>Per últim, reniciarem i entrarem amb l'usuari.         <br />
+<img alt="ldap" src="../fotos/perfils15.png" />
+<img alt="ldap" src="../fotos/perfils16.png" /></p>
+</li>
+</ol>
+<hr />
+<h2 id="server-samba">Server SAMBA</h2>
+<h3 id="que-es-samba">Què és Samba?</h3>
+<p>Samba és una implementació de SMB (Server Message Block), un protocol que permet compartir fitxers i impressors entre sistemes Linux/Unix i Windows. Gràcies a Samba, els equips Linux poden interactuar i compartir recursos amb equips Windows, ja que SMB és el protocol que utilitzen els sistemes Windows per la compartició de fitxers i serveis de xarxa.</p>
+<h3 id="funcionalitat-de-samba">Funcionalitat de Samba</h3>
+<p>Samba permet que els sistemes Linux/Unix es comportin com a servidors de fitxers i impressores per a dispositius Windows, i viceversa. Això inclou:</p>
+<ul>
+<li>Compartir directoris i arxius entre equips Windows i Linux.</li>
+<li>Fer servir els serveis d’impressió entre aquests sistemes operatius.</li>
+<li>Permetre la connexió a màquines Windows des de Linux (i a l’inrevés) amb un control total sobre permisos i autenticació.</li>
+</ul>
+<hr />
+<ol>
+<li>
+<p>El primer pas és instal·lar samba al servidor.     <br />
+<img alt="ldap" src="../fotos/smb01.png" />
+<img alt="ldap" src="../fotos/smb02.png" /></p>
+</li>
+<li>
+<p>Seguidament, crearem la carpeta /proves, li assignarem permissos 777 i prpitaris nobody:nogroup. A més cream un fitxer de prova anomenat "hola".   <br />
+<img alt="ldap" src="../fotos/smb03.png" /></p>
+</li>
+<li>
+<p>A continuació editarem el fitxer de configuració de samba.     <br />
+<img alt="ldap" src="../fotos/smb04.png" /></p>
+</li>
+<li>
+<p>Dins del fitxer afegirem les següents linies.</p>
+<ul>
+<li><code>[proves]</code>: Defineix el nom del recurs compartit, en aquest cas "proves".</li>
+<li><code>path=/proves</code>: Especifica la ruta al sistema de fitxers on es troba la carpeta compartida.</li>
+<li><code>guest ok = yes</code>: Permet que els usuaris convidats accedeixin al recurs sense necessitat d’autenticació.</li>
+<li><code>directory mask = 0755</code>: Defineix els permisos de les carpetes creades dins del recurs compartit (propietari: lectura/escriptura/execució, grup i altres: només lectura i execució).</li>
+<li><code>create mask = 0644</code>: Estableix els permisos dels fitxers creats (propietari: lectura/escriptura, grup i altres: només lectura).</li>
+<li><code>browseable = yes</code>: Fa que el recurs compartit sigui visible quan es navega per la xarxa.</li>
+<li><code>read list = blau, @colors</code>: Permet accés de només lectura als usuaris especificats (blau i el grup colors).</li>
+<li><code>write list = blau</code>: Permet accés de lectura i escriptura a l'usuari blau.</li>
+<li><code>#read only = yes</code>: Aquesta línia està comentada, per tant, no té efecte, però si s'activés, faria que el recurs fos només de lectura.</li>
+<li><code>writable = yes</code>: Permet que el recurs sigui modificable (escriptura activada).</li>
+<li><code>invalid users = roig</code>: Bloqueja l’accés a l’usuari roig, impedint-li connectar-se al recurs compartit.</li>
+</ul>
+<p><img alt="ldap" src="../fotos/smb25.png" />
+<img alt="ldap" src="../fotos/smb06.png" /></p>
+</li>
+<li>
+<p>Tot seguit, crearem els usuaris de samba, crearem el grup "colors" i afegirem a "roig" i "groc".   <br />
+<img alt="ldap" src="../fotos/smb09.png" /></p>
+</li>
+<li>
+<p>Després comprovarem que realment estan creats.     <br />
+<img alt="ldap" src="../fotos/smb11.png" />
+<img alt="ldap" src="../fotos/smb12.png" /></p>
+</li>
+<li>
+<p>Assignarem contrasenyes a cadascun dels usuaris.   <br />
+<img alt="ldap" src="../fotos/smb13.png" /></p>
+</li>
+<li>
+<p>Anirem al client i instal·larem el paquet smbclient.   <br />
+<img alt="ldap" src="../fotos/smb18.png" /></p>
+</li>
+<li>
+<p>Posteriorment, anirem a "arxius", clicarem en "altres" i afegirem la ruta del recurs compartit.    <br />
+<img alt="ldap" src="../fotos/smb19.png" /></p>
+</li>
+<li>
+<p>Una vegada fet clicarem en anonim, entrarem dins de la carpeta i crearem un directori nou.    <br />
+<img alt="ldap" src="../fotos/smb20.png" />
+<img alt="ldap" src="../fotos/smb21.png" />
+<img alt="ldap" src="../fotos/smb22.png" />
+<img alt="ldap" src="../fotos/smb27.png" /></p>
+</li>
+<li>
+<p>Si anem al server podrem comprovar que la carpeta esta creada.    <br />
+<img alt="ldap" src="../fotos/smb28.png" /></p>
+</li>
+<li>
+<p>Seguidament, provarem amb l'usuari "blau". Com podem comprovar té permisos de lectura i escriptura.   <br />
+<img alt="ldap" src="../fotos/smb29.png" />
+<img alt="ldap" src="../fotos/smb30.png" />
+<img alt="ldap" src="../fotos/smb31.png" />
+<img alt="ldap" src="../fotos/smb32.png" /></p>
+</li>
+<li>
+<p>Ara amb l'usuari "groc", si recordem anteriorment li hem assignat permisos només de lectura, al crear el directori ens denega.    <br />
+<img alt="ldap" src="../fotos/smb33.png" />
+<img alt="ldap" src="../fotos/smb34.png" />
+<img alt="ldap" src="../fotos/smb35.png" />
+<img alt="ldap" src="../fotos/smb36.png" />
+<img alt="ldap" src="../fotos/smb37.png" /></p>
+</li>
+<li>
+<p>Per últim, roig no pot ni entrar dins del recurs compartit, ja que l'hem ficat a invalid users.   <br />
+<img alt="ldap" src="../fotos/smb38.png" /></p>
+</li>
+</ol>
+<hr />
+<h3 id="ldap-authetication">LDAP Authetication</h3>
+<p>L'autenticació LDAP en Samba permet utilitzar un servidor LDAP (com OpenLDAP) per gestionar els usuaris i les contrasenyes en una xarxa Samba. Això vol dir que els usuaris poden iniciar sessió en recursos compartits de Samba utilitzant les credencials d'usuari emmagatzemades en un directori LDAP.</p>
+<ol>
+<li>
+<p>El primer que farem és afegir les següent linies de configuració a smb.conf. Aquestes especifiquen els servidor ldap.
+<img alt="ldap" src="../fotos/smb39.png" />
+<img alt="ldap" src="../fotos/smb40.png" /></p>
+</li>
+<li>
+<p>Seguidament, anirem al client i inicarem sessió amb un usuari que ja formi part de ldap.
+<img alt="ldap" src="../fotos/smb47.png" /></p>
+</li>
+<li>
+<p>Amb aquest mateix usuari entrarem dins del recurs compartit.
+<img alt="ldap" src="../fotos/smb43.png" /></p>
+</li>
+<li>
+<p>Com podem observar podem escriure i llegir dins del directori.
+<img alt="ldap" src="../fotos/smb44.png" />
+<img alt="ldap" src="../fotos/smb45.png" /></p>
+</li>
+</ol>
+<hr />
+<h2 id="webgrafia">Webgrafia</h2>
+<p>Molta de la informació extreta està al <strong>Moodle de 0369 - Implantació de Sistemes Operatius</strong>. Seguidament, els següents links són d'internet:</p>
+<p>Directory.apache.org. Entorns gràfics. Disponible a: <a href="https://directory.apache.org/studio/">https://directory.apache.org/studio/</a></p>
+<p>Jxplorer.org. Entorns gràfics. Disponible a: <a href="https://jxplorer.org/">https://jxplorer.org/</a></p>
+<p>YouTube. Entorns gràfics. Disponible a: <a href="https://www.youtube.com/watch?v=iLs8jKh73pk">https://www.youtube.com/watch?v=iLs8jKh73pk</a></p>
+<p>Shapehost. Ldap authetication. Disponible a: <a href="https://shape.host/resources/advanced-samba-configuration-in-debian-a-comprehensive-guide">https://shape.host/resources/advanced-samba-configuration-in-debian-a-comprehensive-guide</a></p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://mariagutierrez03.github.io/mkdocs-maria-gutierrez/">Mkdocs</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/mariagutierrez03">Maria Gutierrez</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.code.download"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

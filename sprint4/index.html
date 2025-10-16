@@ -1,0 +1,998 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://james-willett.github.io/mkdocs-material-youtube-tutorial/sprint4/">
+      
+      
+        <link rel="prev" href="../sprint3/">
+      
+      
+        <link rel="next" href="../sprint5/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Gestió de discs - MkDocs Maria Gutierrez</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gestio-de-discs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MkDocs Maria Gutierrez" class="md-header__button md-logo" aria-label="MkDocs Maria Gutierrez" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MkDocs Maria Gutierrez
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Gestió de discs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="cyan" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Implantació de Sistemes Operatius
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../sprint1/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Instal·lació i configuració
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../sprint2/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Gestió d'usuaris i serveis
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../sprint3/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Administració de dominis i seguretat
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Gestió de discs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../sprint5/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Monitoratge, auditories i programari client/servidor
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MkDocs Maria Gutierrez" class="md-nav__button md-logo" aria-label="MkDocs Maria Gutierrez" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MkDocs Maria Gutierrez
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Implantació de Sistemes Operatius
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Instal·lació i configuració
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gestió d'usuaris i serveis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Administració de dominis i seguretat
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Gestió de discs
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gestió de discs
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducció
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teoria-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teoria bàsica
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raid-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAID 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raid-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAID 5
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Monitoratge, auditories i programari client/servidor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="gestio-de-discs">Gestió de discs</h1>
+<p>Per a la documentació completa visita <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
+<hr />
+<h2 id="introduccio">Introducció</h2>
+<p>Quan es treballa amb ordinadors, és molt important protegir les dades i assegurar-se que el sistema segueixi funcionant encara que hi hagi problemes amb els discos d’emmagatzematge. Per això s’utilitza RAID, una tecnologia que permet combinar diversos discos per millorar la seguretat i evitar la pèrdua d’informació en cas de fallada.</p>
+<p>En aquest treball, configuraré RAID en un sistema Ubuntu Linux dins d’una màquina virtual. Això inclou triar el tipus de RAID més adequat segons les necessitats, instal·lar-lo i fer proves per comprovar que funciona correctament. Per exemple, veuré què passa si falla un disc en una configuració RAID 1, que fa còpies de seguretat automàticament, o com es comporta RAID 5, que combina seguretat i bon ús de l’espai.</p>
+<p>L’objectiu no és només aprendre a instal·lar RAID, sinó també entendre com funciona, com es pot reparar si hi ha problemes i com assegurar que les dades estiguin sempre disponibles. Documentaré cada pas amb captures de pantalla i explicacions senzilles perquè es pugui repetir en altres sistemes.</p>
+<p>Aquest treball m’ajudarà a comprendre millor com es protegeixen les dades en un sistema informàtic i com evitar pèrdues d’informació en cas d’errors tècnics.     <br />
+<img alt="intro" src="../fotos/fotointro4.jpg" /></p>
+<hr />
+<h2 id="teoria-basica">Teoria bàsica</h2>
+<p>RAID és una tecnologia que permet combinar diversos discos durs per aconseguir més velocitat, més seguretat o totes dues coses alhora. És molt útil en servidors i sistemes on és important protegir les dades i evitar pèrdues en cas de fallada d’un disc. A més, en sistemes Linux, es poden crear volums lògics RAID per gestionar millor l’espai d’emmagatzematge i fer que sigui més flexible.</p>
+<p>Hi ha diferents tipus de RAID, i cadascun té les seves característiques:</p>
+<p>RAID 0 és el més ràpid, ja que divideix les dades entre tots els discos i permet llegir i escriure més ràpidament. Però té un problema important: si un dels discos falla, es perden totes les dades. Per això només s’utilitza en situacions on la velocitat és la prioritat, com en edició de vídeo o jocs.     <br />
+<img alt="raid" src="../fotos/raidft0.png" /></p>
+<p>RAID 1, en canvi, és molt segur perquè guarda una còpia exacta de les dades en dos discos. Si un d’ells es fa malbé, el sistema segueix funcionant amb l’altre sense perdre informació. Això sí, només s’aprofita la meitat de l’espai, ja que tot es duplica. És ideal per a servidors i sistemes crítics on la seguretat és el més important.   <br />
+<img alt="raid" src="../fotos/raidft1.png" /></p>
+<p>RAID 5 ofereix un bon equilibri entre seguretat i aprofitament de l’espai. Utilitza almenys tres discos i distribueix tant les dades com la paritat, que és una mena de informació addicional que permet reconstruir les dades si un disc falla. Així, encara que un disc es trenqui, el sistema pot seguir funcionant sense perdre informació. És una bona opció per a servidors i sistemes que necessiten seguretat sense perdre massa espai.   <br />
+<img alt="raid" src="../fotos/raidft5.png" /></p>
+<p>RAID 6 funciona de manera similar a RAID 5, però amb més protecció. Utilitza almenys quatre discos i guarda dues còpies de paritat, la qual cosa permet que fins a dos discos fallin alhora sense perdre dades. Això el fa ideal per a entorns on la informació ha d’estar sempre disponible, com en grans bases de dades o centres de dades.     <br />
+<img alt="raid" src="../fotos/raidft6.png" /></p>
+<p>A Linux, configurar RAID es pot fer amb l’eina mdadm, i es pot combinar amb LVM (Logical Volume Manager) per gestionar millor els discos. Això permet afegir o modificar espai d’emmagatzematge sense perdre dades ni haver de tornar a configurar-ho tot.</p>
+<hr />
+<h2 id="raid-1">RAID 1</h2>
+<ol>
+<li>
+<p>El primer que farem és instal·lar el paquet mdadm.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>apt install mdadm
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-1.png" /></p>
+</li>
+<li>
+<p>Seguidament, afegirem i revisarem els dos discs de 1GB.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>fdisk -l 
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-2.png" /></p>
+</li>
+<li>
+<p>A continuació, crearem una partició principal als dos discs, com aviem fet en apartats anteriors. A més una vegada acaba de crear, abans de sortir escriurem "t" pel terminal i després "fd", d'aquesta manera indiquem que és de Linux.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>fdisk /dev/sdb
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>fdisk /dev/sdc
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-3.png" />
+<img alt="raid1" src="../fotos/raid1-4.png" /></p>
+</li>
+<li>
+<p>Posteriorment, tornarem a revisar els disc per comprovar el seu estat.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>fdisk -l
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-5.png" /></p>
+</li>
+<li>
+<p>Tot seguit, crearem la carpeta raid1 en la ruta /mnt/ i li afegirem permissos. 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>cd /mnt
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>mkdir raid1
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>chmod 777 raid1
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>ls -la | grep raid1
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-6.png" /></p>
+</li>
+<li>
+<p>El següent pas serà executar la comanda <code>mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sdb1 /dev/sdc1</code>, aquesta indica el tipus de raid i el numero de discs que volem utilitzar. 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sdb1 /dev/sdc1
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-7.png" />
+<img alt="raid1" src="../fotos/raid1-8.png" /></p>
+</li>
+<li>
+<p>Seguidament, formatarem /dev/md0.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>mkfs.ext4 /dev/md0
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-9.png" /></p>
+</li>
+<li>
+<p>A continuació, revisarem /dev/md0.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>mdadm --detail /dev/md0
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-10.png" /></p>
+</li>
+<li>
+<p>Després executarem la commanda <code>mdadm --detail --scan &gt; /etc/mdadm/mdadm.conf</code> i revisarem el fitxer.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>mdadm --detail --scan &gt; /etc/mdadm/mdadm.conf
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>nano /etc/mdadm/mdadm.conf
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-11.png" />
+<img alt="raid1" src="../fotos/raid1-12.png" /></p>
+</li>
+<li>
+<p>Posteriorment, afegirem una linia nova al fitxer, aquesta indica les particions que utilitzarem.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>DEVICE /dev/sdb1 /dev/sdc1
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-13.png" /></p>
+</li>
+<li>
+<p>Una vegada, ja hem fet tots els passos anteriors, afegirem una nova linia al fstab muntant el raid a la carpeta que hem creat abans.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>nano /etc/fstab
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>/dev/md0    /mnt/raid1  ext4    deafults    0   0
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-14.png" /></p>
+</li>
+<li>
+<p>Seguidament, reiniciarem la maquina.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>reboot
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-15.png" /></p>
+</li>
+<li>
+<p>A continuació, farem un muntatge, reiniciarem el serveis i la màquina virtual.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>mount -a
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>systemctl daemon-reload
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>update-initramfs -u -k all
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>reboot
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-16.png" />
+<img alt="raid1" src="../fotos/raid1-17.png" />
+<img alt="raid1" src="../fotos/raid1-18.png" /></p>
+</li>
+<li>
+<p>Una vegada hem fet els passos anteriors quan visualitzem el raid ens haura de sortir els dos disc i estat clean.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>mdadm --detail /dev/md0
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-19.png" /></p>
+</li>
+<li>
+<p>Per acabar de revisar el funcionamemt, entrarem dins de la carpeta raid1, crearem contingut i la visualitzarem.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>cd /mnt/raid1
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>touch provafitxer
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>mkdir prova
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>ls -la
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-20.png" /></p>
+</li>
+<li>
+<p>Seguidamet, desmuntarem el disc sdb del raid. D'aquesta manera comprovarem que amb el metode espill podrem continuar treballant amb l'altre disc.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>mdadm /dev/md0 -f /dev/sdb1
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-21.png" /></p>
+</li>
+<li>
+<p>Quan revisem l'estat del raid veurem que sdb1 esta faulty.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>mdadm --detail /dev/md0
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-22.png" /></p>
+</li>
+<li>
+<p>Després l'eliminarem amb la mateixa comanda que per desactivar-lo però amb el paràmetre <code>-r</code>. Posterioment revisarem l'estat del raid, aquí podrem comprovar que ja no està sdb.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>mdadm /dev/md0 -r /dev/sdb1
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>mdadm --detail /dev/md0
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-23.png" /></p>
+</li>
+<li>
+<p>En aquest cas si tornem a revisar veurem que la carpeta raid1 segueix existint i podem accedir als recursos. A més crearem un fitxer per comprovar que al afegir posteriorment el sdb segueix estan. 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>cd /mnt/raid1
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>ls -la 
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>touch provafitxer2
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>ls
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-24.png" /></p>
+</li>
+<li>
+<p>Seguidament tornarem a realitzar la mateixa comanda per eliminar i deshabilitar pero amb el paràmetre <code>-a</code> per afegir sdb1. Quan revisem l'estat veurem que esta en 'spare rebuilding' aquest indica que s'està afegint.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>mdadm /dev/md0 -a /dev/sdb1
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>mdadm --detail /dev/md0
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-25.png" /></p>
+</li>
+<li>
+<p>Quan tornem a revisar després d'una estona veurem que ja esta actiu de nou. A més la carpeta raid1 conté tots els arxius creats posterioment.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>mdadm --detail /dev/md0
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>ls raid1
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-26.png" />
+<img alt="raid1" src="../fotos/raid1-27.png" /></p>
+</li>
+<li>
+<p>Per fer una altra prova, tancarem la vm eliminarem des de virtualbox el disc i tornarem a encendre-la.    <br />
+<img alt="raid1" src="../fotos/raid1-28.png" />
+<img alt="raid1" src="../fotos/raid1-29.png" /></p>
+</li>
+<li>
+<p>Quan el treiem veurem que només tenim un disc al raid i l'estat està inactiu.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>mdadm --detail /dev/md0
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-30.png" /></p>
+</li>
+<li>
+<p>Per intentar restaurar-ho pararem el funcionament del raid, muntarem una altra vegada la carpeta raid1 i actualitzarem els canvis. Com podem comprovar al entrar dins de la carpeta tindrem acces i el contingut continua intacte.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>mdadm --stop /dev/md0
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>mdadm -As /dev/md0
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>mount -a
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>update-initramfs -u -k all
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>ls /mnt/raid1
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-31.png" /></p>
+</li>
+<li>
+<p>Seguidament, revisarem l'estat del raid i a la carpeta raid1 crearem una nova carpeta per comporvar que al afegir el disc el contigut persisteix intacte.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>mdadm --detail /dev/md0
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>cd /mnt/raid1
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>mkdir prova2
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>ls
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-32.png" />
+<img alt="raid1" src="../fotos/raid1-33.png" /></p>
+</li>
+<li>
+<p>Tot seguit, tornarem ha afegir un disc a la vm des de virtualbox, aquest serà un de nou, per realment comprovar el funcionament.      <br />
+<img alt="raid1" src="../fotos/raid1-34.png" />
+<img alt="raid1" src="../fotos/raid1-35.png" /></p>
+</li>
+<li>
+<p>A continuació al ser un disc nou realitzarem el procés del principi.      <br />
+<img alt="raid1" src="../fotos/raid1-36.png" />
+<img alt="raid1" src="../fotos/raid1-37.png" />
+<img alt="raid1" src="../fotos/raid1-38.png" />
+<img alt="raid1" src="../fotos/raid1-39.png" /></p>
+</li>
+<li>
+<p>Una vegada afegit al raid revisarem el directori raid1, com podem observar tot està exactament igual. Reiniciarem la vm i tornarem a la carpeta per comprovar realment que funciona.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>ls /mnt/raid1
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>reboot
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>ls /mnt/raid1
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>mdadm --detail /dev/md0
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-41.png" />
+<img alt="raid1" src="../fotos/raid1-42.png" />
+<img alt="raid1" src="../fotos/raid1-43.png" />
+<img alt="raid1" src="../fotos/raid1-44.png" /></p>
+</li>
+<li>
+<p>L'últim que farem és eliminar el raid definitivament. Per realitzar això, desmuntarem /dev/md0, pararem el raid, eliminarem la carpeta raid1 i comentarem la linia del fstab.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>umount /dev/md0
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>mdadm --stop /dev/md0
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>mdadm --remove /dev/md0
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>rm -r /mnt/raid1
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a>nano /etc/fstab
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-45.png" />
+<img alt="raid1" src="../fotos/raid1-46.png" /></p>
+</li>
+<li>
+<p>A més comentarem o eliminarem les linies del fitxer mdadm.conf, buidarem el contingut del raid, actualitzarem canvis i reinciarem la vm. En aquest pas també és molt important la comanda <code>mdadm --zero-superblock /dev/sdb1 /dev/sdc1</code>, ja que si ens la deixem el raid continuarà existint.          <br />
+<img alt="raid1" src="../fotos/raid1-51.png" />
+<img alt="raid1" src="../fotos/raid1-54.png" /></p>
+</li>
+<li>
+<p>Finalment, revisarem l'estat del raid, com podem observar ja no existeix.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a>mdadm --detail /dev/md0
+</code></pre></div>
+<img alt="raid1" src="../fotos/raid1-55.png" /></p>
+</li>
+</ol>
+<h2 id="raid-5">RAID 5</h2>
+<ol>
+<li>
+<p>El procès de creació del raid 5 és molt paregut al raid 1, per tant només explicaré en profuditat les noves característiques. En raid 5 és important tindre més de 3 discs, jo en aquest cas he afegit 4 per fer més comprovacions.
+<img alt="raid5" src="../fotos/raid5-1.png" /></p>
+</li>
+<li>
+<p>Realitzarem el mateix procès de preparació de discs que en l'apartat anterior.     <br />
+<img alt="raid5" src="../fotos/raid5-2.png" />
+<img alt="raid5" src="../fotos/raid5-3.png" />
+<img alt="raid5" src="../fotos/raid5-4.png" />
+<img alt="raid5" src="../fotos/raid5-5.png" />
+<img alt="raid5" src="../fotos/raid5-6.png" /></p>
+</li>
+<li>
+<p>Crearem la carpeta raid5, el raid, muntarem el raid a la carpeta, etc.     <br />
+<img alt="raid5" src="../fotos/raid5-7.png" /> <br />
+<img alt="raid5" src="../fotos/raid5-8.png" />
+<img alt="raid5" src="../fotos/raid5-9.png" />
+<img alt="raid5" src="../fotos/raid5-10.png" />
+<img alt="raid5" src="../fotos/raid5-11.png" />
+<img alt="raid5" src="../fotos/raid5-12.png" /></p>
+</li>
+<li>
+<p>Una vegada fet tot això revisarem l'estat del raid, com podem comprovar està operatiu amb els 4 discs. Després anirem a la carpeta raid5 i crearem un fitxer i una carpeta.    <br />
+<img alt="raid5" src="../fotos/raid5-13.png" />
+<img alt="raid5" src="../fotos/raid5-14.png" /></p>
+</li>
+<li>
+<p>Ara iniciarem amb les comprovacions, per començar desactivarem un disc, farem un update o reboot i comprovarem que el raid continua funcionant amb tres discs.     <br />
+<img alt="raid5" src="../fotos/raid5-15.png" />
+<img alt="raid5" src="../fotos/raid5-16.png" /></p>
+</li>
+<li>
+<p>Després eliminarem el disc i comprovarem que el podem tornar ha afegir.
+<img alt="raid5" src="../fotos/raid5-17.png" />
+<img alt="raid5" src="../fotos/raid5-18.png" /></p>
+</li>
+<li>
+<p>Seguidament des de virtualbox eliminarem un disc, comprovarem que l'estat del raid és inactive, realitzarem els mateixos passos que al raid1 per tornar a activar el raid i comprovarem que continuem tenint acces a les dades.
+<img alt="raid5" src="../fotos/raid5-21.png" />
+<img alt="raid5" src="../fotos/raid5-22.png" /></p>
+</li>
+<li>
+<p>Ara si, quan treiem un altre disc des de virtualbox i el raid es que nomes amb 2 discs és quan deixa de funcionar i la informació de la carpeta raid5 ja no és accessible. Per tant com podem comprovar raid 5 necessita 3 o més discs per funcionar correctament.     <br />
+<img alt="raid5" src="../fotos/raid5-23.png" /></p>
+</li>
+<li>
+<p>Tornarem a afegir un dels discs eliminats i comporvarem que tornar al seu estat funcional.
+<img alt="raid5" src="../fotos/raid5-24.png" /></p>
+</li>
+<li>
+<p>Per últim eliminarem el raid definitivament, com podem observar per les captures el procś és el mateix.
+<img alt="raid5" src="../fotos/raid5-25.png" />
+<img alt="raid5" src="../fotos/raid5-26.png" />
+<img alt="raid5" src="../fotos/raid5-27.png" />
+<img alt="raid5" src="../fotos/raid5-28.png" />
+<img alt="raid5" src="../fotos/raid5-29.png" />
+<img alt="raid5" src="../fotos/raid5-30.png" /></p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://mariagutierrez03.github.io/mkdocs-maria-gutierrez/">Mkdocs</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/mariagutierrez03">Maria Gutierrez</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.code.download"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

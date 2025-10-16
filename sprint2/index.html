@@ -1,0 +1,3068 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://james-willett.github.io/mkdocs-material-youtube-tutorial/sprint2/">
+      
+      
+        <link rel="prev" href="../sprint1/">
+      
+      
+        <link rel="next" href="../sprint3/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Gestió d'usuaris i serveis - MkDocs Maria Gutierrez</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gestio-dusuaris-i-serveis" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MkDocs Maria Gutierrez" class="md-header__button md-logo" aria-label="MkDocs Maria Gutierrez" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MkDocs Maria Gutierrez
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Gestió d'usuaris i serveis
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="cyan" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Implantació de Sistemes Operatius
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../sprint1/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Instal·lació i configuració
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Gestió d'usuaris i serveis
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../sprint3/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Administració de dominis i seguretat
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../sprint4/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Gestió de discs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../sprint5/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Monitoratge, auditories i programari client/servidor
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MkDocs Maria Gutierrez" class="md-nav__button md-logo" aria-label="MkDocs Maria Gutierrez" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MkDocs Maria Gutierrez
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Implantació de Sistemes Operatius
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Instal·lació i configuració
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Gestió d'usuaris i serveis
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gestió d'usuaris i serveis
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducció
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestio-de-processos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestió de processos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestio-dusuaris-i-grups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestió d'usuaris i grups
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gestió d&#39;usuaris i grups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#els-fitxers-mes-importants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Els fitxers més importants
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-i-eliminar-usuaris" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crear i eliminar usuaris
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Crear i eliminar usuaris">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#useradd" class="md-nav__link">
+    <span class="md-ellipsis">
+      USERADD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adduser" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDUSER
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#userdel" class="md-nav__link">
+    <span class="md-ellipsis">
+      USERDEL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afegir-usuaris-per-gui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Afegir usuaris per GUI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-usuari-per-gui-i-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Log usuari per GUI i terminal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bloquejar-i-desbloquejar-usuaris" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bloquejar i desbloquejar usuaris
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modificar-nom-dun-usuari" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modificar nom d’un usuari
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-i-eliminar-grups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crear i eliminar grups
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Crear i eliminar grups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#groupadd" class="md-nav__link">
+    <span class="md-ellipsis">
+      GROUPADD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addgroup" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDGROUP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groupdel" class="md-nav__link">
+    <span class="md-ellipsis">
+      GROUPDEL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delgroup" class="md-nav__link">
+    <span class="md-ellipsis">
+      DELGROUP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afegir-i-treure-usuaris-de-grups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Afegir i treure usuaris de grups
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Afegir i treure usuaris de grups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usermod" class="md-nav__link">
+    <span class="md-ellipsis">
+      USERMOD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpasswd" class="md-nav__link">
+    <span class="md-ellipsis">
+      GPASSWD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adduser_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADDUSER
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modificar-grup-principal-dun-usuari" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modificar grup principal d’un usuari
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestio-de-permisos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestió de permisos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gestió de permisos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#permissos-normals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permissos normals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Permissos normals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chmod" class="md-nav__link">
+    <span class="md-ellipsis">
+      CHMOD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chgrp" class="md-nav__link">
+    <span class="md-ellipsis">
+      CHGRP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chown" class="md-nav__link">
+    <span class="md-ellipsis">
+      CHOWN
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permissos-especials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permissos especials
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Permissos especials">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sticky" class="md-nav__link">
+    <span class="md-ellipsis">
+      STICKY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suid" class="md-nav__link">
+    <span class="md-ellipsis">
+      SUID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sgid" class="md-nav__link">
+    <span class="md-ellipsis">
+      SGID
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permissos-en-acl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permissos en ACL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#umask" class="md-nav__link">
+    <span class="md-ellipsis">
+      UMASK
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sistemas-de-fitxers-i-particions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistemas de fitxers i particions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sistemas de fitxers i particions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estructura-fisica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estructura física
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estructura-logica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estructura lògica
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estructura-de-la-informacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estructura de la informació
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estructura de la informació">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mida-del-sector" class="md-nav__link">
+    <span class="md-ellipsis">
+      MIDA DEL SECTOR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mida-del-bloc" class="md-nav__link">
+    <span class="md-ellipsis">
+      MIDA DEL BLOC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fragmentacio-interna" class="md-nav__link">
+    <span class="md-ellipsis">
+      FRAGMENTACIÓ INTERNA
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fragmentacio-externa" class="md-nav__link">
+    <span class="md-ellipsis">
+      FRAGMENTACIÓ EXTERNA
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipus-de-formateig" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipus de formateig
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creacio-de-particions-i-formateig" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creació de particions i formateig
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#muntatge-de-particions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Muntatge de particions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Muntatge de particions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#temporal" class="md-nav__link">
+    <span class="md-ellipsis">
+      TEMPORAL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definitiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      DEFINITIVA
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparticio-de-carpeta-a-traves-de-servidor-samba" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparticio de carpeta a traves de servidor Samba
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comparticio de carpeta a traves de servidor Samba">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ext4-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      EXT4 ~ Ubuntu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ntfs-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      NTFS ~ Windows
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copia-de-seguretat-i-automatitzacio-de-tasques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Còpia de seguretat i automatització de tasques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Còpia de seguretat i automatització de tasques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comandes-backups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comandes backups
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comandes backups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preparacio-del-entorn" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preparació del entorn
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cp" class="md-nav__link">
+    <span class="md-ellipsis">
+      CP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rsync" class="md-nav__link">
+    <span class="md-ellipsis">
+      RSYNC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dd" class="md-nav__link">
+    <span class="md-ellipsis">
+      DD
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Programes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deja-dup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deja-dup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#duplicity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duplicity
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automatitzacio-amb-script-cron-i-anacron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatització amb script, cron i anacron
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Automatització amb script, cron i anacron">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teoria-cron-i-anacron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teoria: cron i anacron
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diferencies-entre-cron-i-anacron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diferències entre cron i anacron
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quan-utilitzar-cron-o-anacron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quan utilitzar cron o anacron?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cron" class="md-nav__link">
+    <span class="md-ellipsis">
+      CRON
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quotes-de-disc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quotes de disc
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#webgrafia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Webgrafia
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Administració de dominis i seguretat
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gestió de discs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Monitoratge, auditories i programari client/servidor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="gestio-dusuaris-i-serveis">Gestió d'usuaris i serveis</h1>
+<p>Per a la documentació completa visita <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
+<hr />
+<h2 id="introduccio">Introducció</h2>
+<p>Començarem instal·lant Ubuntu Linux en un entorn de màquina virtual. L'objectiu és assegurar-nos que el sistema operatiu estigui ben configurat per gestionar usuaris, grups i polítiques de contrasenyes de manera eficaç. En aquesta primera fase, ens centrarem en la creació i gestió de comptes d'usuari locals, així com en l'assignació de permisos als grups i la definició de polítiques de seguretat per a les contrasenyes i accessos.</p>
+<p>Un cop tinguem la configuració inicial a punt, passarem a instal·lar i gestionar serveis essencials que són crucials per al bon funcionament del sistema. Això inclou la configuració de serveis i processos, l'optimització de l'ús dels recursos disponibles, i l'administració dels serveis actius segons les necessitats del sistema.</p>
+<p>A continuació, ens ocuparem de la creació i gestió de particions i sistemes de fitxers. Ens assegurarem que l'espai es distribueixi de manera adequada, aplicarem quotes de disc i implementarem còpies de seguretat automàtiques per protegir la integritat de les dades.</p>
+<p>Finalment, realitzarem proves exhaustives per verificar que tot funcioni correctament, incloent-hi la gestió d'usuaris, grups i serveis, així com la integritat dels fitxers, sistemes de particions i quotes de disc. Documentarem cada pas del procés de manera detallada, que inclourà la creació de comptes d'usuari, la configuració de serveis, l'administració de particions, i el pla de recuperació en cas de desastres. A més, acompanyarem la documentació amb captures de pantalla que il·lustrin les configuracions i ajustaments realitzats durant el procés.</p>
+<p><img alt="intro" src="../fotos/intro4.jpg" /></p>
+<hr />
+<h2 id="gestio-de-processos">Gestió de processos</h2>
+<p>La gestió de processos és una part essencial dels sistemes operatius, ja que s’encarrega de controlar els programes que s’executen al sistema. Cada procés és un programa en funcionament amb els seus propis recursos, com la memòria o l’accés a la CPU. El sistema operatiu gestiona tasques com crear, executar, pausar o acabar processos, assegurant que tots funcionin de manera eficient i sense problemes. Això permet que diversos processos puguin compartir els recursos del sistema de forma equilibrada.</p>
+<hr />
+<ol>
+<li>
+<p>En aquest apartat executarem múltiples comandes per administrar els processos, però una de les més importants és <code>pstree</code> la qual mostra en forma d’arbre jeràrquic tots els processos actius del sistema, organitzats segons les seves relacions de parentiu. Aquesta depenent de en quin usuari l'executes mostra uns processos o uns altres.    <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pstree
+</code></pre></div>
+<img alt="processos" src="../fotos/p1.png" />
+<img alt="processos" src="../fotos/p2.png" /></p>
+</li>
+<li>
+<p>A més si no estem iniciats en la sessió d'un usuari i volem saber els seus processos podem afegir el paràmetre <code>-h</code>. La comanda completa seria <code>pstree -h maria</code>.     <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pstree -h maria
+</code></pre></div>
+<img alt="processos" src="../fotos/p3.png" /></p>
+</li>
+<li>
+<p>A continuació també podem afegir el paràmetre <code>-p</code> el qual mostra el PID dels processos. Per fer una prova del que he explicat, obrirem un terminal a part i executarem la comanda <code>pstree -p -h maria</code> en el terminal que ja estàvem abans. Aquí buscarem la branca que indica el nostre terminal (la qual normalment està en negreta) i la primera subbranca hauria de ser l'altre terminal. Important fixar-nos en el PID del segon terminal. Seguidament, executarem la comanda <code>kill -9 2930</code> (hauràs de canviar el PID 2930 pel que tu tinguis) aquesta força la terminació immediata d’un procés específic, utilitzant la senyal SIGKILL, que no pot ser ignorada pel procés. Una vegada executada s'hauria de tancar el segon terminal.     <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pstree -p -h maria
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>kill -9 2930
+</code></pre></div>
+<img alt="processos" src="../fotos/p4.png" />
+<img alt="processos" src="../fotos/p9.png" />
+<img alt="processos" src="../fotos/p10.png" />
+<img alt="processos" src="../fotos/p11.png" /></p>
+</li>
+<li>
+<p>Ara executarem <code>top</code> aquesta mostra en temps real informació detallada sobre els processos actius al sistema, incloent ús de CPU, memòria, temps d'execució i estat dels processos. En la sortida de la comanda top, cada columna representa una informació específica dels processos actius. Aquí tens l’explicació de cada columna que es veu a la captura:       </p>
+<ul>
+<li>PID: Identificador únic del procés (Process ID).</li>
+<li>USER: Nom de l'usuari que està executant el procés.</li>
+<li>PR: Prioritat del procés. Valors més baixos indiquen més prioritat.</li>
+<li>NI: Valor de nice del procés, que afecta la seva prioritat (pot variar de -20 a 19).</li>
+<li>VIRT: Memòria virtual utilitzada pel procés (inclou memòria reservada i compartida).</li>
+<li>RES: Memòria física resident (en RAM) que està utilitzant el procés.</li>
+<li>SHR: Memòria compartida entre diversos processos.</li>
+<li>%CPU: Percentatge de CPU utilitzada pel procés.</li>
+<li>%MEM: Percentatge de memòria RAM utilitzada pel procés.</li>
+<li>TIME+: Temps total de CPU que el procés ha consumit des que es va iniciar.</li>
+<li>COMMAND: Nom o comanda del procés executant-se.</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>top
+</code></pre></div>
+ <img alt="processos" src="../fotos/p12.png" /></p>
+<p>Per exemple si obrim el Firefox ens indicarà que el PID és 3372, USER és maria, consumeix un 85,8% de CPU i un 5,2% de memòria, amb un temps acumulat d'execució de 7 segons.      </p>
+<p><img alt="processos" src="../fotos/p13.png" /></p>
+</li>
+<li>
+<p>La comanda <code>renice -n 19 -p 3372</code> canvia la prioritat del procés amb PID 3372 (en aquest cas, Firefox) ajustant el seu valor de nice a 19, que és la prioritat més baixa.     <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>renice -n 19 -p 3372
+</code></pre></div>
+<img alt="processos" src="../fotos/p15.png" />
+<img alt="processos" src="../fotos/p14.png" /></p>
+</li>
+<li>
+<p>La comanda <code>ps aux</code> s'utilitza per mostrar una llista completa de tots els processos en execució al sistema, amb informació detallada.      </p>
+<ul>
+<li>USER: Usuari que executa el procés.</li>
+<li>PID: Identificador del procés.</li>
+<li>%CPU i %MEM: Ús de CPU i memòria.</li>
+<li>VSZ: Mida de la memòria virtual en kilobytes.</li>
+<li>RSS: Mida de la memòria resident (RAM utilitzada pel procés).</li>
+<li>TTY: Terminal associat al procés (si no en té, apareix com ?).</li>
+<li>STAT: Estat del procés (ex.: R executant-se, S dormint, Z zombie).</li>
+<li>START: Hora en què es va iniciar el procés.</li>
+<li>TIME: Temps total de CPU utilitzat pel procés.</li>
+<li>COMMAND: Comanda que va iniciar el procés. </li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>ps aux
+</code></pre></div>
+<img alt="processos" src="../fotos/p16.png" /></p>
+</li>
+<li>
+<p>La comanda <code>ps -a</code> mostra una llista dels processos que s'estan executant en tots els terminals del sistema, excepte els processos propis de l'usuari que no tenen terminal associat (com els processos en segon pla).  <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>ps -a
+</code></pre></div>
+<img alt="processos" src="../fotos/p17.png" /></p>
+</li>
+<li>
+<p>La comanda <code>ps -A</code> mostra tots els processos en execució al sistema, incloent-hi tant processos amb terminal associat com processos en segon pla o dimonis.    <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>ps -A
+</code></pre></div>
+<img alt="processos" src="../fotos/p18.png" /></p>
+</li>
+<li>
+<p>Seguidament, executarem top i farem Ctrl+Z per aturar-lo d'aquesta manera està en segon pla. Per veure els processos en segon pla tenim la comanda <code>jobs</code>.   <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>jobs
+</code></pre></div>
+<img alt="processos" src="../fotos/p21.png" />
+<img alt="processos" src="../fotos/p22.png" /></p>
+</li>
+<li>
+<p>Per veure el PID de top podem executar <code>pstree -p | grep top</code>.   <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>pstree -p | grep top
+</code></pre></div>
+<img alt="processos" src="../fotos/p23.png" /></p>
+</li>
+<li>
+<p>Seguidament el matarem amb <code>kill -9 4307</code> i llavors ens sortirà que top està "matat".    <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>kill -9 4307
+</code></pre></div>
+<img alt="processos" src="../fotos/p24.png" /></p>
+</li>
+<li>
+<p>També quan un procés esta en segon pla podem optar per tornar-lo a ficar en primer pla amb <code>fg %1</code> (el numero després del % canvia segons el número que mostra jobs).    <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>jobs
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>fg %1
+</code></pre></div>
+<img alt="processos" src="../fotos/p25.png" /></p>
+</li>
+<li>
+<p>Tot seguit, també tenim l'ordre <code>top &amp;</code> que executa l'eina top en segon pla, permetent que se segueixi executant mentre el terminal roman disponible per a altres ordres.    <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>top &amp;
+</code></pre></div>
+<img alt="processos" src="../fotos/p26.png" /></p>
+</li>
+<li>
+<p>A continuació tenim la comanda <code>xeyes</code> amb la que farem un parell de exemples. Si l'executem i després fem Ctrl+Z l'aturem i la podem recuperar amb <code>fg %5</code>com hem fet abans en top.  <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>xeyes
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>fg %5
+</code></pre></div>
+<img alt="processos" src="../fotos/p29.png" /></p>
+</li>
+<li>
+<p>A més també ho podem fer amb <code>xeyes &amp;</code> i recuperar de la mateixa manera que abans.   <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>xeyes &amp;
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>jobs
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>fg %1
+</code></pre></div>
+<img alt="processos" src="../fotos/p30.png" /></p>
+</li>
+<li>
+<p>De la mateixa manera funciona executant xeyes i posteriorment escriure <code>bg xeyes</code> (és igual que fer Ctrl+Z).   <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>bg xeyes
+</code></pre></div>
+<img alt="processos" src="../fotos/p31.png" /></p>
+</li>
+<li>
+<p>Per poder veure el PID d'un procés en concret com Firefox ho podem fer amb múltiples comandes com:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>pgrep firefox
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>ps aux | grep firefox
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>pstree -p | grep firefox
+</code></pre></div>
+<img alt="processos" src="../fotos/p32.png" />
+<img alt="processos" src="../fotos/p33.png" />
+<img alt="processos" src="../fotos/p34.png" /></p>
+</li>
+<li>
+<p>Per últim, la comanda <code>nice -n 19 xeyes</code> executa el programa xeyes amb la prioritat més baixa possible, fet que fa que rebi menys recursos de la CPU. Quina és la diferència entre renice i nice? La diferència entre nice i renice és que nice s'utilitza per establir la prioritat d'un procés en el moment en què es crea, mentre que renice serveix per canviar la prioritat d'un procés que ja està en execució.     <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>nice -n 19 xeyes
+</code></pre></div>
+<img alt="processos" src="../fotos/p36.png" />
+<img alt="processos" src="../fotos/p37.png" /></p>
+</li>
+</ol>
+<hr />
+<h2 id="gestio-dusuaris-i-grups">Gestió d'usuaris i grups</h2>
+<p>La gestió d'usuaris i grups és una part fonamental del sistema operatiu Ubuntu 24 Desktop. Cada usuari té les seves pròpies configuracions, fitxers i permisos, la qual cosa permet una experiència personalitzada i segura. A més, agrupar usuaris facilita l'administració de permisos i l'accés a recursos compartits.</p>
+<p>En aquest apartat, explorarem com crear, modificar i eliminar usuaris i grups. També veurem com establir permisos per assegurar-nos que les dades estiguin protegides i accessibles només per aquells que ho necessiten. Amb unes poques passes senzilles, podreu gestionar els vostres usuaris i grups de manera eficient i efectiva.</p>
+<hr />
+<h3 id="els-fitxers-mes-importants">Els fitxers més importants</h3>
+<p>En la gestió d'usuaris i grups d'Ubuntu, hi ha diversos fitxers clau que contenen informació essencial. A continuació, expliquem els més importants:</p>
+<ul>
+<li><strong>etc/passwd:</strong> Aquest fitxer és un registre de tots els usuaris del sistema. Conté informació com el nom d'usuari, la identificació d'usuari (UID), el directori inicial i el shell predeterminat. És un fitxer accessible, per la qual cosa tothom pot veure qui són els usuaris del sistema.</li>
+<li><strong>etc/shadow:</strong> Aquí s'emmagatzema la informació de les contrasenyes dels usuaris. Cada línia correspon a un usuari i conté la seva contrasenya encriptada. Si en aquest fitxer veiem un signe "!", significa que l'usuari està bloquejat i no pot accedir al sistema.</li>
+<li><strong>etc/gshadow:</strong> Aquest fitxer és similar a /etc/group, però proporciona informació addicional sobre els grups. Aquí es poden veure els administradors de cada grup. És útil per gestionar els permisos i els drets d'accés dels grups d'usuaris.</li>
+<li><strong>etc/groups:</strong> Conté informació sobre els grups del sistema. Cada línia representa un grup i inclou el nom del grup, el seu identificador (GID) i els membres que en formen part. Aquest fitxer és útil per veure quins usuaris pertanyen a cada grup.</li>
+</ul>
+<hr />
+<h3 id="crear-i-eliminar-usuaris">Crear i eliminar usuaris</h3>
+<h4 id="useradd">USERADD</h4>
+<ol>
+<li>
+<p>Per poder crear un nou usuari al sistema, utilitzarem la comanda useradd. Aquesta comanda ens permet afegir usuaris amb diversos paràmetres que ens ajuden a definir les seves característiques. A continuació, veurem alguns dels paràmetres clau que podem utilitzar:</p>
+<ul>
+<li><strong>-m:</strong> Aquest paràmetre indica que es crearà un directori d'usuari personal (home directory) automàticament. Això és important perquè cada usuari necessita un espai propi per emmagatzemar els seus fitxers.</li>
+<li><strong>-s /bin/bash:</strong> Amb aquest paràmetre, especificarem el shell que utilitzarà l'usuari. En aquest cas, estem indicant que volem que el shell sigui Bash, que és un dels més utilitzats en sistemes Linux.</li>
+<li><strong>-d /home/nick:</strong> Aquí podem definir el directori d'inici de l'usuari. En aquest exemple, establim que el directori personal de l'usuari serà /home/nick.</li>
+<li><strong>nick:</strong> Aquest és el nom de l'usuari que estem creant. En aquest cas, hem triat "nick" com a nom d'usuari.</li>
+<li><strong>&amp;&amp; passwd nick:</strong> Aquesta comanda s'utilitza per establir o canviar la contrasenya per a l'usuari "nick".</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>useradd -m -s /bin/bash -d /home/nick nick &amp;&amp; passwd nick
+</code></pre></div>
+<img alt="useradd" src="../fotos/s1.png" /></p>
+</li>
+<li>
+<p>Una vegada fet, si observem el fitxer /etc/passwd/ podrem visualitzar el nou registre amb el nom de l'usuari que acabem de crear.      <br />
+<img alt="useradd" src="../fotos/s2.png" /></p>
+</li>
+</ol>
+<h4 id="adduser">ADDUSER</h4>
+<ol>
+<li>Per fer-ho d'una forma més senzilla haurem de executar la comanda <code>adduser (nom d'usuari)</code>. Seguidament ens apareixeran apartats per emplenar com la contrasenya, nom complet, número d'espai, telèfon, etc. Si revisem el contingut del fitxer /etc/passwd surt l'usuari que acabem de crear, per tant les dues formes de crear usuaris són vàlides.<br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>adduser marta
+</code></pre></div>
+<img alt="useradd" src="../fotos/au1.png" />
+<img alt="useradd" src="../fotos/au2.png" /></li>
+</ol>
+<h4 id="userdel">USERDEL</h4>
+<ol>
+<li>
+<p>Per poder eliminar un usuari haurem d'utilitzar la comanda userdel que aquesta té diferents parametres el quals podem arribar a ser útils, per exemple <code>-r</code> aquest elimina l'usuari, el seu directori personal i els seus correus electrònics. Es recomana usar-lo per assegurar que s'eliminen també els fitxers personals de l'usuari i no quedin restes innecessàries al sistema.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>userdel -r nick
+</code></pre></div>
+<img alt="useradd" src="../fotos/s3.png" /></p>
+</li>
+<li>
+<p>Una vegada fet si revisem el fitxer /etc/passwd podem observar que l'usuari <strong>nick</strong> ja no existeix.
+<img alt="useradd" src="../fotos/s4.png" /></p>
+</li>
+<li>
+<p>Seguidament també tenim el paràmetre <code>-f</code>, aquest força l'eliminació de l'usuari fins i tot si està iniciat o té fitxers encara en ús.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>userdel -f andrea
+</code></pre></div>
+<img alt="useradd" src="../fotos/s5.png" />
+<img alt="useradd" src="../fotos/s6.png" /></p>
+</li>
+</ol>
+<hr />
+<h4 id="afegir-usuaris-per-gui">Afegir usuaris per GUI</h4>
+<ol>
+<li>
+<p>Per poder administrar el usuaris i grups per entorn gràfic haurem d'instal·lar per terminal un programa anomenat gnome-system-tools. 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>apt install gnome-system-tools
+</code></pre></div>
+<img alt="useradd" src="../fotos/s7.png" /></p>
+</li>
+<li>
+<p>Una vegada dins del programa, veurem els diferents usuaris del sistema, des del que podrem afegir, suprimir i gestionar grups. 
+<img alt="useradd" src="../fotos/s8.png" /></p>
+</li>
+</ol>
+<hr />
+<h3 id="log-usuari-per-gui-i-terminal">Log usuari per GUI i terminal</h3>
+<ol>
+<li>
+<p>Per iniciar sessió pel terminal haurem de executar la comanda "su" i seguidament el nom de l'usuari amb el qual volem iniciar-la. Per comprovar que ja estem dins podem executar la comanda pwd, aquesta en mostrarà la home de l'usuari.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>su andrea
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>cd
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>ls -la
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>pwd
+</code></pre></div>
+<img alt="useradd" src="../fotos/s9.png" /></p>
+</li>
+<li>
+<p>Per fer el inici de sessió des de la interfície gràfica, haurem de sortir de la sessió actual i entrar en l'usuari correcte, de forma habitual introduint la contrasenya.      <br />
+<img alt="useradd" src="../fotos/s10.png" />
+<img alt="useradd" src="../fotos/s11.png" /></p>
+</li>
+<li>
+<p>Seguidament, una vegada hem entrat, obrirem un terminal i comprovarem el pwd. Podem veure que quan fem un "ls -la" hi ha moltes més carpetes que abans, això és degut al fet que les carpetes de la home no es creen fins que l'usuari no inicia sessió des de la GUI. <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>ls -la
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>pwd
+</code></pre></div>
+<img alt="useradd" src="../fotos/s12.png" /></p>
+</li>
+</ol>
+<hr />
+<h3 id="bloquejar-i-desbloquejar-usuaris">Bloquejar i desbloquejar usuaris</h3>
+<ol>
+<li>
+<p>Per poder bloquejar usuaris haurem de escriure la comanda <code>usermod -L (nom d'usuari que volem bloquejar)</code>. Seguidament per poder comprovar si els canvis s'han aplicat, revisarem el fitxer /etc/shadow. Dins d'aquest fitxer baixarem fins trobar l'usuari i si apareix el símbol d'exclamació com mostra la captura de pantalla, vol dir que l'usuari està bloquejat.<br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>usermod -L andrea
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>cat /etc/shadow
+</code></pre></div>
+<img alt="useradd" src="../fotos/s13.png" />
+<img alt="useradd" src="../fotos/s14.png" /></p>
+</li>
+<li>
+<p>Una altra forma per comprovar-ho és tancat la sessió i observar que no apareix l'usuari per GUI.
+<img alt="useradd" src="../fotos/s15.png" /></p>
+</li>
+<li>
+<p>Per poder desbloquejar l'usuari haurem de escriure la comanda <code>usermod -U (nom d'usuari)</code>. Seguidament, si tornem a revisar el fitxer "/etc/passwd" veurem que no té el signe d'exclamació. Per acabar de comprovar-ho sortirem de la sessió actual i veurem que l'usuari torna a estar.    <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>usermod -U andrea
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>cat /etc/shadow
+</code></pre></div>
+<img alt="useradd" src="../fotos/s16.png" />
+<img alt="useradd" src="../fotos/s17.png" />
+<img alt="useradd" src="../fotos/s19.png" /></p>
+</li>
+<li>
+<p>A més també tenim la comanda <code>passwd -u (nom usuari)</code> desbloqueja el compte de l'usuària Andrea perquè pugui tornar a iniciar sessió. <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>passwd -u andrea
+</code></pre></div>
+<img alt="useradd" src="../fotos/s20.png" /></p>
+</li>
+</ol>
+<hr />
+<h3 id="modificar-nom-dun-usuari">Modificar nom d’un usuari</h3>
+<ol>
+<li>Per canviar el nom d’un usuari i del seu grup en un sistema Linux, primer utilitzem la comanda <code>usermod -l nou_nom antic_nom</code>, que actualitza el nom de l’usuari al sistema, tot i que aquest canvi no afecta el directori personal ni els fitxers associats.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>usermod -l lena helena
+</code></pre></div>
+<img alt="useradd" src="../fotos/k1.png" /></li>
+<li>A continuació, podem modificar el directori personal de l’usuari amb <code>usermod -d /home/nou_nom -m nou_nom</code>, on l’opció -d especifica el nou directori i -m mou els continguts del directori antic al nou. Si preferim fer-ho manualment, podem renombrar el directori amb <code>mv /home/antic_nom /home/nou_nom</code>, assegurant-nos després d’ajustar els permisos correctament.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>mv /home/helena /home/lena
+</code></pre></div>
+<img alt="useradd" src="../fotos/k2.png" /></li>
+<li>Per canviar també el nom del grup associat, fem servir <code>groupmod -n nou_grup antic_grup</code>, actualitzant així el nom del grup al sistema.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>groupmod -n lena helena
+</code></pre></div>
+<img alt="useradd" src="../fotos/k3.png" /></li>
+<li>Finalment, verifiquem i ajustem els permisos dels fitxers amb la comanda <code>chown -R nou_nom:nou_grup /home/nou_nom</code>, garantint que el nou usuari i grup tenen els accessos correctes al directori personal i als fitxers. Amb aquests passos ens assegurem que el sistema reconeix de manera coherent els canvis en el nom de l’usuari, el grup i el directori personal.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>chown -R lena:lena /home/lena
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>id lena
+</code></pre></div>
+<img alt="useradd" src="../fotos/k4.png" />
+<img alt="useradd" src="../fotos/k5.png" /></li>
+</ol>
+<hr />
+<h3 id="crear-i-eliminar-grups">Crear i eliminar grups</h3>
+<h4 id="groupadd">GROUPADD</h4>
+<ol>
+<li>
+<p>Per crear un grup amb groupadd només haurem de executar la comanda <code>groupadd (nom del grup)</code>. Seguidament, mirarem el fitxer "/etc/gshadow" i comprovarem que realment està.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>groupadd sistemes0369
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>cat /etc/gshadow
+</code></pre></div>
+<img alt="useradd" src="../fotos/s26.png" />
+<img alt="useradd" src="../fotos/s27.png" /></p>
+</li>
+<li>
+<p>Seguidament, per aplicar un gid personalitzat haurem d'afegir el paràmetre "-g (número de gid desitjat)". Després comprovarem els canvis al fitxer "/etc/group".
+<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>groupadd -g 1006 asixb
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>cat /etc/group
+</code></pre></div>
+<img alt="useradd" src="../fotos/s30.png" />
+<img alt="useradd" src="../fotos/s31.png" /></p>
+</li>
+</ol>
+<h4 id="addgroup">ADDGROUP</h4>
+<ol>
+<li>El cas de la comanda addgroup és molt paregut al anterior, ja que només haurem d'introduir la comanda i consecutivament el nom del grup. L'única diferència notable és el fet que t'informa dels canvis aplicats. Si anem al fitxer "/etc/group" podrem veure que el grup està creat.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>addgroup informatica
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>cat /etc/group
+</code></pre></div>
+<img alt="useradd" src="../fotos/s34.png" />
+<img alt="useradd" src="../fotos/s35.png" /></li>
+</ol>
+<h4 id="groupdel">GROUPDEL</h4>
+<ol>
+<li>Per eliminar un grup en groupdel haurem d'utilitzar la mateixa estructura que en les dues anteriors. Seguidament, revisar que realment ja no està al fitxer "/etc/group".
+<div class="highlight"><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>groupdel sistemes0369
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>cat /etc/group
+</code></pre></div>
+<img alt="useradd" src="../fotos/s32.png" /></li>
+</ol>
+<h4 id="delgroup">DELGROUP</h4>
+<ol>
+<li>Una altra forma de eliminar grups és utilitzar la comanda delgroup.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>delgroup informatica
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>cat /etc/group
+</code></pre></div>
+<img alt="useradd" src="../fotos/s37.png" /></li>
+</ol>
+<hr />
+<h3 id="afegir-i-treure-usuaris-de-grups">Afegir i treure usuaris de grups</h3>
+<h4 id="usermod">USERMOD</h4>
+<ol>
+<li>
+<p>Per poder afegir un usuari haurem d'utilitzar la comanda <code>usermod -aG (nom grup) (nom usuari)</code>. Si comprovem el resultat a "/etc/group" veurem que l'usuari ara ja està afegit.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>usermod -aG asixb andreaperez
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a>cat /etc/group
+</code></pre></div>
+<img alt="useradd" src="../fotos/s38.png" />
+<img alt="useradd" src="../fotos/s39.png" /></p>
+</li>
+<li>
+<p>Seguidament per treure l'usuari ficarem la mateixa comanda, però en el paràmetre "-G" només.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a>usermod -G asixb andreaperez
+</code></pre></div>
+<img alt="useradd" src="../fotos/s50.png" /></p>
+</li>
+</ol>
+<h4 id="gpasswd">GPASSWD</h4>
+<ol>
+<li>
+<p>A més també podem afegir usuaris a grups amb la comanda "gpasswd -a (nom usuari) (nom grup)".
+<div class="highlight"><pre><span></span><code><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a>gpasswd -a maria asixb
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a>cat /etc/group
+</code></pre></div>
+<img alt="useradd" src="../fotos/s40.png" />
+<img alt="useradd" src="../fotos/s41.png" /></p>
+</li>
+<li>
+<p>En aquesta mateixa comanda també podem treure usuaris de grups amb el paràmetre <code>-d</code>.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a>gpasswd -d maria asixb
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a>cat /etc/group
+</code></pre></div>
+<img alt="useradd" src="../fotos/s45.png" />
+<img alt="useradd" src="../fotos/s46.png" /></p>
+</li>
+</ol>
+<h4 id="adduser_1">ADDUSER</h4>
+<ol>
+<li>
+<p>En adduser també podem afegir usuaris a grups, utilitzant la comanda <code>adduser (nom usuari) (nom grup)</code>.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a>adduser andreaperez informatica
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a>cat /etc/group
+</code></pre></div>
+<img alt="useradd" src="../fotos/s42.png" />
+<img alt="useradd" src="../fotos/s43.png" /></p>
+</li>
+<li>
+<p>En una comanda pareguda a l'anterior podem eliminar aquests usuaris dels grups, <code>deluser (nom usuari) (nom grup)</code>.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a>deluser andreaperez asixb
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a>cat /etc/group
+</code></pre></div>
+<img alt="useradd" src="../fotos/s47.png" />
+<img alt="useradd" src="../fotos/s48.png" /></p>
+</li>
+</ol>
+<hr />
+<h3 id="modificar-grup-principal-dun-usuari">Modificar grup principal d’un usuari</h3>
+<ol>
+<li>Per modificar el nom el grup principal d'un usuari haurem d'utilitzar la comanda "usermod -g (nom grup) (nom usuari)". Per comprovar-ho farem un "id (nom usuari)", aqui si revisem el gid veurem que ara està canviat.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a>id andreaperez
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a>usermod -g informatica andreaperez
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a>id andreaperez
+</code></pre></div>
+<img alt="useradd" src="../fotos/s52.png" /></li>
+</ol>
+<hr />
+<h2 id="gestio-de-permisos">Gestió de permisos</h2>
+<h3 id="permissos-normals">Permissos normals</h3>
+<ol>
+<li>
+<p>El primer haurem de fer és crear 4 usuaris, en el meu cas he creat a Lola, Laura, Mariona i Martina.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-70-1" name="__codelineno-70-1" href="#__codelineno-70-1"></a>adduser lola
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-71-1" name="__codelineno-71-1" href="#__codelineno-71-1"></a>adduser laura
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-72-1" name="__codelineno-72-1" href="#__codelineno-72-1"></a>adduser mariona
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-73-1" name="__codelineno-73-1" href="#__codelineno-73-1"></a>adduser martina
+</code></pre></div>
+<img alt="chmod" src="../fotos/1.png" />
+<img alt="chmod" src="../fotos/2.png" />
+<img alt="chmod" src="../fotos/3.png" />
+<img alt="chmod" src="../fotos/4.png" /></p>
+</li>
+<li>
+<p>Seguidament, revisarem que realment estan creats els 4 usuaris al fitxer /etc/passwd.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-74-1" name="__codelineno-74-1" href="#__codelineno-74-1"></a>cat /etc/passwd
+</code></pre></div>
+<img alt="chmod" src="../fotos/5.png" /></p>
+</li>
+<li>
+<p>Després crearem un grup anomenat grup-a i afegirem als usuaris lola i mariona.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-75-1" name="__codelineno-75-1" href="#__codelineno-75-1"></a>addgroup grup-a
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-76-1" name="__codelineno-76-1" href="#__codelineno-76-1"></a>adduser lola grup-a
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-77-1" name="__codelineno-77-1" href="#__codelineno-77-1"></a>adduser mariona grup-a
+</code></pre></div>
+<img alt="chmod" src="../fotos/6.png" /></p>
+</li>
+<li>
+<p>A continuació revisarem al fitxer /etc/group.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-78-1" name="__codelineno-78-1" href="#__codelineno-78-1"></a>cat /etc/group
+</code></pre></div>
+<img alt="chmod" src="../fotos/7.png" /></p>
+</li>
+<li>
+<p>Tot seguit iniciarem sessió a través de terminal en un dels usuaris que forma part de grup-a, en aquest cas lola. A més al directori /tmp crearem una carpeta anomenada fitxers-a i dins fitxer1. Seguidament revisarem els permisos de la carpeta i el fitxer amb <code>ls -l</code>.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-79-1" name="__codelineno-79-1" href="#__codelineno-79-1"></a>su lola
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-80-1" name="__codelineno-80-1" href="#__codelineno-80-1"></a>cd /tmp
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-81-1" name="__codelineno-81-1" href="#__codelineno-81-1"></a>mkdir fitxers-a
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-82-1" name="__codelineno-82-1" href="#__codelineno-82-1"></a>ls -l | grep fitxers-a
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-83-1" name="__codelineno-83-1" href="#__codelineno-83-1"></a>touch fitxers-a/fitxer1
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-84-1" name="__codelineno-84-1" href="#__codelineno-84-1"></a>ls -la | grep fitxers-a
+</code></pre></div>
+<img alt="chmod" src="../fotos/8.png" /></p>
+</li>
+</ol>
+<hr />
+<h4 id="chmod">CHMOD</h4>
+<p>La comanda chmod a Linux i altres sistemes Unix-like serveix per canviar els permisos d’accés als fitxers i directoris, controlant qui pot llegir, escriure o executar-los. El nom prové de "change mode" (canviar mode).</p>
+<ol>
+<li>
+<p>Per utilitzar la comanda chmod en aquest cas, utilitzarem el paràmetre <code>-R</code>, que serveix per aplicar els canvis de permisos de forma recursiva a la carpeta indicada i a tots els seus fitxers i subdirectoris. Després afegirem els números <code>750</code>, on cada dígit indica els permisos: el 7 (propietari) significa lectura (4) + escriptura (2) + execució (1), és a dir, permisos complets; el 5 (grup) significa lectura (4) + execució (1), però sense escriptura; i el 0 (altres) significa cap permís. Això afecta el comportament d'accés a la carpeta i als fitxers, limitant-lo segons el rol de cada usuari. Per acabar, indicarem la carpeta on volem fer els canvis, en aquest cas fitxers-a, amb la comanda <code>chmod -R 750 fitxers-a</code>. Si revisem amb <code>ls -l</code>, podrem veure que la carpeta i tots els fitxers continguts han actualitzat els seus permisos segons aquest esquema.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-85-1" name="__codelineno-85-1" href="#__codelineno-85-1"></a>chmod -R 750 fitxers-a/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-86-1" name="__codelineno-86-1" href="#__codelineno-86-1"></a>ls -l | grep fitxers-a
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-87-1" name="__codelineno-87-1" href="#__codelineno-87-1"></a>ls -la fitxers-a/
+</code></pre></div>
+<img alt="chmod" src="../fotos/10.png" /></p>
+</li>
+<li>
+<p>També podem afegir permisos amb lletres utilitzant el comandament chmod, com en aquest cas on s’ha executat <code>sudo chmod -R g+x,o+r,u-x fitxers-a/</code>. Aquí, el paràmetre <code>-R</code> aplica els canvis recursivament a la carpeta i a tots els fitxers i subdirectoris que conté. L'opció <code>g+x</code> afegeix el permís d'execució per al grup, <code>o+r</code> permet que altres usuaris (que no són ni propietaris ni del grup) puguin llegir, i <code>u-x</code> elimina el permís d'execució del propietari. Després de la comanda, els permisos de la carpeta fitxers-a són <code>drw-r-xr--</code>, on el propietari té lectura i escriptura (rw-), el grup té lectura i execució (r-x), i altres usuaris només tenen lectura (r--).   <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-88-1" name="__codelineno-88-1" href="#__codelineno-88-1"></a>sudo chmod -R g+x,o+r,u-x fitxers-a/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-89-1" name="__codelineno-89-1" href="#__codelineno-89-1"></a>ls -l | grep fitxers-a
+</code></pre></div>
+<img alt="chmod" src="../fotos/11.png" /></p>
+</li>
+<li>
+<p>A més es pot especificar directament una combinació concreta de permisos amb l’opció <code>g=rw</code>, que assigna exclusivament permisos de lectura i escriptura al grup, sobreescrivint els permisos anteriors. Això permet una gestió més específica i flexible dels permisos.  <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-90-1" name="__codelineno-90-1" href="#__codelineno-90-1"></a>sudo chmod -R g=rw fitxers-a/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-91-1" name="__codelineno-91-1" href="#__codelineno-91-1"></a>ls -la | grep fitxers-a
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-92-1" name="__codelineno-92-1" href="#__codelineno-92-1"></a>ls -l | grep fitxers-a
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-93-1" name="__codelineno-93-1" href="#__codelineno-93-1"></a>sudo chmod -R a+x fitxers-a/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-94-1" name="__codelineno-94-1" href="#__codelineno-94-1"></a>ls -l | grep fitxers-a
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-95-1" name="__codelineno-95-1" href="#__codelineno-95-1"></a>ls -la | grep fitxers-a
+</code></pre></div>
+<img alt="chmod" src="../fotos/12.png" /></p>
+</li>
+<li>
+<p>Una vegada explicat tot això tornarem als permisos 750 i des de lola crearem un fitxer i l'eliminarem per comprovar que tot funciona correctament. 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-96-1" name="__codelineno-96-1" href="#__codelineno-96-1"></a>chmod -R 750 fitxers-a/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-97-1" name="__codelineno-97-1" href="#__codelineno-97-1"></a>cd fitxers-a/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-98-1" name="__codelineno-98-1" href="#__codelineno-98-1"></a>ls
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-99-1" name="__codelineno-99-1" href="#__codelineno-99-1"></a>touch fitxer3
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-100-1" name="__codelineno-100-1" href="#__codelineno-100-1"></a>ls
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-101-1" name="__codelineno-101-1" href="#__codelineno-101-1"></a>rm fitxer3
+</code></pre></div>
+<img alt="chmod" src="../fotos/13.png" /></p>
+</li>
+<li>
+<p>Després entrarem des de mariona, si recordem aquesta usuaria estava al grup-a i a més el grup només té permisos de lectura i execució a la carpeta fitxers-a. Per tant, si fem un <code>ls</code> per visualitzar el contingut ens deixarà, però si intentem crear un nou fitxer o eliminar un existent no tindrem permisos.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-102-1" name="__codelineno-102-1" href="#__codelineno-102-1"></a>su mariona
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-103-1" name="__codelineno-103-1" href="#__codelineno-103-1"></a>ls
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-104-1" name="__codelineno-104-1" href="#__codelineno-104-1"></a>touch fitxer4
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-105-1" name="__codelineno-105-1" href="#__codelineno-105-1"></a>rm fitxer4
+</code></pre></div>
+<img alt="chmod" src="../fotos/14.png" /></p>
+</li>
+<li>
+<p>Per acabar, entrarem en martina, aquesta usuaria no pertany al grup-a i per tant si fa un <code>ls</code> de la carpeta fitxers-a no podrà.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-106-1" name="__codelineno-106-1" href="#__codelineno-106-1"></a>su martina
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-107-1" name="__codelineno-107-1" href="#__codelineno-107-1"></a>ls
+</code></pre></div>
+<img alt="chmod" src="../fotos/15.png" /></p>
+</li>
+</ol>
+<hr />
+<h4 id="chgrp">CHGRP</h4>
+<p>El comandament chgrp en Linux i altres sistemes similars serveix per canviar el grup al qual pertany un fitxer o directori. Això permet controlar qui té permís per accedir o modificar el fitxer, ja que els grups tenen permisos específics.</p>
+<ol>
+<li>A continuació, executarem la comanda <code>chgrp -R grup-a fitxers-a</code> per canviar el grup propietari de la carpeta fitxers-a i tot el seu contingut a grup-a en comptes de lola. Després, crearem un nou fitxer anomenat fitxer2 dins del directori amb <code>touch fitxers-a/fitxer2</code> i verificarem el resultat amb <code>ls -l fitxers-a</code>, on veurem que el fitxer nou adopta el grup per defecte de l’usuari creador i no el del directori. Per solucionar-ho i fer que els fitxers creats heretin automàticament el grup del directori, establirem el bit setgid amb <code>chmod g+s fitxers-a</code>. Finalment, si provem de crear un altre fitxer amb <code>touch fitxers-a/fitxer3</code>, comprovarem amb <code>ls -l fitxers-a</code> que aquest nou fitxer ara sí que té el grup propietari grup-a, igual que el directori, garantint així la consistència en el grup propietari.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-108-1" name="__codelineno-108-1" href="#__codelineno-108-1"></a>sudo chgrp -R grup-a fitxers-a
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-109-1" name="__codelineno-109-1" href="#__codelineno-109-1"></a>ls -l | grep fitxers-a
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-110-1" name="__codelineno-110-1" href="#__codelineno-110-1"></a>touch /fitxers-a/fitxer2
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-111-1" name="__codelineno-111-1" href="#__codelineno-111-1"></a>ls -la fitxers-a
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-112-1" name="__codelineno-112-1" href="#__codelineno-112-1"></a>chmod g+s fitxers-a
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-113-1" name="__codelineno-113-1" href="#__codelineno-113-1"></a>touch fitxers-a/fitxer3
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-114-1" name="__codelineno-114-1" href="#__codelineno-114-1"></a>ls -l fitxers-a
+</code></pre></div>
+<img alt="chmod" src="../fotos/9.png" /></li>
+</ol>
+<hr />
+<h4 id="chown">CHOWN</h4>
+<p>La comanda chown en sistemes operatius basats en Unix i Linux s'utilitza per canviar el propietari i/o el grup associat a un fitxer o directori. Només l'usuari amb privilegis de superusuari (root) o el propietari actual del fitxer pot utilitzar aquesta comanda per modificar aquests permisos. La sintaxi bàsica és <code>chown [opcions] usuari[:grup] fitxer</code>, on pots especificar un nou propietari i opcionalment un nou grup. Aquesta comanda és essencial per gestionar la seguretat i els accessos en entorns multiusuari, assegurant que només els usuaris autoritzats puguin interactuar amb els recursos del sistema.</p>
+<ol>
+<li>El primer que haurem de fer és crear una carpeta nova, en aquest cas anomenada documentacions. Seguidament, veurem que com hem creat la carpeta des de l'usuari maria el usuari propietari i grup propietari són maria. Per poder canviar aquesta opció al usuari marta executarem la comanda <code>sudo chown marta:marta documentacions/</code> i revisarem el resultat.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-115-1" name="__codelineno-115-1" href="#__codelineno-115-1"></a>mkdir documentacions
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-116-1" name="__codelineno-116-1" href="#__codelineno-116-1"></a>ls -la | grep documentacions
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-117-1" name="__codelineno-117-1" href="#__codelineno-117-1"></a>sudo chown marta:marta documentacions/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-118-1" name="__codelineno-118-1" href="#__codelineno-118-1"></a>ls -la | grep documentacions
+</code></pre></div>
+<img alt="chown" src="../fotos/chown.png" /></li>
+</ol>
+<hr />
+<h3 id="permissos-especials">Permissos especials</h3>
+<p>Els permisos especials en Ubuntu (i altres sistemes operatius basats en Linux) són atributs addicionals que es poden assignar als fitxers i directoris per controlar de manera més precisa qui pot accedir a ells i com es poden utilitzar. Aquests permisos especials són SUID, SGID i Sticky bit, i proporcionen un nivell extra de seguretat i funcionalitat. Aquests permisos tenen un comportament específic que no es pot aconseguir només amb els permisos tradicionals de lectura, escriptura i execució.</p>
+<hr />
+<h4 id="sticky">STICKY</h4>
+<p>Aquest permís s'assigna habitualment a directoris i fa que només el propietari d'un fitxer, el propietari del directori o l'administrador del sistema puguin eliminar o renombrar els fitxers dins d'aquest directori, tot i que altres usuaris puguin escriure'ls.</p>
+<ol>
+<li>
+<p>Per començar, creem un directori anomenat compartits amb la comanda <code>mkdir</code> i li assignem permisos inicials 757 (lectura, escriptura i execució per a l’usuari i el grup, i només execució per als altres). A continuació, activem el Sticky Bit amb la comanda <code>chmod o+t compartits</code> o <code>chmod 1757 compartits</code>. Això garanteix que només el propietari d’un fitxer dins del directori (o l’administrador) pugui eliminar o modificar els fitxers. Finalment, verifiquem que el Sticky Bit s’ha aplicat correctament amb la comanda <code>ls -l</code>, on observem la lletra <code>t</code> al final dels permisos del directori.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-119-1" name="__codelineno-119-1" href="#__codelineno-119-1"></a>mkdir compartits
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-120-1" name="__codelineno-120-1" href="#__codelineno-120-1"></a>chmod 757 compartits/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-121-1" name="__codelineno-121-1" href="#__codelineno-121-1"></a>ls -l | grep compartits
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-122-1" name="__codelineno-122-1" href="#__codelineno-122-1"></a>chmod 1757 compartits/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-123-1" name="__codelineno-123-1" href="#__codelineno-123-1"></a>chmod o+t compartits/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-124-1" name="__codelineno-124-1" href="#__codelineno-124-1"></a>ls -l | grep compartits
+</code></pre></div>
+<img alt="chmod" src="../fotos/16.png" /></p>
+</li>
+<li>
+<p>Seguidament, accedim al directori com a usuari <code>lola</code> i creem dos fitxers: <code>fitxer-lola</code> i <code>prova-lola</code>. Podem comprovar que els fitxers s’han creat correctament amb la comanda <code>ls</code>. Després, intentem esborrar el fitxer <code>prova-lola</code>, i com que som els propietaris, el sistema ens ho permet sense problemes. Aquest pas ens mostra que podem gestionar els nostres propis fitxers dins d’un directori amb Sticky Bit activat.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-125-1" name="__codelineno-125-1" href="#__codelineno-125-1"></a>su lola
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-126-1" name="__codelineno-126-1" href="#__codelineno-126-1"></a>cd compartits
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-127-1" name="__codelineno-127-1" href="#__codelineno-127-1"></a>touch fitxer-lola
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-128-1" name="__codelineno-128-1" href="#__codelineno-128-1"></a>touch prova-lola
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-129-1" name="__codelineno-129-1" href="#__codelineno-129-1"></a>ls
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-130-1" name="__codelineno-130-1" href="#__codelineno-130-1"></a>rm prova-lola
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-131-1" name="__codelineno-131-1" href="#__codelineno-131-1"></a>ls
+</code></pre></div>
+<img alt="chmod" src="../fotos/17.png" /></p>
+</li>
+<li>
+<p>A continuació, accedim al mateix directori com a un altre usuari, laura. Creem dos fitxers anomenats <code>fitxer-laura</code> i <code>prova-laura</code> per comprovar el comportament del Sticky Bit. Posteriorment, intentem eliminar el fitxer <code>fitxer-lola</code>, que pertany a l’usuari <code>lola</code>. El sistema ens denega el permís, mostrant un missatge d’error. Això confirma que gràcies al Sticky Bit, només el propietari d’un fitxer (o l’administrador) pot eliminar-lo, fins i tot si altres usuaris tenen permisos d’escriptura al directori.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-132-1" name="__codelineno-132-1" href="#__codelineno-132-1"></a>su laura
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-133-1" name="__codelineno-133-1" href="#__codelineno-133-1"></a>ls
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-134-1" name="__codelineno-134-1" href="#__codelineno-134-1"></a>touch fitxer-laura
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-135-1" name="__codelineno-135-1" href="#__codelineno-135-1"></a>touch prova-laura
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-136-1" name="__codelineno-136-1" href="#__codelineno-136-1"></a>ls
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-137-1" name="__codelineno-137-1" href="#__codelineno-137-1"></a>rm prova-laura
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-138-1" name="__codelineno-138-1" href="#__codelineno-138-1"></a>ls
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-139-1" name="__codelineno-139-1" href="#__codelineno-139-1"></a>rm fitxer-lola
+</code></pre></div>
+<img alt="chmod" src="../fotos/18.png" /></p>
+</li>
+</ol>
+<hr />
+<h4 id="suid">SUID</h4>
+<p>Quan un fitxer té aquest permís, s'executa amb els permisos del propietari del fitxer en lloc dels permisos de l'usuari que el llança. Això és útil, per exemple, en programes que necessiten privilegis d'administrador per realitzar certes tasques.</p>
+<ol>
+<li>
+<p>Per començar, creem un programa en C (script.c) que obre el directori /root i mostra el seu contingut. Això no és possible per a usuaris sense privilegis d'administrador, ja que el directori /root està restringit.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-140-1" name="__codelineno-140-1" href="#__codelineno-140-1"></a>sudo su
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-141-1" name="__codelineno-141-1" href="#__codelineno-141-1"></a>nano script.c
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-142-1" name="__codelineno-142-1" href="#__codelineno-142-1"></a>#include &lt;stdio.h&gt;
+<a id="__codelineno-142-2" name="__codelineno-142-2" href="#__codelineno-142-2"></a>#include &lt;dirent.h&gt;
+<a id="__codelineno-142-3" name="__codelineno-142-3" href="#__codelineno-142-3"></a>
+<a id="__codelineno-142-4" name="__codelineno-142-4" href="#__codelineno-142-4"></a>
+<a id="__codelineno-142-5" name="__codelineno-142-5" href="#__codelineno-142-5"></a>int main() {
+<a id="__codelineno-142-6" name="__codelineno-142-6" href="#__codelineno-142-6"></a>   struct dirent *entry;
+<a id="__codelineno-142-7" name="__codelineno-142-7" href="#__codelineno-142-7"></a>   DIR *dp = opendir(&quot;/root&quot;);
+<a id="__codelineno-142-8" name="__codelineno-142-8" href="#__codelineno-142-8"></a>
+<a id="__codelineno-142-9" name="__codelineno-142-9" href="#__codelineno-142-9"></a>
+<a id="__codelineno-142-10" name="__codelineno-142-10" href="#__codelineno-142-10"></a>   if (dp == NULL) {
+<a id="__codelineno-142-11" name="__codelineno-142-11" href="#__codelineno-142-11"></a>       perror(&quot;No s&#39;ha pogut obrir /root&quot;);
+<a id="__codelineno-142-12" name="__codelineno-142-12" href="#__codelineno-142-12"></a>       return 1;
+<a id="__codelineno-142-13" name="__codelineno-142-13" href="#__codelineno-142-13"></a>   }
+<a id="__codelineno-142-14" name="__codelineno-142-14" href="#__codelineno-142-14"></a>
+<a id="__codelineno-142-15" name="__codelineno-142-15" href="#__codelineno-142-15"></a>
+<a id="__codelineno-142-16" name="__codelineno-142-16" href="#__codelineno-142-16"></a>   printf(&quot;Contingut de /root:\n&quot;);
+<a id="__codelineno-142-17" name="__codelineno-142-17" href="#__codelineno-142-17"></a>   while ((entry = readdir(dp))) {
+<a id="__codelineno-142-18" name="__codelineno-142-18" href="#__codelineno-142-18"></a>       printf(&quot;%s\n&quot;, entry-&gt;d_name);
+<a id="__codelineno-142-19" name="__codelineno-142-19" href="#__codelineno-142-19"></a>   }
+<a id="__codelineno-142-20" name="__codelineno-142-20" href="#__codelineno-142-20"></a>
+<a id="__codelineno-142-21" name="__codelineno-142-21" href="#__codelineno-142-21"></a>
+<a id="__codelineno-142-22" name="__codelineno-142-22" href="#__codelineno-142-22"></a>   closedir(dp);
+<a id="__codelineno-142-23" name="__codelineno-142-23" href="#__codelineno-142-23"></a>   return 0;
+<a id="__codelineno-142-24" name="__codelineno-142-24" href="#__codelineno-142-24"></a>}
+</code></pre></div>
+<img alt="chmod" src="../fotos/20.png" /></p>
+</li>
+<li>
+<p>Compilem el fitxer amb la comanda gcc script.c -o script per generar l'executable. Després, utilitzem la comanda chmod u+s script per assignar el permís SUID al fitxer. Això es pot verificar amb la comanda ls -l, on veiem una s en lloc de la x al camp de permisos de l’usuari. Això significa que l'executable s’executarà amb els privilegis del propietari del fitxer (en aquest cas, root). Finalment, comprovem el funcionament executant el programa com un usuari normal (mariona) i veiem que podem accedir al contingut de /root, gràcies al SUID.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-143-1" name="__codelineno-143-1" href="#__codelineno-143-1"></a>gcc script.c -o script
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-144-1" name="__codelineno-144-1" href="#__codelineno-144-1"></a>sudo chmod +x script
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-145-1" name="__codelineno-145-1" href="#__codelineno-145-1"></a>sudo chmod u+s script
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-146-1" name="__codelineno-146-1" href="#__codelineno-146-1"></a>su mariona
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-147-1" name="__codelineno-147-1" href="#__codelineno-147-1"></a>./script
+</code></pre></div>
+<img alt="chmod" src="../fotos/19.png" /></p>
+</li>
+</ol>
+<hr />
+<h4 id="sgid">SGID</h4>
+<p>Aquest permís fa que els fitxers executables s'executin amb els permisos del grup del fitxer en lloc dels permisos del grup de l'usuari que el llança. També afecta els directoris, de manera que els fitxers creats dins d'aquest directori pertanyin al mateix grup que el directori, independentment del grup de l'usuari.</p>
+<ol>
+<li>Per començar, assignem el permís SGID a l’executable script amb la comanda chmod g+s script. Això fa que el fitxer s’executi amb els permisos del grup propietari del fitxer, en lloc dels permisos del grup de l’usuari que el llança. Seguidament, verifiquem que el permís SGID s’ha aplicat correctament amb la comanda ls -l | grep script. En els permisos del fitxer, observem una s al camp del grup (en lloc de la x), que indica que el permís especial SGID està actiu. Aquest permís també és aplicable a directoris, on assegura que els fitxers creats dins d’ells pertanyin al mateix grup que el directori, independentment del grup de l’usuari que els crea. Aquesta funcionalitat ens permet gestionar de manera més eficient els permisos en entorns de treball col·laboratius.   <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-148-1" name="__codelineno-148-1" href="#__codelineno-148-1"></a>sudo chmod g+s script
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-149-1" name="__codelineno-149-1" href="#__codelineno-149-1"></a>la -l | grep script
+</code></pre></div>
+<img alt="chmod" src="../fotos/22.png" /></li>
+</ol>
+<hr />
+<h3 id="permissos-en-acl">Permissos en ACL</h3>
+<p>Els permisos ACL (Access Control Lists) són una extensió dels permisos tradicionals de Linux que ens permeten assignar permisos més granulars i personalitzats als usuaris i grups. Amb les ACL, podem especificar permisos detallats per a usuaris o grups concrets, sense estar limitats únicament als tres nivells bàsics d’usuari, grup i altres. Aquesta funcionalitat és especialment útil en entorns col·laboratius o complexos, on diferents usuaris necessiten accedir a fitxers o directoris amb permisos específics, millorant així la flexibilitat i el control sobre la seguretat del sistema.</p>
+<ol>
+<li>
+<p>Per començar, assignem permisos ACL a l'usuari <code>mariona</code> sobre la carpeta <code>compartits</code>, atorgant permisos complets (rwx) amb la comanda <code>setfacl -m</code>. Seguidament, utilitzem <code>getfacl</code> per verificar que l'usuari <code>mariona</code> té aquests permisos. <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-150-1" name="__codelineno-150-1" href="#__codelineno-150-1"></a>sudo setfacl -m user:mariona:rwx compartits
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-151-1" name="__codelineno-151-1" href="#__codelineno-151-1"></a>getfacl compartits
+</code></pre></div>
+<img alt="chmod" src="../fotos/24.png" /></p>
+</li>
+<li>
+<p>Tot seguit, eliminem els permisos de l'usuari <code>mariona</code> amb <code>setfacl -x</code> i, després, comprovem amb <code>getfacl</code> que l'entrada de l'usuari ha desaparegut.  <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-152-1" name="__codelineno-152-1" href="#__codelineno-152-1"></a>sudo setfacl -x mariona compartits
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-153-1" name="__codelineno-153-1" href="#__codelineno-153-1"></a>getfacl compartits
+</code></pre></div>
+<img alt="chmod" src="../fotos/25.png" /></p>
+</li>
+<li>
+<p>A continuació, assignem permisos ACL a altres usuaris sobre el directori <code>compartits</code>. Donem permisos complets a <code>lola</code> i a <code>laura</code> amb <code>setfacl -m</code>. Tot seguit, utilitzem <code>getfacl</code> per verificar que les dues entrades ACL s'han configurat correctament. Després, buidem totes les entrades ACL del directori compartits amb la comanda <code>setfacl -b</code>. Finalment, comprovem amb <code>getfacl</code> que només queden els permisos bàsics sense ACL.  <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-154-1" name="__codelineno-154-1" href="#__codelineno-154-1"></a>sudo setfacl -m user:lola:rwx compartits
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-155-1" name="__codelineno-155-1" href="#__codelineno-155-1"></a>sudo setfacl -m user:laura:rwx compartits
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-156-1" name="__codelineno-156-1" href="#__codelineno-156-1"></a>getfacl compartits
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-157-1" name="__codelineno-157-1" href="#__codelineno-157-1"></a>setfacl -b compartits
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-158-1" name="__codelineno-158-1" href="#__codelineno-158-1"></a>getfacl compartits
+</code></pre></div>
+<img alt="chmod" src="../fotos/26.png" /></p>
+</li>
+<li>
+<p>En aquesta part, configurem una entrada ACL predeterminada per al grup <code>grup-a</code> amb permisos complets (rwx) mitjançant <code>setfacl -d</code>. Seguidament, fem servir <code>getfacl</code> per confirmar que els permisos predeterminats s'han aplicat correctament. Això implica que qualsevol nou fitxer creat al directori heretarà aquests permisos per defecte.    <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-159-1" name="__codelineno-159-1" href="#__codelineno-159-1"></a>sudo setfacl -d -m g:grup-a:rwx compartits
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-160-1" name="__codelineno-160-1" href="#__codelineno-160-1"></a>getfacl compartits
+</code></pre></div>
+<img alt="chmod" src="../fotos/27.png" /></p>
+</li>
+<li>
+<p>Després, comprovem els permisos del directori <code>compartits</code> amb la comanda <code>ls -l</code>. Observem que el directori mostra un símbol <code>+</code>, indicant que té configuracions ACL aplicades, la qual cosa confirma que les ACL estan en funcionament.  <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-161-1" name="__codelineno-161-1" href="#__codelineno-161-1"></a>la -l | grep compartits
+</code></pre></div>
+<img alt="chmod" src="../fotos/28.png" /></p>
+</li>
+<li>
+<p>Tot seguit, creem un nou directori anomenat informes amb la comanda <code>mkdir</code>. A continuació, assignem permisos ACL a l'usuari <code>lola</code> amb permisos complets (rwx) mitjançant <code>setfacl -m</code>. Utilitzem <code>getfacl</code> per assegurar-nos que els permisos s'han aplicat correctament. Després, limitem els permisos del directori amb <code>chmod 770</code>, restringint l'accés només a l'usuari propietari i al grup. Finalment, comprovem el comportament dels permisos al directori <code>informes</code>. L'usuari <code>lola</code> pot crear fitxers sense cap problema, però quan l'usuari <code>mariona</code> intenta fer-ho, el sistema li denega l'accés, ja que no té permisos configurats. Això ens confirma que els permisos ACL i bàsics estan funcionant de manera adequada.  <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-162-1" name="__codelineno-162-1" href="#__codelineno-162-1"></a>mkdir informes
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-163-1" name="__codelineno-163-1" href="#__codelineno-163-1"></a>sudo setfacl -m user:lola:rwx informes
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-164-1" name="__codelineno-164-1" href="#__codelineno-164-1"></a>getfacl informes
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-165-1" name="__codelineno-165-1" href="#__codelineno-165-1"></a>ls -l | grep compartits
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-166-1" name="__codelineno-166-1" href="#__codelineno-166-1"></a>chmod 770 informes/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-167-1" name="__codelineno-167-1" href="#__codelineno-167-1"></a>ls -l | grep compartits
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-168-1" name="__codelineno-168-1" href="#__codelineno-168-1"></a>su lola
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-169-1" name="__codelineno-169-1" href="#__codelineno-169-1"></a>cd informes
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-170-1" name="__codelineno-170-1" href="#__codelineno-170-1"></a>touch informe1
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-171-1" name="__codelineno-171-1" href="#__codelineno-171-1"></a>ls
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-172-1" name="__codelineno-172-1" href="#__codelineno-172-1"></a>su mariona
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-173-1" name="__codelineno-173-1" href="#__codelineno-173-1"></a>cd informes
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-174-1" name="__codelineno-174-1" href="#__codelineno-174-1"></a>touch informes/informe2
+</code></pre></div>
+<img alt="chmod" src="../fotos/29.png" /></p>
+</li>
+</ol>
+<hr />
+<h3 id="umask">UMASK</h3>
+<p>La umask (User Mask) és un paràmetre del sistema que determina els permisos predeterminats que es restaran dels permisos per defecte quan es creen nous fitxers o directoris. És una eina important per gestionar la seguretat i les restriccions d'accés als sistemes basats en Unix/Linux, com Ubuntu.</p>
+<p>Vídeo explicatiu càlculs umask: <a href="https://www.youtube.com/watch?v=Hpdc4s6tvfc&amp;t=238s">https://www.youtube.com/watch?v=Hpdc4s6tvfc&amp;t=238s</a></p>
+<ol>
+<li>
+<p>El primer pas serà visualitzar el fitxer /etc/login.defs. Aquí observarem que el umask per defecte és 022, aquest estableix que els fitxers nous tindran permisos 644 (lectura/escriptura per al propietari, lectura per al grup i altres) i els directoris tindran 755 (lectura/escriptura/execució per al propietari, lectura/execució per al grup i altres).
+<img alt="UMASK" src="../fotos/U1.png" /></p>
+</li>
+<li>
+<p>Una vegada fora del fitxer, també podem comprovar el umask amb la comanda <code>umask</code> i establir un de nou amb <code>umask 027</code>, aquest configura permisos predeterminats de 640 per a fitxers i 750 per a directoris, restringint tot accés a "altres" i limitant el grup a lectura o execució. Per comprovar-ho crearem la carpeta prova2 i farem <code>ls -la</code>.
+<img alt="UMASK" src="../fotos/U2.png" /></p>
+</li>
+<li>
+<p>A més crearem un fitxer nou per acabar de comprovar l'efecte del umask 027. Seguidament, el canviarem per 137, aquest configura permisos predeterminats de 640 per a fitxers i 640 per a directoris, restringint accés d'altres en execució i grup en escriptura. Per comprovar-ho crearem el fitxer <code>p1</code> i la carpeta <code>p2</code>.
+<img alt="UMASK" src="../fotos/U3.png" />
+<img alt="UMASK" src="../fotos/U5.png" /></p>
+</li>
+</ol>
+<hr />
+<h2 id="sistemas-de-fitxers-i-particions">Sistemas de fitxers i particions</h2>
+<h3 id="estructura-fisica">Estructura física</h3>
+<p>L’estructura física fa referència als components tangibles que constitueixen un sistema d’emmagatzematge. Aquests inclouen discos durs (HDD), unitats d'estat sòlid (SSD), memòries flash, i altres dispositius. Els elements físics importants són les pistes, sectors i cilindres en el cas dels HDD, i les cel·les d'emmagatzematge en els SSD. Aquesta estructura és la base sobre la qual es construeixen els mecanismes d'emmagatzematge i recuperació de dades.</p>
+<hr />
+<h3 id="estructura-logica">Estructura lògica</h3>
+<p>L’estructura lògica representa com es gestionen i organitzen les dades dins del sistema operatiu. Inclou elements com el sistema de fitxers, carpetes, i enllaços simbòlics. Els sistemes de fitxers (com NTFS, FAT32, ext4) defineixen la manera com es llegeixen, escriuen i organitzen les dades emmagatzemades al dispositiu físic. Aquesta estructura permet als usuaris accedir a la informació d'una manera comprensible i eficient.</p>
+<hr />
+<h3 id="estructura-de-la-informacio">Estructura de la informació</h3>
+<p>L’estructura de la informació descriu com s’organitzen i gestionen les dades tant a nivell físic com lògic dins d’un dispositiu d’emmagatzematge. Inclou aspectes com les unitats mínimes on es desen les dades i com aquestes són agrupades per optimitzar el rendiment. A continuació, es detalla uns conceptes clau dins d’aquesta estructura:</p>
+<h4 id="mida-del-sector">MIDA DEL SECTOR</h4>
+<p>La mida del sector és la unitat mínima física on es guarden les dades en un dispositiu d'emmagatzematge. Per defecte, aquesta mida sol ser de 512 bytes, però pot variar en dispositius més moderns amb sectors de 4 KB (4096 bytes). Aquesta mida està definida de fàbrica i no es pot modificar. Tot i això, el sistema operatiu no treballa directament amb sectors sinó amb blocs, que són unitats lògiques més grans on es guarden les dades. </p>
+<p>Per poder revisar els discs haurem d'executar la comanda "fdisk -l", aquesta és molt útils, ja que et mostra l'identificador del disc (/dev/sda), el tamany (50 GB), el tipus (GPT o MBR), número de sectors, tamany del sector, etc.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-175-1" name="__codelineno-175-1" href="#__codelineno-175-1"></a>sudo fdisk -l
+</code></pre></div>
+<img alt="chmod" src="../fotos/m3.png" />
+<img alt="chmod" src="../fotos/m7.png" /></p>
+<h4 id="mida-del-bloc">MIDA DEL BLOC</h4>
+<p>El bloc és la unitat mínima lògica d'emmagatzematge utilitzada pel sistema operatiu. La mida del bloc es pot configurar durant el procés de formatatge d'una partició. La mida del bloc influeix en l'eficiència de l'emmagatzematge: blocs més grans poden ser més ràpids, però poden generar més espai desaprofitat (fragmentació interna).   </p>
+<p>Per mostrar els blocs haurem de especificar quina partició sobretot. La comanda és la següent:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-176-1" name="__codelineno-176-1" href="#__codelineno-176-1"></a>tune2fs -l /dev/sda2 | grep Block
+</code></pre></div>
+<img alt="chmod" src="../fotos/m5.png" /></p>
+<h4 id="fragmentacio-interna">FRAGMENTACIÓ INTERNA</h4>
+<p>La fragmentació interna es produeix quan un fitxer no omple completament un bloc assignat, deixant espai sense utilitzar. Aquest espai es considera desaprofitat. La mida del bloc és clau per minimitzar aquest tipus de fragmentació. Si reduïm la mida dels blocs, es pot disminuir la fragmentació interna, però això pot impactar negativament el rendiment, ja que el sistema haurà de gestionar més blocs.  </p>
+<ol>
+<li>
+<p>Seguidament, crearem un fitxer nou anomenat hola, en el que escriurem "bon dia". Després comprovarem que existeix amb un "ls" i mostrarem el contingut per terminal amb "cat". Per demostrar la fragmentació interna executarem la comanda "du -b hola" i "du -sh hola". Podem comprovar que en la primera comanda mostra un 8  que vol dir que el fitxer ocupa 8 Bytes, en la segona comanda mostra la mida real que ocupa el fitxer, aquesta és 4Kb. <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-177-1" name="__codelineno-177-1" href="#__codelineno-177-1"></a>echo &quot;bon dia&quot; &gt; hola
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-178-1" name="__codelineno-178-1" href="#__codelineno-178-1"></a>ls
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-179-1" name="__codelineno-179-1" href="#__codelineno-179-1"></a>cat hola
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-180-1" name="__codelineno-180-1" href="#__codelineno-180-1"></a>du -b hola
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-181-1" name="__codelineno-181-1" href="#__codelineno-181-1"></a>du -sh hola
+</code></pre></div>
+<img alt="chmod" src="../fotos/m9.png" /></p>
+</li>
+<li>
+<p>Per últim, si revisem per GUI els paràmetres del fitxers, ens mostra 8 Bytes.
+<img alt="chmod" src="../fotos/m8.png" /></p>
+</li>
+</ol>
+<h4 id="fragmentacio-externa">FRAGMENTACIÓ EXTERNA</h4>
+<p>La fragmentació externa passa quan els fitxers es guarden en blocs dispersos en lloc de ser contigus. Això afecta el rendiment, ja que es necessiten més operacions per accedir a les dades. Aquesta situació és més habitual en dispositius d'emmagatzematge que han estat utilitzats durant molt de temps sense una reorganització (per exemple, una desfragmentació).  </p>
+<p>Aquesta es pot resoldre fent una desfragmentació, aquesta l’aconseguirem executant la comanda "e4defrag -c /dev/sda2" per visualitzar el que cal desfragmentar. Tot seguit per realitzar el procés escriurem la mateixa comanda, però sense el paràmetre "-c". D'aquesta manera aconseguirem organitzar el fitxers i augmentar el rendiment del disc.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-182-1" name="__codelineno-182-1" href="#__codelineno-182-1"></a>e4defrag -c /dev/sda2
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-183-1" name="__codelineno-183-1" href="#__codelineno-183-1"></a>e4defrag /dev/sda2
+</code></pre></div>
+<img alt="chmod" src="../fotos/m11.png" />
+<img alt="chmod" src="../fotos/m12.png" />
+<img alt="chmod" src="../fotos/m13.png" /></p>
+<hr />
+<h3 id="tipus-de-formateig">Tipus de formateig</h3>
+<p>Hi ha tres tipus principals de formatatge, que es diferencien en la manera com preparen el dispositiu i tracten els blocs defectuosos:</p>
+<ul>
+<li>
+<p>Formatatge de baix nivell: És un procés lent que organitza els sectors físics i reescriu tota la informació. Marca els blocs defectuosos i elimina completament totes les dades, recuperant l'estructura física del dispositiu. Sovint és realitzat pels fabricants.</p>
+</li>
+<li>
+<p>Formatatge intermig: No esborra les dades existents, però analitza el dispositiu i marca els blocs defectuosos perquè no s’utilitzin en el futur. És útil per diagnosticar problemes sense perdre informació.</p>
+</li>
+<li>
+<p>Formatatge ràpid: És molt més veloç perquè no comprova ni marca blocs defectuosos ni esborra les dades físicament. Només elimina l'índex del sistema de fitxers, fent que els fitxers semblin esborrats, però encara estiguin presents físicament fins que es sobreescriguin.</p>
+</li>
+</ul>
+<p>La diferència principal entre aquests tipus és el tractament de les dades i dels blocs defectuosos, així com la velocitat i la profunditat del procés.</p>
+<hr />
+<h3 id="creacio-de-particions-i-formateig">Creació de particions i formateig</h3>
+<ol>
+<li>
+<p>Per començar, afegirem un disc dur de 2 GB i executarem la comanda "fdisk -l", per revisar que detecta el disc.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-184-1" name="__codelineno-184-1" href="#__codelineno-184-1"></a>fdisk -l
+</code></pre></div>
+<img alt="chmod" src="../fotos/1c.png" /></p>
+</li>
+<li>
+<p>Seguidament, crearem una partició i utilitzarem la meitat del disc dur.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-185-1" name="__codelineno-185-1" href="#__codelineno-185-1"></a>fdisk /dev/sdb
+</code></pre></div>
+<img alt="chmod" src="../fotos/2c.png" /></p>
+</li>
+<li>
+<p>Una vegada fet, revisarem una altra vegada amb el "fdisk -l" que ara el disc té una nova partició, la sdb1.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-186-1" name="__codelineno-186-1" href="#__codelineno-186-1"></a>fdisk -l
+</code></pre></div>
+<img alt="chmod" src="../fotos/3c.png" />
+<img alt="chmod" src="../fotos/4c.png" /></p>
+</li>
+<li>
+<p>El següent que farem és formatar la nova partició en format ext4 i amb mida de bloc 2048.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-187-1" name="__codelineno-187-1" href="#__codelineno-187-1"></a>mkfs.ext4 -b 2048 /dev/sdb1
+</code></pre></div>
+<img alt="chmod" src="../fotos/5c.png" /></p>
+</li>
+<li>
+<p>Com a comprovació haurem d'executar la comanda següent, la qual mostra la mida de bloc de la partició sdb1, per comprovar que el paràmetre -b de la comanda anterior ha funcionat:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-188-1" name="__codelineno-188-1" href="#__codelineno-188-1"></a>tune2fs -l /dev/sdb1 | grep Block
+</code></pre></div>
+<img alt="chmod" src="../fotos/6c.png" /></p>
+</li>
+</ol>
+<hr />
+<h3 id="muntatge-de-particions">Muntatge de particions</h3>
+<h4 id="temporal">TEMPORAL</h4>
+<ol>
+<li>
+<p>Per fer un muntatge temporal primer haurem de crear una carpeta en la qual afegirem un nou fitxer, anomenat "hola". Seguidament, executarem la comanda que fa possible el muntatge temporal "mount -t ext4 /dev/sdb1 /var/particio1". Si tornem a visualitzar el contingut de la carpeta veurem que el fitxer "hola", ja no està, això no vol dir que estigui esborrat sinó que al muntar la carpeta desapareix. A més per verificar que un muntatge està correctament realitzat veurem que apareix lost+found dins del directori.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-189-1" name="__codelineno-189-1" href="#__codelineno-189-1"></a>cd /var
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-190-1" name="__codelineno-190-1" href="#__codelineno-190-1"></a>mkdir particio1
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-191-1" name="__codelineno-191-1" href="#__codelineno-191-1"></a>cd particio1/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-192-1" name="__codelineno-192-1" href="#__codelineno-192-1"></a>touch hola
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-193-1" name="__codelineno-193-1" href="#__codelineno-193-1"></a>mount -t ext4 /dev/sdb1 /var/particio1
+</code></pre></div>
+<img alt="chmod" src="../fotos/mt1.png" /></p>
+</li>
+<li>
+<p>Seguidament, quan creem fitxers dins del directori muntat, una vegada es desmunta desapareixen, però no s'esborren.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-194-1" name="__codelineno-194-1" href="#__codelineno-194-1"></a>cd particio1/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-195-1" name="__codelineno-195-1" href="#__codelineno-195-1"></a>touch adeu
+</code></pre></div>
+<img alt="chmod" src="../fotos/mt2.png" /></p>
+</li>
+</ol>
+<hr />
+<h4 id="definitiva">DEFINITIVA</h4>
+<ol>
+<li>
+<p>Per començar, si volem un muntatge definitiu haurem de afegir una nova línia al fitxer /etc/fstab.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-196-1" name="__codelineno-196-1" href="#__codelineno-196-1"></a>nano /etc/fstab
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-197-1" name="__codelineno-197-1" href="#__codelineno-197-1"></a>/dev/sdb1   /var/particio1  ext4    defaults    0   0
+</code></pre></div>
+<img alt="chmod" src="../fotos/md1.png" />
+<img alt="chmod" src="../fotos/md2.png" /></p>
+</li>
+<li>
+<p>Una vegada acabat reiniciarem la vm i una vegada es torni a encendre carregarà el muntatge.  <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-198-1" name="__codelineno-198-1" href="#__codelineno-198-1"></a>reboot
+</code></pre></div>
+<img alt="chmod" src="../fotos/md3.png" /></p>
+</li>
+<li>
+<p>Seguidament, si comprovem el directori veurem que ja està muntat.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-199-1" name="__codelineno-199-1" href="#__codelineno-199-1"></a>sudo su
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-200-1" name="__codelineno-200-1" href="#__codelineno-200-1"></a>cd /var
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-201-1" name="__codelineno-201-1" href="#__codelineno-201-1"></a>ls particio1/
+</code></pre></div>
+<img alt="chmod" src="../fotos/md4.png" /></p>
+</li>
+</ol>
+<hr />
+<h3 id="comparticio-de-carpeta-a-traves-de-servidor-samba">Comparticio de carpeta a traves de servidor Samba</h3>
+<p>La compartició de carpetes a través de Samba és una manera eficient i flexible de permetre que diferents dispositius d’una xarxa, independentment del seu sistema operatiu (Windows, Linux, macOS), accedeixen a recursos compartits com fitxers i carpetes. Samba és un programari de codi obert que implementa el protocol SMB/CIFS, facilitant la comunicació i la transferència de dades entre ordinadors de diverses plataformes. Aquesta funcionalitat és àmpliament utilitzada tant en entorns domèstics com empresarials per compartir dades de manera segura i còmoda.</p>
+<hr />
+<h4 id="ext4-ubuntu">EXT4 ~ Ubuntu</h4>
+<p>(Fourth Extended Filesystem) és un sistema de fitxers avançat utilitzat principalment en Linux, que ofereix millores significatives en rendiment, escalabilitat i fiabilitat en comparació amb els seus predecessors ext2 i ext3. És capaç de gestionar sistemes de fitxers de fins a 1 exabyte i fitxers individuals de fins a 16 terabytes. Inclou característiques com el journaling per garantir la integritat de les dades, l’al·locació retardada per optimitzar l’ús de l’espai i el control de fragmentació per millorar l’eficiència. Gràcies a aquestes funcionalitats, ext4 s’ha convertit en un dels sistemes de fitxers més utilitzats en entorns Linux.</p>
+<ol>
+<li>
+<p>El primer que haurem de fer és canviar l'adaptador de xarxa a pont.
+<img alt="chmod" src="../fotos/ex1.png" />
+<img alt="chmod" src="../fotos/ex2.png" /></p>
+</li>
+<li>
+<p>Seguidament, instal·larem a la màquina real el smbclient.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-202-1" name="__codelineno-202-1" href="#__codelineno-202-1"></a>sudo apt install smbclient
+</code></pre></div>
+<img alt="chmod" src="../fotos/ex3.png" /></p>
+</li>
+<li>
+<p>Després tornarem a la vm i instal·larem nautilus-shared.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-203-1" name="__codelineno-203-1" href="#__codelineno-203-1"></a>sudo apt install nautilus-share
+</code></pre></div>
+<img alt="chmod" src="../fotos/ex4.png" /></p>
+</li>
+<li>
+<p>Per fer servir-lo haurem de fer clic sobre un directori i escollir l'opció recursos compartits.
+<img alt="chmod" src="../fotos/ex5.png" /></p>
+</li>
+<li>
+<p>Aquí veurem que tenim diferents opcions de permisos, però si intentem aplicar-los veurem que realment no podem.
+<img alt="chmod" src="../fotos/ex6.png" />
+<img alt="chmod" src="../fotos/ex7.png" />
+<img alt="chmod" src="../fotos/ex8.png" /></p>
+</li>
+<li>
+<p>Per compartir recursos hi ha una millor forma que amb nautilus-shared i aquesta és samba. Per això haurem de instal·lar-lo a la vm.   <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-204-1" name="__codelineno-204-1" href="#__codelineno-204-1"></a>sudo apt install samba
+</code></pre></div>
+<img alt="chmod" src="../fotos/ex9.png" /></p>
+</li>
+<li>
+<p>Per poder afegir un nou recurs haurem d'anar a smb.conf, aqui anirem fins al final del fitxer i afegirem totes aquestes linies, que com podem veure son per definir la ruta, l'usuari, els permisos, etc.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-205-1" name="__codelineno-205-1" href="#__codelineno-205-1"></a>nano /etc/samba/smb.conf
+</code></pre></div>
+<img alt="chmod" src="../fotos/ex10.png" />
+<img alt="chmod" src="../fotos/ex11.png" /></p>
+</li>
+<li>
+<p>Una vegada fet haurem de reiniciar el servei samba amb la següent comanda:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-206-1" name="__codelineno-206-1" href="#__codelineno-206-1"></a>systemctl restart smbd nmbd
+</code></pre></div>
+<img alt="chmod" src="../fotos/ex12.png" /></p>
+</li>
+<li>
+<p>Després anirem al directori i li canviarem un parell de coses: permisos (que en aquest cas, són totalment permissius) i usuari + grup propietari (aquest seran nobody:nogroup, per a que qualsevol usuari pugui accedir i crear).
+<div class="highlight"><pre><span></span><code><a id="__codelineno-207-1" name="__codelineno-207-1" href="#__codelineno-207-1"></a>cd /var
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-208-1" name="__codelineno-208-1" href="#__codelineno-208-1"></a>ls -l
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-209-1" name="__codelineno-209-1" href="#__codelineno-209-1"></a>chmod 777 particio1/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-210-1" name="__codelineno-210-1" href="#__codelineno-210-1"></a>chown nobody:nogroup particio1/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-211-1" name="__codelineno-211-1" href="#__codelineno-211-1"></a>ls -l | grep particio1
+</code></pre></div>
+<img alt="chmod" src="../fotos/ex13.png" /></p>
+</li>
+<li>
+<p>Seguidament, crearem l'usuari que havíem definit abans en el fitxer smb.conf, anonemat "platano". Després li assignarem una contrasenya per al samba.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-212-1" name="__codelineno-212-1" href="#__codelineno-212-1"></a>adduser platano
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-213-1" name="__codelineno-213-1" href="#__codelineno-213-1"></a>smbpasswd -a platano
+</code></pre></div>
+<img alt="chmod" src="../fotos/ex14.png" />
+<img alt="chmod" src="../fotos/ex15.png" /></p>
+</li>
+<li>
+<p>Tot seguit, visualitzarem des de la màquina real els recursos compartits del servidor (màquina virtual), veurem que ens apareix el directori en qüestió.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-214-1" name="__codelineno-214-1" href="#__codelineno-214-1"></a>sudo smbclient -L //192.168.203.208
+</code></pre></div>
+<img alt="chmod" src="../fotos/ex16.png" />
+<img alt="chmod" src="../fotos/ex17.png" /></p>
+</li>
+<li>
+<p>A partir de la interfície gràfica anirem a fitxers, altres ubicacions i afegirem la següent línia en el requadre que marca la captura: smb://192.168.203.208/particio1.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-215-1" name="__codelineno-215-1" href="#__codelineno-215-1"></a>smb://192.168.203.208/particio1
+</code></pre></div>
+<img alt="chmod" src="../fotos/ex18.png" /></p>
+</li>
+<li>
+<p>Després afegirem l'usuari "platano" i la contrasenya que hem assignat per al samba anteriorment. Seguidament ja estarem dins del directori.  <br />
+<img alt="chmod" src="../fotos/ex19.png" />
+<img alt="chmod" src="../fotos/ex20.png" /></p>
+</li>
+<li>
+<p>Per últim, farem unes proves de connexió. El que haurem de fer és crear una carpeta o fitxer des de la màquina real i més tard comprovar al servidor que s'han realitzat els canvis a temps real.
+<img alt="chmod" src="../fotos/ex21.png" />
+<img alt="chmod" src="../fotos/ex22.png" />
+<img alt="chmod" src="../fotos/ex23.png" /></p>
+</li>
+</ol>
+<hr />
+<h4 id="ntfs-windows">NTFS ~ Windows</h4>
+<p>(New Technology File System) és un sistema de fitxers desenvolupat per Microsoft, utilitzat principalment en sistemes Windows, que destaca per la seva seguretat, eficiència i funcionalitats avançades. Pot gestionar volums de fins a 16 exabytes i fitxers de fins a 256 terabytes, a més d’integrar un sistema de permisos avançats basats en ACL per controlar l’accés a fitxers i carpetes. També inclou journaling per garantir la integritat davant fallades, així com compressió i xifratge de fitxers mitjançant EFS. Gràcies a aquestes característiques, NTFS és el sistema de fitxers per defecte en les versions modernes de Windows.</p>
+<ol>
+<li>
+<p>Per començar, comprovarem l'estat del disc amb fdisk -l, com podem observar queda encara la mitad.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-216-1" name="__codelineno-216-1" href="#__codelineno-216-1"></a>fdisk -l
+</code></pre></div>
+<img alt="chmod" src="../fotos/nt1.png" /></p>
+</li>
+<li>
+<p>Per tant, crearem l'altra particio.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-217-1" name="__codelineno-217-1" href="#__codelineno-217-1"></a>fdisk /dev/sdb
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-218-1" name="__codelineno-218-1" href="#__codelineno-218-1"></a>fdisk -l
+</code></pre></div>
+<img alt="chmod" src="../fotos/nt2.png" />
+<img alt="chmod" src="../fotos/nt3.png" /></p>
+</li>
+<li>
+<p>Seguidament, la formatarem, però en aquest cas NO serà en ext4 sinó en NTFS.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-219-1" name="__codelineno-219-1" href="#__codelineno-219-1"></a>mkfs.ntfs /dev/sdb2
+</code></pre></div>
+<img alt="chmod" src="../fotos/nt4.png" /></p>
+</li>
+<li>
+<p>Una vegada fet crearem el directori particio2 i crearem el fitxer hola (com a la particio1).
+<div class="highlight"><pre><span></span><code><a id="__codelineno-220-1" name="__codelineno-220-1" href="#__codelineno-220-1"></a>cd /var
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-221-1" name="__codelineno-221-1" href="#__codelineno-221-1"></a>mkdir particio2
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-222-1" name="__codelineno-222-1" href="#__codelineno-222-1"></a>cd particio2
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-223-1" name="__codelineno-223-1" href="#__codelineno-223-1"></a>touch hola
+</code></pre></div>
+<img alt="chmod" src="../fotos/nt5.png" /></p>
+</li>
+<li>
+<p>Tot seguit, farem un muntatge definitiu al fitxer fstab. Com podem comprovar aquí també serà necessari canviar ext4 per NTFS.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-224-1" name="__codelineno-224-1" href="#__codelineno-224-1"></a>/dev/sdb2   /var/particio2  ntfs    defaults    0   0
+</code></pre></div>
+<img alt="chmod" src="../fotos/nt6.png" /></p>
+</li>
+<li>
+<p>Seguidament afegirem un nou recurs compartit al fitxer smb.conf, aquest tindrà un usuari diferent anomenat "fresa". Quan acabessim haurem de reiniciar el servei samba.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-225-1" name="__codelineno-225-1" href="#__codelineno-225-1"></a>systemctl restart smbd nmbd
+</code></pre></div>
+<img alt="chmod" src="../fotos/nt8.png" />
+<img alt="chmod" src="../fotos/nt9.png" /></p>
+</li>
+<li>
+<p>Després canviarem permisos i propietaris a la carpeta que volem compartir, però si ens fixem quan revisem el resultat no s'apliquen els canvis de propietaris, això és perquè la partició es NTFS.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-226-1" name="__codelineno-226-1" href="#__codelineno-226-1"></a>chmod 777 particio2
+</code></pre></div>
+<img alt="chmod" src="../fotos/nt10.png" /></p>
+</li>
+<li>
+<p>Per poder solucionar-ho haurem d'anar també al fstab i afegir nobody, nogroup a la línia de muntatge.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-227-1" name="__codelineno-227-1" href="#__codelineno-227-1"></a>/dev/sdb2   /var/particio2  ntfs    defaults,uid=nobody,gid=nogroup    0   0
+</code></pre></div>
+<img alt="chmod" src="../fotos/nt11.png" />
+<img alt="chmod" src="../fotos/nt12.png" /></p>
+</li>
+<li>
+<p>Una vegada fet, haurem de crear l'usuari "fresa" i afegir una contrasenya de samba específica del usuari.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-228-1" name="__codelineno-228-1" href="#__codelineno-228-1"></a>adduser fresa
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-229-1" name="__codelineno-229-1" href="#__codelineno-229-1"></a>smbpasswd -a fresa
+</code></pre></div>
+<img alt="chmod" src="../fotos/nt13.png" />
+<img alt="chmod" src="../fotos/nt14.png" /></p>
+</li>
+<li>
+<p>Ara des de la màquina real comprovarem els recursos compartits del servidor.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-230-1" name="__codelineno-230-1" href="#__codelineno-230-1"></a>sudo smbclient -L //192.168.1.155
+</code></pre></div>
+<img alt="chmod" src="../fotos/nt15.png" /></p>
+</li>
+<li>
+<p>Ens connectarem amb l'usuari fresa i ja tindrem accés. Per comprovar-ho crearem la carpeta "prova".
+<img alt="chmod" src="../fotos/nt16.png" />
+<img alt="chmod" src="../fotos/nt17.png" /></p>
+</li>
+<li>
+<p>Després anirem al servidor i veurem que la carpeta està creada.
+<img alt="chmod" src="../fotos/nt18.png" /></p>
+</li>
+<li>
+<p>Seguidament, ens connectarem des de Windows, per fer-ho haurem de estar amb una vm en adaptador pont. Més tard afegirem una nova unitat de xarxa, la qual portara la ruta "\\192.168.1.155\particio2". A més haurem de marcar l'opció "Conectar con otras credenciales" si no no funcionarà.   <br />
+<img alt="chmod" src="../fotos/nt20.png" /><img alt="chmod" src="../fotos/nt21.png" /></p>
+</li>
+<li>
+<p>Tot seguit, ficarem les credencials de l'usuari fresa i ja tindrem accés al recurs compartit.
+<img alt="chmod" src="../fotos/nt22.png" />
+<img alt="chmod" src="../fotos/nt23.png" /></p>
+</li>
+<li>
+<p>Per últim, crearem una carpeta nova des de Windows i comprovarem que apareix tant al servidor com a la màquina real.
+<img alt="chmod" src="../fotos/nt24.png" />
+<img alt="chmod" src="../fotos/nt25.png" />
+<img alt="chmod" src="../fotos/nt26.png" /></p>
+</li>
+</ol>
+<hr />
+<h2 id="copia-de-seguretat-i-automatitzacio-de-tasques">Còpia de seguretat i automatització de tasques</h2>
+<p>Avui dia, fer còpies de seguretat és imprescindible per protegir les nostres dades davant possibles problemes com errors humans, fallades del sistema o atacs informàtics. A més, automatitzar aquestes tasques ens permet estalviar temps i assegurar que no ens oblidem de fer-les regularment.</p>
+<p>Hi ha diferents tipus de còpies de seguretat, cadascun amb els seus punts forts i febles. A continuació, es presenta una taula comparativa: </p>
+<table>
+<thead>
+<tr>
+<th>Tipus de còpia</th>
+<th>Descripció</th>
+<th>Avantatges</th>
+<th>Inconvenients</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Completa</strong></td>
+<td>Es copia la totalitat de les dades seleccionades, independentment de si han canviat o no.</td>
+<td>Simplifica la recuperació, ja que només cal una còpia i ofereix una instantània completa del sistema.</td>
+<td>Requereix molt espai d'emmagatzematge i temps de creació més llarg.</td>
+</tr>
+<tr>
+<td><strong>Diferencial</strong></td>
+<td>Es copia només les dades que han canviat des de l'última còpia completa.</td>
+<td>Més ràpida de crear que una còpia completa i recuperació més ràpida que amb còpies incrementals.</td>
+<td>L'espai necessari creix amb el temps des de la completa i més lenta i menys eficient que les còpies incrementals.</td>
+</tr>
+<tr>
+<td><strong>Incremental</strong></td>
+<td>Es copia només les dades que han canviat des de l'última còpia (completa o incremental).</td>
+<td>Estalvia espai d'emmagatzematge i temps de còpia molt reduït.</td>
+<td>Recuperació més complexa i lenta (requereix totes les còpies) i risc més elevat si alguna còpia intermèdia falla.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="comandes-backups">Comandes backups</h3>
+<p>Quan es tracta de fer còpies de seguretat o gestionar dades, tenim a la nostra disposició diverses eines que s’adapten a diferents necessitats. Algunes són més senzilles i ràpides d’utilitzar, mentre que altres ofereixen funcionalitats avançades per optimitzar recursos o treballar amb màquines remotes.</p>
+<p>A continuació, es presenta una taula amb les principals eines de còpies de seguretat. S’hi detallen les seves característiques, els casos d’ús més comuns, i els seus avantatges i inconvenients.</p>
+<table>
+<thead>
+<tr>
+<th>Eina</th>
+<th>Descripció</th>
+<th>Ús principal</th>
+<th>Avantatges</th>
+<th>Inconvenients</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>cp</strong></td>
+<td>Còpia simple, no intel·ligent. Només s’utilitza en entorns locals.</td>
+<td>Transferir fitxers localment.</td>
+<td>Simple d’utilitzar i disponible en tots els sistemes Unix-like.</td>
+<td>No optimitza el temps ni l’espai i no detecta fitxers ja copiats, duplicant feina.</td>
+</tr>
+<tr>
+<td><strong>rsync</strong></td>
+<td>Eina intel·ligent que només copia els fitxers modificats. S’utilitza sovint en màquines remotes via SSH.</td>
+<td>Sincronització de fitxers locals o remots.</td>
+<td>Només copia els canvis, estalviant temps i espai i suporta compressió i verificació remota.</td>
+<td>Configuració inicial més complexa i pot ser menys intuïtiu per a usuaris sense experiència.</td>
+</tr>
+<tr>
+<td><strong>dd</strong></td>
+<td>Realitza una clonació sector a sector. No està dissenyat per a còpies de seguretat d’arxius. També s’utilitza per sobreescriure dades.</td>
+<td>Clonar discos, particions o sobreescriure dades.</td>
+<td>Pot copiar sistemes de fitxers complets o dispositius físics.</td>
+<td>No és intel·ligent (còpia tots els sectors, ocupats o no).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="preparacio-del-entorn">Preparació del entorn</h4>
+<ol>
+<li>
+<p>El primer que farem és afegir dos discos a la maquina virtual i comprovar que estan.
+<img alt="comandes" src="../fotos/c1.png" /></p>
+</li>
+<li>
+<p>Seguidament, els crearem una partició general i els formatarem.
+<img alt="comandes" src="../fotos/c2.png" /></p>
+</li>
+<li>
+<p>Tot seguit, en el directori Documents crearem una carpeta anomenada 'prova' i un fitxer anomenat 'prova2'. Després anirem a /var i crearem un carpeta anomenada 'copies', aquí dins montarem la particio sdb1. Una vegada fet comprovarem el resultat amb <code>df -T</code>. 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-231-1" name="__codelineno-231-1" href="#__codelineno-231-1"></a>cd Documents/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-232-1" name="__codelineno-232-1" href="#__codelineno-232-1"></a>mkdir prova
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-233-1" name="__codelineno-233-1" href="#__codelineno-233-1"></a>touch prova2
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-234-1" name="__codelineno-234-1" href="#__codelineno-234-1"></a>cd /var/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-235-1" name="__codelineno-235-1" href="#__codelineno-235-1"></a>mkdir copies
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-236-1" name="__codelineno-236-1" href="#__codelineno-236-1"></a>mount -t ext4 /dev/sdb1 /var/copies
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-237-1" name="__codelineno-237-1" href="#__codelineno-237-1"></a>df -T
+</code></pre></div>
+<img alt="comandes" src="../fotos/c3.png" /></p>
+</li>
+</ol>
+<hr />
+<h4 id="cp">CP</h4>
+<p>A continuació per poder fer usar la comanda <code>cp</code> haurem de escriure 'cp', '-R' si volem copiar tot el contingut, la ruta de la carpeta de la qual és vol fer la copia i seguidament la ruta del destí. Per comprovar el resultat visualitzarem la ruta de destí amb <code>ls</code>. A més si creem un nou fitxer a l'origen i després li esborrem un fitxer o carpeta, podrem comprovar que si tornem a fer la comanda <code>cp</code> i visualitzem el destí s'ha agregat l'arxiu nou, però no s'ha eliminat el que hem esborrat a l'origen.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-238-1" name="__codelineno-238-1" href="#__codelineno-238-1"></a>cp -R /home/maria/Documents/* /var/copies/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-239-1" name="__codelineno-239-1" href="#__codelineno-239-1"></a>ls /var/copies/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-240-1" name="__codelineno-240-1" href="#__codelineno-240-1"></a>touch /home/maria/Documents/fitxer
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-241-1" name="__codelineno-241-1" href="#__codelineno-241-1"></a>rm -r /home/maria/Documents/prova
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-242-1" name="__codelineno-242-1" href="#__codelineno-242-1"></a>cp -R /home/maria/Documents/* /var/copies/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-243-1" name="__codelineno-243-1" href="#__codelineno-243-1"></a>ls /var/copies/
+</code></pre></div>
+<img alt="comandes" src="../fotos/c4.png" /></p>
+<hr />
+<h4 id="rsync">RSYNC</h4>
+<p>Per fer ús de <code>rsync</code> primer crearem un archiu anomenat fitxer2 i una carpeta. Seguidament eliminarem la carpeta creada i iniciarem la comanda de <code>rsync</code>. Com podem comprovar ara els dos directoris tenen el mateix contigut, ja que rsync és intel·ligent i si detecta que algun fitxer o carpeta han sigut eliminats també els elimina a l'altre costat. 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-244-1" name="__codelineno-244-1" href="#__codelineno-244-1"></a>cd Documents/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-245-1" name="__codelineno-245-1" href="#__codelineno-245-1"></a>ls
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-246-1" name="__codelineno-246-1" href="#__codelineno-246-1"></a>touch fitxer2
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-247-1" name="__codelineno-247-1" href="#__codelineno-247-1"></a>mkdir carpeta
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-248-1" name="__codelineno-248-1" href="#__codelineno-248-1"></a>ls
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-249-1" name="__codelineno-249-1" href="#__codelineno-249-1"></a>ls /var/copies/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-250-1" name="__codelineno-250-1" href="#__codelineno-250-1"></a>rm -r carpeta/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-251-1" name="__codelineno-251-1" href="#__codelineno-251-1"></a>ls
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-252-1" name="__codelineno-252-1" href="#__codelineno-252-1"></a>ls /var/copies
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-253-1" name="__codelineno-253-1" href="#__codelineno-253-1"></a>rsync -av --delete /home/maria/Documents/ /var/copies/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-254-1" name="__codelineno-254-1" href="#__codelineno-254-1"></a>ls
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-255-1" name="__codelineno-255-1" href="#__codelineno-255-1"></a>ls /var/copies/
+</code></pre></div>
+<img alt="comandes" src="../fotos/c5.png" />
+<img alt="comandes" src="../fotos/c6.png" />
+<img alt="comandes" src="../fotos/c7.png" /></p>
+<hr />
+<h4 id="dd">DD</h4>
+<p>En aquest cas prepararem l'escenari creant un nou directori a /var anomenat 'clonacio' i aqui muntarem la particio sdc1. Després executarem la comanda <code>dd</code> en la que 'if' és l'origen i 'of' és el destí, bs indica la mida en la que és copia la informació i status és per poder visualitzar el procés. Com podem comprovar quan hem executat la comanda hem indicat <code>bs=4M</code>, quan comprovem els hashos per comprovar que la clonacio ha sigut exacta detectem que no, ja que són diferents. El problema resideix en la mida, ja que, si li canviem a <code>bs=1M</code> i comprovem el hashos ara si son iguals. 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-256-1" name="__codelineno-256-1" href="#__codelineno-256-1"></a>cd /var/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-257-1" name="__codelineno-257-1" href="#__codelineno-257-1"></a>mkdir clonacio
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-258-1" name="__codelineno-258-1" href="#__codelineno-258-1"></a>mount -t ext4 /dev/sdc1 /var/clonacio
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-259-1" name="__codelineno-259-1" href="#__codelineno-259-1"></a>dd if=/dev/sdb1 of=/dev/sdc1 bs=1M status=progress
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-260-1" name="__codelineno-260-1" href="#__codelineno-260-1"></a>md5sum /dev/sdb1 /dev/sdc1
+</code></pre></div>
+<img alt="comandes" src="../fotos/c8.png" />
+<img alt="comandes" src="../fotos/c9.png" />
+<img alt="comandes" src="../fotos/c10.png" />
+<img alt="comandes" src="../fotos/c11.png" /></p>
+<hr />
+<h3 id="programes">Programes</h3>
+<p>Les còpies de seguretat són essencials per protegir els nostres fitxers i garantir que no perdem dades importants. En aquest apartat, parlarem de dues eines destacades per gestionar còpies de seguretat en sistemes Ubuntu: Duplicity i Deja Dup. Ambdues ofereixen opcions pràctiques i eficients, adaptades a diferents necessitats, ja sigui per a usuaris avançats o per a aquells que busquen una solució senzilla i intuïtiva. A continuació, explico com funcionen aquestes eines i quins avantatges ens ofereixen.</p>
+<hr />
+<h4 id="deja-dup">Deja-dup</h4>
+<p>Deja Dup és una eina que ens permet fer còpies de seguretat de manera fàcil i sense complicacions. Amb una interfície clara, podem programar còpies automàtiques, guardar els nostres fitxers al núvol o en altres ubicacions, i protegir-los amb xifratge per garantir la nostra privadesa. És ideal per assegurar les nostres dades en Ubuntu sense haver de preocupar-nos per configuracions tècniques.</p>
+<ol>
+<li>
+<p>El primer que haurem de fer és instal·lar el programa.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-261-1" name="__codelineno-261-1" href="#__codelineno-261-1"></a>sudo apt install deja-dup
+</code></pre></div>
+<img alt="deja-dup" src="../fotos/deja1.png" /></p>
+</li>
+<li>
+<p>Seguidament, inciarem el programa i clicarem en crear una primera backup.      <br />
+<img alt="deja-dup" src="../fotos/deja2.png" /></p>
+</li>
+<li>
+<p>Tot seguit, escollirem les carpetes les quals volem fer la còpia de seguretat i les que no ens interessa, com per exemple la paperera i baixades.      <br />
+<img alt="deja-dup" src="../fotos/deja3.png" /></p>
+</li>
+<li>
+<p>A més també podrem escollir multiples opcions con a destí de la backup, com per exemple Google Drive, Microsoft OneDrive, un servidor de xarxa o inclus una carpeta local. En aquest cas realitzarem la prova amb una carpeta local anomenada "backupmaria".   <br />
+<img alt="deja-dup" src="../fotos/deja4.png" />
+<img alt="deja-dup" src="../fotos/deja5.png" /></p>
+</li>
+<li>
+<p>A continuació, introduirem una contrasenya, encara que aquest pas és opcional.     <br />
+<img alt="deja-dup" src="../fotos/deja6.png" /></p>
+</li>
+<li>
+<p>Quan acabi de fer la copia de seguretat tornarem al menú incial, deja-dup proporciona diferents opcions com per exmeple fer les copies de seguretat cada cert temps.   <br />
+<img alt="deja-dup" src="../fotos/deja7.png" /></p>
+</li>
+<li>
+<p>Si anem a la segona pestanya podrem seleccionar una de les carpetes de les que hem fet la backup i restaurar-la. En aquest cas ho farem amb Escriptori, per tant crearem una carpeta de prova dins del directori i després procedirem amb la restauració.      <br />
+<img alt="deja-dup" src="../fotos/deja8.png" />
+<img alt="deja-dup" src="../fotos/deja9.png" />
+<img alt="deja-dup" src="../fotos/deja10.png" /></p>
+</li>
+<li>
+<p>Tot seguit, crearem una carpeta nova on restaurar el directori.
+<img alt="deja-dup" src="../fotos/deja11.png" />
+<img alt="deja-dup" src="../fotos/deja12.png" /></p>
+</li>
+<li>
+<p>Finalment, comporvarem que les carpetes existeixen. 
+<img alt="deja-dup" src="../fotos/deja13.png" /></p>
+</li>
+</ol>
+<hr />
+<h4 id="duplicity">Duplicity</h4>
+<p>Duplicity és una eina que ens permet fer còpies de seguretat de manera fàcil i eficient. Podem guardar només els canvis des de l'últim backup, cosa que ens ajuda a estalviar espai, i també podem xifrar les dades per protegir-les. A més, tenim la possibilitat d'emmagatzemar les còpies al nostre ordinador, en servidors o al núvol, ideal per mantenir els nostres fitxers segurs en sistemes com Ubuntu.</p>
+<ol>
+<li>
+<p>El primer pas és instal·lar duplicity, normalment ja està instal·lat.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-262-1" name="__codelineno-262-1" href="#__codelineno-262-1"></a>sudo apt install duplicity
+</code></pre></div>
+<img alt="duplicity" src="../fotos/d1.png" /></p>
+</li>
+<li>
+<p>Després crearem una carpeta on allotjarem les copies de seguretat.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-263-1" name="__codelineno-263-1" href="#__codelineno-263-1"></a>mkdir /home/maria/Backups
+</code></pre></div>
+<img alt="duplicity" src="../fotos/d2.png" /></p>
+</li>
+<li>
+<p>Seguidament, introduirem la comanda per fer la backup, en l'estructura de la comanda <code>duplicity</code> primer s'indica la ruta d'origen i després la de destí.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-264-1" name="__codelineno-264-1" href="#__codelineno-264-1"></a>duplicity /home/maria/Documents/ file:///home/maria/Backups/BackupsDocuments
+</code></pre></div>
+<img alt="duplicity" src="../fotos/d3.png" /></p>
+</li>
+<li>
+<p>Per últim, comprovarem que s'ha realitzat correctament.<br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-265-1" name="__codelineno-265-1" href="#__codelineno-265-1"></a>ls /home/maria/Backups
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-266-1" name="__codelineno-266-1" href="#__codelineno-266-1"></a>ls /home/maria/Backups/BackupDocuments/
+</code></pre></div>
+<img alt="duplicity" src="../fotos/d4.png" /></p>
+</li>
+</ol>
+<hr />
+<h3 id="automatitzacio-amb-script-cron-i-anacron">Automatització amb script, cron i anacron</h3>
+<p>L’automatització de tasques és una part essencial de l’administració de sistemes operatius com Ubuntu. Mitjançant eines com <strong>scripts</strong>, <strong>cron</strong> i <strong>anacron</strong>, podem programar l’execució de tasques de manera regular, eficient i adaptada a les necessitats específiques del sistema.  </p>
+<h4 id="teoria-cron-i-anacron">Teoria: cron i anacron</h4>
+<p><strong>cron</strong> i <strong>anacron</strong> són eines d’automatització que permeten executar tasques periòdiques en un sistema Ubuntu. Tot i que abans funcionaven separadament, ara estan integrades i col·laboren per oferir més flexibilitat.  </p>
+<ul>
+<li><strong>cron</strong>: Executa tasques programades en una data i hora específiques, sempre que el sistema estigui encès.  </li>
+<li><strong>anacron</strong>: És ideal per executar tasques periòdiques encara que el sistema hagi estat apagat o desconnectat en el moment de l’execució prevista.  </li>
+</ul>
+<h4 id="diferencies-entre-cron-i-anacron">Diferències entre cron i anacron</h4>
+<table>
+<thead>
+<tr>
+<th>Aspecte</th>
+<th><strong>cron</strong></th>
+<th><strong>anacron</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Execució</strong></td>
+<td>Només funciona quan el sistema està en funcionament.</td>
+<td>Les tasques es poden executar encara que el sistema hagi estat apagat durant el moment previst.</td>
+</tr>
+<tr>
+<td><strong>Freqüència</strong></td>
+<td>Adequat per a tasques amb horaris específics i definits (diari, setmanal, mensual, etc.).</td>
+<td>Dissenyat per a tasques generals de manteniment i neteja periòdiques.</td>
+</tr>
+<tr>
+<td><strong>Usuaris</strong></td>
+<td>Normalment associat a tasques programades per un usuari específic.</td>
+<td>Les tasques solen ser més generals i administratives.</td>
+</tr>
+<tr>
+<td><strong>Precisió</strong></td>
+<td>Executa tasques exactament en la data i hora configurades.</td>
+<td>Recupera tasques perdudes, però no les executa exactament en el moment originalment planificat.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="quan-utilitzar-cron-o-anacron">Quan utilitzar cron o anacron?</h4>
+<ul>
+<li><strong>cron</strong>: Ideal per programar tasques que necessiten executar-se a una hora i data concretes, especialment per accions específiques d’un usuari (p. ex., fer una còpia de seguretat a les 22:00 cada dia).  </li>
+<li><strong>anacron</strong>: Recomanat per a tasques que no requereixen precisió horària però que són essencials per al manteniment del sistema, com ara netejar fitxers temporals o actualitzar registres. És especialment útil en sistemes que poden estar apagats durant períodes de temps.  </li>
+</ul>
+<hr />
+<h4 id="cron">CRON</h4>
+<p>Utilitzem l’arxiu /etc/crontab quan volem executar alguna cosa globalment per a tots el usuaris. Quan interessa un usuari específic executarem la comanda “crontab -e -u usuari”. Dintre del directori /etc/ tenim unes carpetes predeterminades per al cron per ficar scripts que volem que s’executem diàriament, mensualment, anualment. </p>
+<ol>
+<li>
+<p>Dins del directori /etc/ si filtrem per el nom de "cron" podrem observar que hi ha per hora, per dia, per setmana, per mes i per any.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-267-1" name="__codelineno-267-1" href="#__codelineno-267-1"></a>cd /etc/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-268-1" name="__codelineno-268-1" href="#__codelineno-268-1"></a>ls | grep cron 
+</code></pre></div>
+<img alt="cron" src="../fotos/cron1.png" /></p>
+</li>
+<li>
+<p>A continuació, entrarem dins de /home/maria i crearem un script anomenat "copia.sh". A més crearem un carpeta anomenada prova per a que el director Imatges tingui una mica més de contingut.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-269-1" name="__codelineno-269-1" href="#__codelineno-269-1"></a>cd /home/maria/
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-270-1" name="__codelineno-270-1" href="#__codelineno-270-1"></a>nano copies.sh
+</code></pre></div>
+<img alt="cron" src="../fotos/1cron.png" />
+<img alt="cron" src="../fotos/2cron.png" /></p>
+</li>
+<li>
+<p>Aquest script crea una còpia de seguretat comprimida de la carpeta "Imatges" del teu usuari i guarda el fitxer al "Escriptori" amb un nom que inclou la data i l’hora per identificar cada còpia. Utilitza la comanda tar per empaquetar els fitxers i genera un arxiu comprimit amb el format .tar.gz. A més, es pot programar perquè s'executi automàticament amb cron, indicant l’hora i la freqüència d’execució, com per exemple fer una còpia cada dia o cada setmana. Molt convenient per tenir les teves dades segures sense haver de fer-ho manualment.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-271-1" name="__codelineno-271-1" href="#__codelineno-271-1"></a>#!/bin/bash
+<a id="__codelineno-271-2" name="__codelineno-271-2" href="#__codelineno-271-2"></a># Crear una còpia de seguretat de la carpeta Imatges
+<a id="__codelineno-271-3" name="__codelineno-271-3" href="#__codelineno-271-3"></a>
+<a id="__codelineno-271-4" name="__codelineno-271-4" href="#__codelineno-271-4"></a># Generar un timestamp amb la data i hora actual
+<a id="__codelineno-271-5" name="__codelineno-271-5" href="#__codelineno-271-5"></a>TIMESTAMP=$(date +&quot;%Y%m%d_%H%M%S&quot;)
+<a id="__codelineno-271-6" name="__codelineno-271-6" href="#__codelineno-271-6"></a>
+<a id="__codelineno-271-7" name="__codelineno-271-7" href="#__codelineno-271-7"></a># Crear la còpia de seguretat comprimida
+<a id="__codelineno-271-8" name="__codelineno-271-8" href="#__codelineno-271-8"></a>tar -cvf &quot;/home/maria/Escriptori/copies_$TIMESTAMP.tar.gz&quot; &quot;/home/maria/Imatges&quot;
+</code></pre></div>
+<img alt="cron" src="../fotos/3cron.png" /></p>
+</li>
+<li>
+<p>Després afegirem permissos de execució a l'script i farem un <code>ls</code>per comprovar que estan aplicats. 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-272-1" name="__codelineno-272-1" href="#__codelineno-272-1"></a>chmod +x copies.sh
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-273-1" name="__codelineno-273-1" href="#__codelineno-273-1"></a>ls -la
+</code></pre></div>
+<img alt="cron" src="../fotos/4cron.png" />
+<img alt="cron" src="../fotos/5cron.png" /></p>
+</li>
+<li>
+<p>Tot seguit, modificarem el fitxer /etc/crontab. Aquí afegirem una nova linia abaix del document, aquesta programa que l'script copies.sh serà executat per l'usuari maria el 15 de gener a les 10:26 del matí, independentment del dia de la setmana.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-274-1" name="__codelineno-274-1" href="#__codelineno-274-1"></a>nano /etc/crontab
+</code></pre></div>
+<img alt="cron" src="../fotos/6cron.png" />
+<img alt="cron" src="../fotos/7cron.png" /></p>
+</li>
+<li>
+<p>A continuació, ens esperarem fins les 10:26 i veurem com de cop apareix un fitxer comprimit el qual conté el contigut de la carpeta "Imatges".     <br />
+<img alt="cron" src="../fotos/8cron.png" />
+<img alt="cron" src="../fotos/10cron.png" /></p>
+</li>
+<li>
+<p>Seguidament, tornarem al fitxer i comentarem la linia.
+<img alt="cron" src="../fotos/11cron.png" /></p>
+</li>
+<li>
+<p>Ara entrarem dins del directori /etc/cron.daily/, copiarem l'script de copies dins i li treurem ".sh" ja que si el deixem no funcionarà.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-275-1" name="__codelineno-275-1" href="#__codelineno-275-1"></a>cd /etc/cron.daily/
+</code></pre></div>
+<img alt="cron" src="../fotos/12cron.png" />
+<img alt="cron" src="../fotos/13cron.png" />
+<img alt="cron" src="../fotos/14cron.png" /></p>
+</li>
+<li>
+<p>Tot seguit, editarem el fitxer /var/spool/anacron/cron.daily, en el que eliminarem la informació i el guardarem.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-276-1" name="__codelineno-276-1" href="#__codelineno-276-1"></a>nano /var/spool/anacron/cron.daily
+</code></pre></div>
+<img alt="cron" src="../fotos/15cron.png" />
+<img alt="cron" src="../fotos/16cron.png" /></p>
+</li>
+<li>
+<p>Seguidament, editarem el fitxer /etc/anacrontab i editarem que s'execute en 1 minut en comptes de 5. 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-277-1" name="__codelineno-277-1" href="#__codelineno-277-1"></a>nano /etc/anacrontab
+</code></pre></div>
+<img alt="cron" src="../fotos/17cron.png" />
+<img alt="cron" src="../fotos/18cron.png" />
+<img alt="cron" src="../fotos/19cron.png" /></p>
+</li>
+<li>
+<p>Després, reniciarem i una vegada encesa la màquina en apareixerà el comprimit automaticament, a més si revisem el fitxer /var/spool/anacron/cron.daily la data s'ha actualitzat.
+<img alt="cron" src="../fotos/20cron.png" />
+<img alt="cron" src="../fotos/21cron.png" />
+<img alt="cron" src="../fotos/22cron.png" /></p>
+</li>
+</ol>
+<hr />
+<h2 id="quotes-de-disc">Quotes de disc</h2>
+<p>Les quotes de disc a Ubuntu són una eina que permet limitar la quantitat d'espai en disc que pot utilitzar cada usuari o grup al sistema. Això és útil per evitar que un usuari ocupi tot l’espai disponible i per gestionar millor els recursos en entorns compartits, com servidors o ordinadors multiusuari. Les quotes es poden configurar per definir límits tant en la quantitat de fitxers com en la mida total que es pot emmagatzemar, assegurant un ús més equilibrat i controlat de l'espai disponible.</p>
+<ol>
+<li>
+<p>El primer que haurem de fer és afegir un disc nou, en aquest cas de 5 GB.   <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-278-1" name="__codelineno-278-1" href="#__codelineno-278-1"></a>fdisk -l
+</code></pre></div>
+<img alt="chmod" src="../fotos/q1.png" /></p>
+</li>
+<li>
+<p>Seguidament, farem una única partició en tot el disc. <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-279-1" name="__codelineno-279-1" href="#__codelineno-279-1"></a>fdisk /dev/sdc
+</code></pre></div>
+<img alt="chmod" src="../fotos/q2.png" /></p>
+</li>
+<li>
+<p>Després la formatarem amb ext4.   <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-280-1" name="__codelineno-280-1" href="#__codelineno-280-1"></a>mkfs.etx4 /dev/sdc1
+</code></pre></div>
+<img alt="chmod" src="../fotos/q3.png" /></p>
+</li>
+<li>
+<p>Tot seguit comprovarem que la partició està creada.   <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-281-1" name="__codelineno-281-1" href="#__codelineno-281-1"></a>fdisk -l
+</code></pre></div>
+<img alt="chmod" src="../fotos/q4.png" /></p>
+</li>
+<li>
+<p>A continuació farem una actualització del repositori de paquets i instal·larem <strong>quota</strong>.     <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-282-1" name="__codelineno-282-1" href="#__codelineno-282-1"></a>sudo apt update
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-283-1" name="__codelineno-283-1" href="#__codelineno-283-1"></a>sudo apt install quota
+</code></pre></div>
+<img alt="chmod" src="../fotos/q5.png" />
+<img alt="chmod" src="../fotos/q6.png" /></p>
+</li>
+<li>
+<p>Seguidament crearem una carpeta en /mnt anomenada dades.  <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-284-1" name="__codelineno-284-1" href="#__codelineno-284-1"></a>cd /mnt
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-285-1" name="__codelineno-285-1" href="#__codelineno-285-1"></a>mkdir dades
+</code></pre></div>
+<img alt="chmod" src="../fotos/q7.png" /></p>
+</li>
+<li>
+<p>Posteriorment, anirem a afegir una nova linia a /etc/fstab per muntar la carpeta creada a la particio del disc de 5GB. Important afegir usrquota i grpquota ja que aixi podrem establir quotes.   <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-286-1" name="__codelineno-286-1" href="#__codelineno-286-1"></a>/dev/sdc1   /mnt/dades  ext4    defaults,usrquota,grpquota  0   0
+</code></pre></div>
+<img alt="chmod" src="../fotos/q8.png" /></p>
+</li>
+<li>
+<p>Una vegada fet reinciarem el sistema i comprovarem que el directori ja esta muntat. A més afegirem dos comandes crucials <code>quotacheck -cug /mnt/dades</code> que verifica i crea els fitxers de quotes per a usuaris i grups en un sistema de fitxers, i <code>quotaon /mnt/dades</code> que activa la gestió d’aquestes quotes. També crearem un usuari nou al que establirem quotes, anomenat usuari1.    <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-287-1" name="__codelineno-287-1" href="#__codelineno-287-1"></a>reboot
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-288-1" name="__codelineno-288-1" href="#__codelineno-288-1"></a>ls /mnt/dades
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-289-1" name="__codelineno-289-1" href="#__codelineno-289-1"></a>quotacheck -cug /mnt/dades
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-290-1" name="__codelineno-290-1" href="#__codelineno-290-1"></a>quotaon /mnt/dades
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-291-1" name="__codelineno-291-1" href="#__codelineno-291-1"></a>ls /mnt/dades
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-292-1" name="__codelineno-292-1" href="#__codelineno-292-1"></a>adduser usuari1
+</code></pre></div>
+<img alt="chmod" src="../fotos/q9.png" />
+<img alt="chmod" src="../fotos/q10.png" /></p>
+</li>
+<li>
+<p>Després executarem la comanda <code>quota -u usuari1</code> que mostra l’ús del disc i els límits de quota assignats a un usuari específic. Com podem comprovar el resultat marca que no en té cap.  <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-293-1" name="__codelineno-293-1" href="#__codelineno-293-1"></a>quota -u usuari1
+</code></pre></div>
+<img alt="chmod" src="../fotos/q11.png" /></p>
+</li>
+<li>
+<p>Per afegir quotes a un usuari haurem de executar la comanda <code>edquota -u usuari1</code>. Aquí ens mostrara diferents columnes, nosaltres només haurem de tindre en compte dos: soft i hard. El soft límit és un límit flexible que es pot superar temporalment durant un període de gràcia, mentre que el hard limit és un límit estricte que no es pot superar mai. Això permet advertir l'usuari abans d'arribar al límit màxim absolut. En aquest cas hem establert com a soft límit 1024 i en hard 2048.    <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-294-1" name="__codelineno-294-1" href="#__codelineno-294-1"></a>edquota -u usuari1
+</code></pre></div>
+<img alt="chmod" src="../fotos/q12.png" />
+<img alt="chmod" src="../fotos/q13.png" /></p>
+</li>
+<li>
+<p>Seguidament, executarem la comanda <code>repquota /mnt/dades</code> aquesta mostra un informe detallat de l’ús de disc i les quotes de usuaris i grups en un sistema de fitxers.    <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-295-1" name="__codelineno-295-1" href="#__codelineno-295-1"></a>repquota /dev/sdc1
+</code></pre></div>
+<img alt="chmod" src="../fotos/q14.png" /></p>
+</li>
+<li>
+<p>Tot seguit, afegirem permisos 777 a la carpeta dades.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-296-1" name="__codelineno-296-1" href="#__codelineno-296-1"></a>cd /mnt
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-297-1" name="__codelineno-297-1" href="#__codelineno-297-1"></a>chmod 777 dades/
+</code></pre></div>
+<img alt="chmod" src="../fotos/q16.png" /></p>
+</li>
+<li>
+<p>A continuació entrarem amb usuari1 i crearem un fitxer especificant tamany i contingut. Si fem un <code>quota -u usuari1</code> veurem que segons el tamany assignat del fitxer el resultat determina l'espai utilitzat.    <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-298-1" name="__codelineno-298-1" href="#__codelineno-298-1"></a>dd if=/dev/zero of=test bs=1K count=800
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-299-1" name="__codelineno-299-1" href="#__codelineno-299-1"></a>quota -u usuari1
+</code></pre></div>
+<img alt="chmod" src="../fotos/q17.png" /></p>
+</li>
+<li>
+<p>Si ho comprovem des de root amb repquota també ens indicara el mateix espai i l'usuari que l'ocupa.      <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-300-1" name="__codelineno-300-1" href="#__codelineno-300-1"></a>repquota /dev/sdc1
+</code></pre></div>
+<img alt="chmod" src="../fotos/q18.png" /></p>
+</li>
+<li>
+<p>Ara tornarem a ser usuari1 i crearem 2 fitxers més per observar que passa si sobrepassem el límit. Com podem observar al fitxer test2 salta l'avís, però podem continuar creant més fitxers. Com és possible? El sistema accepta el fitxer que estàs creant, però realment està buit, per tant, s'estan aplicant les restriccions de quota de manera correcta.    <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-301-1" name="__codelineno-301-1" href="#__codelineno-301-1"></a>dd if=/dev/zero of=test1 bs=1K count=800
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-302-1" name="__codelineno-302-1" href="#__codelineno-302-1"></a>dd if=/dev/zero of=test2 bs=1K count=800
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-303-1" name="__codelineno-303-1" href="#__codelineno-303-1"></a>dd if=/dev/zero of=test3 bs=1K count=800
+</code></pre></div>
+<img alt="chmod" src="../fotos/q19.png" />
+<img alt="chmod" src="../fotos/q20.png" />
+<img alt="chmod" src="../fotos/q21.png" />
+<img alt="chmod" src="../fotos/q22.png" />
+<img alt="chmod" src="../fotos/q23.png" /></p>
+</li>
+<li>
+<p>Si ho comprovem, podrem observar que indica 6 dies de gràcia, els grace days només són aplicables al soft límit, indicant el temps durant el qual es pot excedir aquest límit abans que es comencin a imposar restriccions.  <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-304-1" name="__codelineno-304-1" href="#__codelineno-304-1"></a>quota -u usuari1
+</code></pre></div>
+<img alt="chmod" src="../fotos/q24.png" /></p>
+</li>
+<li>
+<p>Com a dada interessant si no volem grace days amb la comanda <code>edquota -t</code> podem modificar-los a 0.   <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-305-1" name="__codelineno-305-1" href="#__codelineno-305-1"></a>edquota -t
+</code></pre></div>
+<img alt="chmod" src="../fotos/q26.png" />
+<img alt="chmod" src="../fotos/q25.png" /></p>
+</li>
+<li>
+<p>Ara per poder fer la següent part eliminarem tots els fitxers creats i revisarem la quota.     <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-306-1" name="__codelineno-306-1" href="#__codelineno-306-1"></a>cd /mnt/dades
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-307-1" name="__codelineno-307-1" href="#__codelineno-307-1"></a>rm tes*
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-308-1" name="__codelineno-308-1" href="#__codelineno-308-1"></a>ls
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-309-1" name="__codelineno-309-1" href="#__codelineno-309-1"></a>quota -u usuari1
+</code></pre></div>
+<img alt="chmod" src="../fotos/q28.png" /></p>
+</li>
+<li>
+<p>Per poder mostrar de forma més clara com funciona quota, delimitarem soft a 100 i hard a 400.    <br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-310-1" name="__codelineno-310-1" href="#__codelineno-310-1"></a>edquota -u maria
+</code></pre></div>
+<img alt="chmod" src="../fotos/q30.png" />
+<img alt="chmod" src="../fotos/q32.png" /></p>
+</li>
+<li>
+<p>Seguidament, descarregarem una foto d'internet i l'apegarem a /mnt/dades, com podem comprovar si la foto passa el límit salta un error de quota.     <br />
+<img alt="chmod" src="../fotos/q31.png" /></p>
+</li>
+<li>
+<p>Però si ens n'adonem la foto segueix al directori i a més és visible, això és perquè li baixa la qualitat per a que pugui d'alguna forma entrar dins del límit de la quota.  <br />
+<img alt="chmod" src="../fotos/q34.png" /></p>
+</li>
+<li>
+<p>Si provem de tornar a copiar la foto aquesta, ja no serà visible, perquè la quota ja està plena per l'altra.     <br />
+<img alt="chmod" src="../fotos/q35.png" />
+<img alt="chmod" src="../fotos/q36.png" /></p>
+</li>
+</ol>
+<hr />
+<h2 id="webgrafia">Webgrafia</h2>
+<p>Molta de la informació extreta està al <strong>Moodle de 0369 - Implantació de Sistemes Operatius</strong>. Seguidament, els següents links són d'internet:</p>
+<p>Linux.die.net. Manual de comandes per a la gestió de processos. Disponible a: <a href="https://linux.die.net/man/">https://linux.die.net/man/</a></p>
+<p>Tecmint. Manage Users and Groups in Linux. Disponible a: <a href="https://www.tecmint.com/manage-users-and-groups-in-linux/">https://www.tecmint.com/manage-users-and-groups-in-linux/</a></p>
+<p>Arch Wiki. File Systems. Disponible a: <a href="https://wiki.archlinux.org/title/File_systems">https://wiki.archlinux.org/title/File_systems</a></p>
+<p>Tecmint. Setting Disk Quotas. Disponible a: <a href="https://www.tecmint.com/set-filesystem-disk-quotas-on-ubuntu/">https://www.tecmint.com/set-filesystem-disk-quotas-on-ubuntu/</a></p>
+<p>Ubuntu Official Documentation. Disk Quotas. Disponible a: <a href="https://help.ubuntu.com/community/DiskQuotas">https://help.ubuntu.com/community/DiskQuotas</a></p>
+<p>Ubuntu Tutorials. Create a USB stick on Ubuntu. Disponible a: <a href="https://ubuntu.com/tutorials/create-a-usb-stick-on-ubuntu#1-overview">https://ubuntu.com/tutorials/create-a-usb-stick-on-ubuntu#1-overview</a></p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://mariagutierrez03.github.io/mkdocs-maria-gutierrez/">Mkdocs</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/mariagutierrez03">Maria Gutierrez</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.code.download"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
